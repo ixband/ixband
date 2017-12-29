@@ -1,6 +1,5 @@
 ---
-layout: docs
-category: events
+layout: default
 title: 타이틀
 ---
 
