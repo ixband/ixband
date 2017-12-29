@@ -1,0 +1,22 @@
+<div class="collection-title">
+    {{ page.title }}
+</div>
+
+{% assign paginate = site.category.paginate | default: site.paginate  %}
+{% assign paginate_path = site.category.paginate_path | default: site.paginate_path  %}
+
+{% for cat_posts in site.categories %}
+    {% assign cat = cat_posts[0] | url_encode | replace: '+', '%20' %}
+    {% assign posts = cat_posts[1] %}
+
+    {% for post in posts %}
+        {% if paginate > 0 %}
+            {% assign page_num = forloop.index0 | divided_by: paginate | plus: 1 %}
+            {% assign route = '/' | append: cat %}
+
+            {% if page_num != 1 %}
+                {% assign route = route | append: paginate_path | replace: ':num', page_num %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
