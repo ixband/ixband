@@ -1,6 +1,7 @@
 ---
 layout: default
-title: 타이틀
+category: events
+title: event-test
 ---
 
  테스트 docs page

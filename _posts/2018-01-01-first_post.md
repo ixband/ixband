@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: docs
 category: Android
 title: 타이틀
 tagline: by blaxk
