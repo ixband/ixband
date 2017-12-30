@@ -23,7 +23,6 @@ CustomEvents를 상속하여 리스너 관리기능을 사용한다.<br/>
 
 ### Methods
 
-{% sample lang="js" %}
 **extend\(** _methods, className_ **\)** : `Class` `1.0~`
 > Methods 상속
 
