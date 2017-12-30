@@ -3,5 +3,5 @@ category: $B
 title: VERSION
 ---
 
-#{{ page.title }}
+{{ page.title }}
 ---
