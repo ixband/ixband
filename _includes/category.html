@@ -1,9 +1,10 @@
+
 <ul class="categories">
     {% assign sortedDocs = site.docs | sort: 'category' %}
     {% assign groups = sortedDocs | group_by: 'category' %}
 
     {% for group in groups %}
-        {% if group.name !== 'DOM' %}
+        {% if group.name != 'DOM' %}
         <li>
             <h3 class="category-name">{{ group.name }}</h3>
             <ul class="category-items">
@@ -18,7 +19,7 @@
     {% endfor %}
 
     {% for group in groups %}
-        {% if group.name === 'DOM' %}
+        {% if group.name == 'DOM' %}
         <li>
             <h3 class="category-name">{{ group.name }}</h3>
             <ul class="category-items">
