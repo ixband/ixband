@@ -1,39 +1,18 @@
-
-<h2>Docs (sort:category)</h2>
-<ul class="docs-list">
-    {% assign sortedDocs = site.docs | sort: 'category' %}
-    {% for doc in sortedDocs %}
-        <li>
-            <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
-            <span class="cat">{{ doc.category }}</span>
-        </li>
-    {% endfor %}
-</ul>
-
-<h2>group_by</h2>
 <ul class="categories-list">
     {% assign sortedDocs = site.docs | sort: 'category' %}
-    {% assign group = sortedDocs | group_by: 'category' %}
+    {% assign groups = sortedDocs | group_by: 'category' %}
 
-    <li>{{ group | jsonify }}</li>
-
-    {% for category in group.items %}
+    {% for group in groups %}
         <li>
             {% assign currentCategory = category | first %}
-            <h3>{{ currentCategory.category }}</h3>
-            <ul class="category">
-                {% for doc in category %}
+            <h3 class="category-name">{{ group.name }}</h3>
+            <ul class="categories">
+                {% for item in group.items %}
                     <li>
-                        <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
-                        <span class="cat">{{ doc.category }}</span>
+                        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
                     </li>
                 {% endfor %}
             </ul>
         </li>
     {% endfor %}
-</ul>
-
-<h2>Categories</h2>
-<ul class="categories-list">
-    <li>{{ site.categories | jsonify }}</li>
 </ul>
