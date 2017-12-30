@@ -19,8 +19,6 @@ CustomEvents를 상속하여 리스너 관리기능을 사용한다.<br/>
 </p>
 
 
-{% method %}
-
 ### Methods
 
 **extend\(** _methods, className_ **\)** : `Class` `1.0~`
@@ -31,7 +29,6 @@ methods
 - **className** : `String`
 Class 객체의 name, console에서 확일할수 있는 name, 설정하지 않으면 랜덤한 값이 들어간다.
 
-{% endmethod %}
 
 ### Example
 ```js
