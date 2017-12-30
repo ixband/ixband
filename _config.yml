@@ -5,6 +5,7 @@ description: ixBnad.js Documentation
 author: blaxk
 language: ko
 date_format: '%Y-%m-%d'
+timezone: 'Asia/Seoul'
 
 # URL
 url:
@@ -19,17 +20,17 @@ highlighter: rouge
 defaults:
   -
     scope:
-      path: ""
-      type: "pages"
+      path: ''
+      type: 'pages'
     values:
-      layout: "page"
-      comments: true
-
-# Collections
-collections:
-  docs:
-    output: true
-    permalink: /docs/:path/
+      layout: 'default'
+  -
+    scope:
+      path: 'docs'
+      type: 'pages'
+    values:
+      layout: 'docs'
+      category: 'docs'
 
 
 

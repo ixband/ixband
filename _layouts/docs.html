@@ -1,6 +1,15 @@
 ---
 ---
 
-<div class="docs-content">
+{% include header.html %}
 
-</div>
+<main>
+    <div id="category">
+        {% include category.html %}
+    </div>
+    <div id="contents docs-content">
+        {{ content }}
+    </div>
+</main>
+
+{% include footer.html %}

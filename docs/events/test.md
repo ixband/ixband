@@ -1,7 +1,6 @@
 ---
-layout: default
 category: events
-title: event-test
+title: docs-test
 ---
 
  테스트 docs page
