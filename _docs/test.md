@@ -1,5 +1,5 @@
 ---
-category: events
+category: docs
 title: docs-test
 ---
 
