@@ -18,7 +18,14 @@
 <h2>Pages</h2>
 <ul class="pages-list">
     {% for page in site.pages %}
-        <li>{{ page.title }}</li>
+        <li>{{ page.title }} : {{ page.name }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Categories</h2>
+<ul class="category-list">
+    {% for category in site.categories %}
+    <li>{{ category }}</li>
     {% endfor %}
 </ul>
 

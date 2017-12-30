@@ -16,6 +16,11 @@ permalink: /:path/
 markdown:    kramdown
 highlighter: rouge
 
+collections:
+  docs:
+    output: true
+    permalink: /docs/:path/
+
 # Default
 defaults:
   -
@@ -24,6 +29,12 @@ defaults:
       type: 'pages'
     values:
       layout: 'default'
+  -
+    scope:
+      path: 'docs'
+      type: 'docs'
+    values:
+      layout: 'docs'
 
 
 
