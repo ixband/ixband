@@ -1,4 +1,5 @@
 ---
+layout: docs
 category: $B
 title: bind()
 ---
