@@ -9,7 +9,7 @@
 
 <h2>Docs</h2>
 <ul class="docs-list">
-    {% for doc in site.docs %}
+    {% for doc in site.docs | sort: 'category' %}
         <li>
             <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
             <span class="cat">{{ doc.category }}</span>
@@ -19,9 +19,10 @@
 
 <h2>Categories</h2>
 <ul class="categories-list">
-    {% assign categories = site.docs | group_by:"category" %}
-    {% for category in categories %}
+    {% for category in site.categories %}
         <li>
+            {% assign currentCategory = category | first %}
+            <h3>{{ currentCategory.category }}</h3>
             <ul class="category">
                 {% for doc in category %}
                     <li>
