@@ -15,8 +15,10 @@
 {% endhighlight %}
 
 <ul class="category-list">
-    {% assign sortedDocs = site.docs | sort %}
-    {% for doc in sortedDocs %}
-        <li>{{ doc.title }}</li>
-    {% endfor %}
+    {% if site.docs %}
+        {% assign sorted_docs = site.docs | sort %}
+        {% for doc in sorted_docs %}
+            <li>{{ doc.title }}</li>
+        {% endfor %}
+    {% endif %}}
 </ul>
