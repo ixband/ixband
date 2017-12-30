@@ -1,18 +1,34 @@
-<ul class="categories-list">
+<ul class="categories">
     {% assign sortedDocs = site.docs | sort: 'category' %}
     {% assign groups = sortedDocs | group_by: 'category' %}
 
     {% for group in groups %}
+        {% if group.name !== 'DOM' %}
         <li>
-            {% assign currentCategory = category | first %}
             <h3 class="category-name">{{ group.name }}</h3>
-            <ul class="categories">
+            <ul class="category-items">
                 {% for item in group.items %}
-                    <li>
-                        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
-                    </li>
+                <li>
+                    <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+                </li>
                 {% endfor %}
             </ul>
         </li>
+        {% endif %}
+    {% endfor %}
+
+    {% for group in groups %}
+        {% if group.name === 'DOM' %}
+        <li>
+            <h3 class="category-name">{{ group.name }}</h3>
+            <ul class="category-items">
+                {% for item in group.items %}
+                <li>
+                    <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endif %}
     {% endfor %}
 </ul>
