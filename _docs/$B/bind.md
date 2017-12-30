@@ -18,7 +18,7 @@ title: bind()
     ~IE7 Cross Browsing 처리
 </p>
 
-
+{% method %}
 ### Methods
 
 **bind\(** _fnc, thisArg_ **\)** : `Function` `1.0~`
@@ -27,6 +27,7 @@ title: bind()
 - **thisArg** : `Function`
 바인딩된 함수가 호출될 때 대상 함수에 this 매개변수로서 전달되는 값
 
+{% endmethod %}
 
 ### Example
 

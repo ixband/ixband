@@ -7,7 +7,7 @@ title: Class
 ---
 > _**Type :** Object_  
 > _**Support version :** 1.0_  
-> _**Extend :** [CustomEvents](../event/CustomEvents.md)_
+> _**Extend :** [CustomEvents]({{ site.baseurl }}/docs/event/CustomEvents.md)_
 
 <br/>
 <p class="indent">
@@ -18,7 +18,7 @@ CustomEvents를 상속하여 리스너 관리기능을 사용한다.<br/>
 ※주의 : instance 를 extend 하게되면 오류가 발생한다.
 </p>
 
-
+{% method %}
 ### Methods
 
 **extend\(** _methods, className_ **\)** : `Class` `1.0~`
@@ -29,6 +29,7 @@ methods
 - **className** : `String`
 Class 객체의 name, console에서 확일할수 있는 name, 설정하지 않으면 랜덤한 값이 들어간다.
 
+{% endmethod %}
 
 ### Example
 ```js
