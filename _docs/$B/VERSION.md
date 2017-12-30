@@ -1,5 +1,5 @@
 ---
-category: ixBand
+category: $B
 title: VERSION
 ---
 
@@ -11,7 +11,7 @@ title: VERSION
 
 <br/>
 <p class="indent">
-ixBand 버전 반환.
+    ixBand 버전 반환.
 </p>
 
 
