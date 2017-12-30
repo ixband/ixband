@@ -20,7 +20,10 @@
 
 <h2>Categories</h2>
 <ul class="categories-list">
-    {% for category in site.categories %}
+    {% assign sortedDocs = site.docs | sort: 'category' %}
+    {% assign groups = sortedDocs | group_by: 'category' %}
+
+    {% for category in groups %}
         <li>
             {% assign currentCategory = category | first %}
             <h3>{{ currentCategory.category }}</h3>
