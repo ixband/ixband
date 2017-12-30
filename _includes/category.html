@@ -20,10 +20,16 @@
 <h2>Categories</h2>
 <ul class="categories-list">
     {% assign categories = site.docs | group_by:"category" %}
-    {% for doc in categories %}
+    {% for category in categories %}
         <li>
-            <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
-            <span class="cat">{{ doc.category }}</span>
+            <ul class="category">
+                {% for doc in category %}
+                    <li>
+                        <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+                        <span class="cat">{{ doc.category }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
         </li>
     {% endfor %}
 </ul>
