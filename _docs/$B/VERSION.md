@@ -1,5 +1,5 @@
 ---
-category: $B
+category: ixBand
 title: VERSION
 ---
 
