@@ -10,7 +10,7 @@
     {% endfor %}
 </ul>
 
-<h2>Categories : group_by</h2>
+<h2>group_by</h2>
 <ul class="categories-list">
     {% assign sortedDocs = site.docs | sort: 'category' %}
     {% assign group = sortedDocs | group_by: 'category' %}
@@ -31,4 +31,9 @@
             </ul>
         </li>
     {% endfor %}
+</ul>
+
+<h2>Categories</h2>
+<ul class="categories-list">
+    <li>{{ site.categories | jsonify }}</li>
 </ul>
