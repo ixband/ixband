@@ -11,7 +11,7 @@
 <ul class="docs-list">
     {% for doc in site.docs %}
         <li>
-            <a href="{{ doc.url }}">{{ doc.title }}</a>
+            <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
             <span class="path">{{ doc.path }}</span>
             <span class="date">{{ doc.date }}</span>
         </li>
@@ -21,10 +21,15 @@
 <h2>Categories</h2>
 <ul class="category-list">
     {% for category in site.categories %}
-    <li>
-        <a href="{{ category.url }}">{{ category.title }}</a>
-        <span class="path">{{ category.path }}</span>
-        <span class="date">{{ category.date }}</span>
-    </li>
+        <h3>{{ category[0].category }}</h3>
+        <ul class="category-list">
+            {% for doc in category %}
+                <li>
+                    <a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a>
+                    <span class="path">{{ doc.path }}</span>
+                    <span class="date">{{ doc.date }}</span>
+                </li>
+            {% endfor %}
+        </ul>
     {% endfor %}
 </ul>
