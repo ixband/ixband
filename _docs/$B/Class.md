@@ -20,11 +20,11 @@ title: Class
 </p>
 
 
-{% method %}
+
 
 ### Methods
 
-{% sample lang="js" %}
+
 **extend\(** _methods, className_ **\)** : `Class` `1.0~`
 > Methods 상속
 
@@ -33,7 +33,7 @@ methods
 - **className** : `String`
 Class 객체의 name, console에서 확일할수 있는 name, 설정하지 않으면 랜덤한 값이 들어간다.
 
-{% endmethod %}
+
 
 ### Example
 ```js
