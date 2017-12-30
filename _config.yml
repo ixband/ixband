@@ -39,23 +39,6 @@ plugins:
  - jekyll-sitemap
 
 
-
-
-# ---------------------------------------------------------------
-# Menu Settings
-# ---------------------------------------------------------------
-
-# When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
-menu:
-  home: /
-  docs: /docs/
-  download: /download/
-  #categories: /categories/
-  #about: /about/
-  #tags: /tags/
-  #sitemap: /sitemap.xml
-
-
 # ---------------------------------------------------------------
 # Third Party Services Settings
 # ---------------------------------------------------------------
