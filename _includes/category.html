@@ -1,12 +1,4 @@
 
-{% highlight js linenos %}
-    var aa = 'test';
-
-    function tesst ( bb ) {
-        return bb;
-    }
-{% endhighlight %}
-
 <h2>Docs (sort:category)</h2>
 <ul class="docs-list">
     {% assign sortedDocs = site.docs | sort: 'category' %}
@@ -22,6 +14,8 @@
 <ul class="categories-list">
     {% assign sortedDocs = site.docs | sort: 'category' %}
     {% assign group = sortedDocs | group_by: 'category' %}
+
+    <li>{{ group | jsonify }}</li>
 
     {% for category in group.items %}
         <li>
