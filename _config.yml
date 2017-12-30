@@ -24,13 +24,6 @@ defaults:
       type: 'pages'
     values:
       layout: 'default'
-  -
-    scope:
-      path: 'docs'
-      type: 'pages'
-    values:
-      layout: 'docs'
-      category: 'docs'
 
 
 
