@@ -3,15 +3,14 @@ layout: null
 ---
 
 {
-  "length": {{ site.docs.length }}
   "docs": [
     {% for doc in site.docs %}
       {
-        "title": {{ doc.title }},
-        "description": {{ doc.description }},
-        "category": {{ doc.category }},
-        "tags": {{ doc.tags }},
-        "path": {{ site.baseurl }}{{ doc.id }}
+        "title": "{{ doc.title }}",
+        "description": "{{ doc.description }}",
+        "category": "{{ doc.category }}",
+        "tags": [{{ doc.tags }}],
+        "path": "{{ site.baseurl }}{{ doc.id }}"
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ]
