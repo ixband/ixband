@@ -7,6 +7,8 @@
     var keyword = $B.utils.urlParam( 'keyword' );
 
     if ( keyword ) {
+        $( '.search input:search' ).val( keyword );
+
         $.ajax({
             url: UI.BASE_URL + '/search.json'
         }).done(function ( data ) {
