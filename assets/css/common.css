@@ -111,13 +111,6 @@ pre {
     overflow-y: hidden;
 }
 
-pre code {
-    color: #efefef;
-    text-shadow: 0px 1px 0px #000;
-    margin: 0;
-    padding: 0;
-}
-
 table {
     width:100%;
     border-collapse:collapse;

@@ -5,6 +5,9 @@
 
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
+.highlight pre code {
+    color: #efefef;
+}
 .highlight, .highlight .w {
     color: #d0d0d0;
 }
