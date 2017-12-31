@@ -5,11 +5,11 @@
 
     {% for group in groups %}
         {% if group.name != 'DOM' %}
-        <li>
-            <h3 class="category-name">{{ group.name }}</h3>
+        <li class="{% if group.name == page.category %}active{% endif %}">
+            <button type="button" class="category-name"><span>{{ group.name }}</span></button>
             <ul class="category-items">
                 {% for item in group.items %}
-                <li>
+                <li class="{% if item.title == page.title %}active{% endif %}">
                     <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
                 </li>
                 {% endfor %}
@@ -20,11 +20,11 @@
 
     {% for group in groups %}
         {% if group.name == 'DOM' %}
-        <li>
-            <h3 class="category-name">{{ group.name }}</h3>
+        <li class="{% if group.name == page.category %}active{% endif %}">
+            <button type="button" class="category-name"><span>{{ group.name }}</span></button>
             <ul class="category-items">
                 {% for item in group.items %}
-                <li>
+                <li class="{% if item.title == page.title %}active{% endif %}">
                     <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
                 </li>
                 {% endfor %}
