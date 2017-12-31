@@ -1,3 +1,9 @@
-;(function ( $ ) {
+/**
+ * Common
+ */
+;(function ( $, $B ) {
+    'use strict';
 
-})( jQuery );
+
+
+})( jQuery, ixBand );

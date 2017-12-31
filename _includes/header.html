@@ -17,7 +17,15 @@
     <link href="{{ site.baseurl }}/assets/css/rouge-base16-dark.css" rel="stylesheet" type="text/css">
     <link href="{{ site.baseurl }}/assets/css/common.css" rel="stylesheet" type="text/css">
 
+    <script>
+        window.UI = {
+            BASE_URL: {{ site.baseurl }}
+        };
+    </script>
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdn.rawgit.com/blaxk/ixband/v1.1.1/bin/ixBand_1.1.min.js"></script>
 </head>
 <body>
 <header>
@@ -38,8 +46,10 @@
     <div class="etc">
         <ul>
             <li class="search">
-                <input type="search" placeholder="Search...">
-                <a href="{{ site.baseurl }}/search/">search</a>
+                <form action="{{ site.baseurl }}/search/" method="get">
+                    <input type="search" placeholder="Search..." name="keyword">
+                    <button type="submit">search</button>
+                </form>
             </li>
             <li class="github">
                 <a href="https://github.com/blaxk/ixband">github</a>

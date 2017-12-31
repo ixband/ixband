@@ -1,7 +1,9 @@
 ---
 layout: docs
 category: $B
+tags: []
 title: VERSION
+description: ixBand 버전 반환.
 ---
 
 {{ page.title }}
@@ -12,8 +14,8 @@ title: VERSION
 > _**Return :** String_
 
 <br/>
-<p class="indent">
-    ixBand 버전 반환.
+<p class="description">
+    {{ page.description }}
 </p>
 
 

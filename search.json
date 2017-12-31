@@ -3,11 +3,12 @@ layout: null
 ---
 
 {
+  "length": {{ site.docs.length }}
   "docs": [
-    {% assign docLength = site.docs.length %}
     {% for doc in site.docs %}
       {
         "title": {{ doc.title }},
+        "description": {{ doc.description }},
         "category": {{ doc.category }},
         "tags": {{ doc.tags }},
         "path": {{ site.baseurl }}{{ doc.id }}

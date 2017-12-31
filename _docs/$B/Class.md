@@ -1,7 +1,9 @@
 ---
 layout: docs
 category: $B
+tags: []
 title: Class
+description: Constructor 객체의 이벤트 관리 및 상속을 지원.
 ---
 
 {{ page.title }}
@@ -12,10 +14,10 @@ title: Class
 > _**Extend :** [CustomEvents]({{ site.baseurl }}/docs/event/CustomEvents/)_
 
 <br/>
-<p class="indent">
-    Constructor 객체의 이벤트 관리 및 상속을 지원.
+<p class="description">
+    {{ page.description }}
 </p>
-<p class="indent">
+<p class="description">
     CustomEvents를 상속하여 리스너 관리기능을 사용한다.<br/>
     ※주의 : instance 를 extend 하게되면 오류가 발생한다.
 </p>
