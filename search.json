@@ -10,7 +10,7 @@ layout: null
         "title": {{ doc.title }},
         "category": {{ doc.category }},
         "tags": {{ doc.tags }},
-        "path": {{ site.baseurl }}{{ doc.id }},
+        "path": {{ site.baseurl }}{{ doc.id }}
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ]
