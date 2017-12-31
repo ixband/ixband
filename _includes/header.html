@@ -16,8 +16,34 @@
     <link href="{{ site.baseurl }}/assets/css/normalize.css" rel="stylesheet" type="text/css">
     <link href="{{ site.baseurl }}/assets/css/rouge-base16-dark.css" rel="stylesheet" type="text/css">
     <link href="{{ site.baseurl }}/assets/css/common.css" rel="stylesheet" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
-    Header : {{ page.title }}
+    <a class="logo" href="{{ site.baseurl }}">home</a>
+    <div class="menu">
+        <ul>
+            <li class="depth1">
+                <a href="{{ site.baseurl }}/docs/">Documentation</a>
+            </li>
+            <li class="depth1">
+                <a href="{{ site.baseurl }}/examples/">Examples</a>
+            </li>
+            <li class="depth1">
+                <a href="https://github.com/blaxk/ixband/releases">Download</a>
+            </li>
+        </ul>
+    </div>
+    <div class="etc">
+        <ul>
+            <li class="search">
+                <input type="search" placeholder="Search...">
+                <a href="{{ site.baseurl }}/search/">search</a>
+            </li>
+            <li class="github">
+                <a href="https://github.com/blaxk/ixband">github</a>
+            </li>
+        </ul>
+    </div>
 </header>

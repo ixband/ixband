@@ -98,7 +98,7 @@ code {
     font-size:13px;
     margin: 0 4px;
     padding: 4px 6px;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 pre {
@@ -151,3 +151,9 @@ dt {
     font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-weight: normal;
 }
+
+/* ----- layout ----- */
+
+/* ----- menu ----- */
+
+/* ----- category ----- */
