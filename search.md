@@ -7,7 +7,7 @@ description: Documentation search
 {{ page.title }}
 ---
 
-<div class="search-result">
+<div class="result">
     <ul>
         
     </ul>

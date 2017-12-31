@@ -17,15 +17,16 @@
     }
 
     function drawList ( keyword, docs ) {
-        var $result = $( 'search-result > ul' ),
-            length = docs.length;
+        var $result = $( '.result > ul' ),
+            length = docs.length,
+            html = '';
 
         for ( var i = 0; i < length; ++i ) {
             var doc = docs[i],
-                reg = new RegExp( keyword );
+                reg = new RegExp( keyword, 'i' );
 
             if ( reg.test(doc.title) || _.contains(doc.tags, keyword) ) {
-                var html = [
+                var item = [
                     '<li class="item">',
                         '<a href="' + doc.path + '">',
                             '<h3>' + doc.title + '</h3>',
@@ -34,9 +35,11 @@
                     '</li>'
                 ];
 
-                $result.html( html.join('') );
+                html += item.join( '' );
             }
         }
+
+        $result.html( html );
     }
 
     function drawNoResult ( keyword ) {
