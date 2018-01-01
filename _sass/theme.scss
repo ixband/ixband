@@ -1,7 +1,6 @@
 @import "normalize";
 @import "rouge-github";
 @import "variables";
-@import url(//cdn.jsdelivr.net/font-nanum/1.0/nanumgothiccoding/nanumgothiccoding.css);
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -151,7 +150,7 @@ header {
 
   code {
     padding: 2px 4px;
-    font-family: 'Nanum Gothic Coding';
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 14px;
     color: $code-text-color;
     background-color: $code-bg-color;
@@ -162,7 +161,7 @@ header {
     padding: 0.8rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    font-family: 'Nanum Gothic Coding';
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 14px;
     color: $code-text-color;
     word-wrap: normal;
