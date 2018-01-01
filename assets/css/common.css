@@ -1,6 +1,6 @@
-@import "{{ site.baseurl }}/assets/css/normalize.css";
-@import "{{ site.baseurl }}/assets/css/fonts.css";
-@import "{{ site.baseurl }}/assets/css/highlight/rouge-github.css";
+@import "normalize.css";
+@import "fonts.css";
+@import "highlight/rouge-github.css";
 
 body {
     padding:0px 0 20px 0px;
