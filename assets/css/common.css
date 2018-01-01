@@ -1,6 +1,6 @@
 @import "normalize.css";
 @import "fonts.css";
-@import "highlight/rouge-base16-dark.css";
+@import "highlight/rouge-github.css";
 
 body {
     padding:0px 0 20px 0px;
