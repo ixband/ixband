@@ -25,9 +25,9 @@ description: Constructor 객체의 이벤트 관리 및 상속을 지원.
 
 
 
-### Methods
+### [](.group-title)Methods
 
-**extend\(** _methods, className_ **\)** : `Class` `1.0~`
+**[](.method)extend\(** _methods, className_ **\)** : `Class` `1.0~`
 > Methods 상속
 
 - **methods** : `Object`
