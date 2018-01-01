@@ -151,8 +151,8 @@ header {
 
   code {
     padding: 2px 4px;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Nanum Gothic Coding';
-    font-size: .85em;
+    font-family: 'Nanum Gothic Coding';
+    font-size: 14px;
     color: $code-text-color;
     background-color: $code-bg-color;
     border-radius: 0.3rem;
@@ -162,8 +162,8 @@ header {
     padding: 0.8rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Nanum Gothic Coding';
-    font-size: .85em;
+    font-family: 'Nanum Gothic Coding';
+    font-size: 14px;
     color: $code-text-color;
     word-wrap: normal;
     background-color: $code-bg-color;
