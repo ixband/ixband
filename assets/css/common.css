@@ -55,7 +55,8 @@ a {
 }
 
 a:hover {
-     color: #3333bb;
+    color: #3333bb;
+    text-decoration: underline;
 }
 
 a small {
