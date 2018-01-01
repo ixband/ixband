@@ -1,6 +1,7 @@
 @import "normalize";
 @import "rouge-github";
 @import "variables";
+@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css);
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -161,7 +162,7 @@ header {
     padding: 0.8rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: 'Fira Code', Courier, monospace;
     color: $code-text-color;
     word-wrap: normal;
     background-color: $code-bg-color;

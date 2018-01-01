@@ -30,9 +30,9 @@ description: Constructor 객체의 이벤트 관리 및 상속을 지원.
 **[](.method)extend\(** _methods, className_ **\)** : `Class` `1.0~`
 > Methods 상속
 
-- **methods** : `Object`
+- **methods** : `Object`  
 methods
-- **className** : `String`
+- **className** : `String`  
 Class 객체의 name, console에서 확일할수 있는 name, 설정하지 않으면 랜덤한 값이 들어간다.
 
 
