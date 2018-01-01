@@ -28,7 +28,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   color: $body-text-color;
 }
@@ -151,7 +151,7 @@ header {
   code {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 14px;
+    font-size: 0.8rem;
     color: $code-text-color;
     background-color: $code-bg-color;
     border-radius: 0.3rem;
@@ -162,7 +162,7 @@ header {
     margin-top: 0;
     margin-bottom: 1rem;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 14px;
+    font-size: 0.8rem;
     color: $code-text-color;
     word-wrap: normal;
     background-color: $code-bg-color;
