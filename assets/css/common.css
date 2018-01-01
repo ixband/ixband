@@ -151,6 +151,14 @@ header {
     background:#7700B4;
 }
 
+/* contents */
+.api-method .api-method-sample > .comments-section {background:#E0E9F2; margin-top:22px; padding:6px 16px; border-radius:0 5px 0 5px;}
+.api-method .api-method-sample > .comments-section:first-child {margin-top:0;}
+.api-method .comments-section em {color:#636363;}
+code.highlighter-rouge {background:#d7dfe7; color:#8d8d8d;}
+p > code.highlighter-rouge:last-of-type {background:none; color:#636363; position:absolute; right:5px;}
+p > code.highlighter-rouge:last-of-type:before {content:"ver ";}
+
 /* ----- menu ----- */
 
 /* ----- category ----- */
