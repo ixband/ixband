@@ -7,6 +7,7 @@
     var keyword = $B.utils.urlParam( 'keyword' );
 
     if ( keyword ) {
+        keyword = decodeURIComponent( keyword );
         $( '.search input[type=search]' ).val( keyword );
 
         $.ajax({
