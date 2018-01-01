@@ -151,8 +151,8 @@ header {
 
   code {
     padding: 2px 4px;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 0.9rem;
+    font-family: 'Fira Code', Courier, monospace;
+    font-size: 14px;
     color: $code-text-color;
     background-color: $code-bg-color;
     border-radius: 0.3rem;
@@ -173,7 +173,6 @@ header {
     > code {
       padding: 0;
       margin: 0;
-      font-size: 0.9rem;
       color: $code-text-color;
       word-break: normal;
       white-space: pre;
@@ -195,8 +194,6 @@ header {
   pre {
     padding: 0.8rem;
     overflow: auto;
-    font-size: 0.9rem;
-    line-height: 1.45;
     border-radius: 0.3rem;
     -webkit-overflow-scrolling: touch;
   }
