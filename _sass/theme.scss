@@ -1,7 +1,7 @@
 @import "normalize";
 @import "rouge-github";
 @import "variables";
-@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css);
+@import url(//cdn.jsdelivr.net/font-nanum/1.0/nanumgothiccoding/nanumgothiccoding.css);
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -151,8 +151,8 @@ header {
 
   code {
     padding: 2px 4px;
-    font-family: 'Fira Code', Courier, monospace;
-    font-size: 14px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Nanum Gothic Coding';
+    font-size: .85em;
     color: $code-text-color;
     background-color: $code-bg-color;
     border-radius: 0.3rem;
@@ -162,8 +162,8 @@ header {
     padding: 0.8rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    font-family: 'Fira Code', Courier, monospace;
-    font-size: 14px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Nanum Gothic Coding';
+    font-size: .85em;
     color: $code-text-color;
     word-wrap: normal;
     background-color: $code-bg-color;
