@@ -5,19 +5,6 @@
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
     @content;
-    
-    header:after{content:''; display:block; clear:both;}
-    .logo{float:left}
-    .menu{float:left;}
-    .menu li{float:left;}
-    .etc{float:right;}
-    
-    main{max-width:1000px; margin:0 auto;}
-    main:after{content:''; display:block; clear:both;}
-    #category{float:left; width:20%}
-    #contents{float:right; width:75%}
-    
-    footer{background:gray;}
   }
 }
 
@@ -103,6 +90,11 @@ header {
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
+  :after{content:''; display:block; clear:both;}
+    .logo{float:left}
+    .menu{float:left;}
+    .menu li{float:left;}
+    .etc{float:right;}
 
   @include large {
     padding: 5rem 6rem;
@@ -117,8 +109,20 @@ header {
   }
 }
 
+main {
+  max-width:1000px; margin:0 auto;
+  
+  :after{content:''; display:block; clear:both;}
+}
+
+#category-area {
+  float:left; width:20%
+}
+
 #contents-area {
   word-wrap: break-word;
+  float:right;
+  width:75%
 
   :first-child {
     margin-top: 0;
@@ -296,6 +300,8 @@ footer {
   padding-top: 2rem;
   margin-top: 2rem;
   border-top: solid 1px $hr-border-color;
+  
+  background:gray;
 
   @include large {
     font-size: 1rem;
