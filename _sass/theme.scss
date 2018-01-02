@@ -90,11 +90,15 @@ header {
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
-  :after{content:''; display:block; clear:both;}
-    .logo{float:left}
-    .menu{float:left;}
-    .menu li{float:left;}
-    .etc{float:right;}
+  
+  &:after{content:''; display:block; clear:both;}
+  
+  .logo{float:left}
+  .menu{float:left;}
+  .menu {
+    li{float:left;}
+  }
+  .etc{float:right;}
 
   @include large {
     padding: 5rem 6rem;
@@ -112,7 +116,7 @@ header {
 main {
   max-width:1000px; margin:0 auto;
   
-  :after{content:''; display:block; clear:both;}
+  &:after{content:''; display:block; clear:both;}
 }
 
 #category-area {
@@ -124,7 +128,7 @@ main {
   float:right;
   width:75%
 
-  :first-child {
+  &:first-child {
     margin-top: 0;
   }
 
