@@ -5,6 +5,17 @@
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
     @content;
+    
+    header:after{content:''; display:block; clear:both;}
+    .logo{float:left}
+    .menu{float:left;}
+    .menu li{float:left;}
+    .etc{float:right;}
+    
+    main{max-width:1000px; margin:0 auto;}
+    main:after{content:''; display:block; clear:both;}
+    #category{float:left; width:20%}
+    #contents{float:right; width:75%}
   }
 }
 
