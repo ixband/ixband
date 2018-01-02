@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
 
-    <meta name="title" content="ixBand.js - {{ page.title }}" />
+    <meta name="title" content="{{ page.title }}|ixBand.js" />
     <meta name="author" content="blaxk"/>
-    <meta name="description" content="ixBand.js - {{ page.description }}"/>
+    <meta name="description" content="{{ page.description }}"/>
 
     <title>ixBand.js - {{ page.title }}</title>
 
     <link href="{{ site.baseurl }}/assets/images/favicon.png" rel="icon">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
 
     <script>
         window.UI = {
@@ -46,7 +47,7 @@
             <li class="search">
                 <form action="{{ site.baseurl }}/search/" method="get">
                     <input type="search" placeholder="Search documents" name="keyword" class="search-input">
-                    <button type="submit" class="btn-search">search</button>
+                    <!--<button type="submit" class="btn-search">search</button>-->
                 </form>
             </li>
             <li class="github">
