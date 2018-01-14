@@ -1,7 +1,10 @@
-{% assign data = site.data[include.category][include.title] %}
+{% assign data=include.model %}
+{% assign title=include.title %}
+{% assign category=include.category %}
+
 <div>
-    <div>{{ include.category }}</div>
-    <div>{{ include.title }}</div>
+    <div class="title">{{ title }}</div>
+    <div>{{ category }}</div>
     <div>{{ data | jsonify }}</div>
     <div>{{ site.data | jsonify }}</div>
 </div>
