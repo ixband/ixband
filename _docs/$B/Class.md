@@ -1,12 +1,11 @@
 ---
 layout: docs
 category: $B
+title: Class
 tags: []
 ---
 
-{% assign data = site.data['$B']['Class'] %}
-
-{% include docs.html %}
+{% include docs.html data=site.data['$B']['Class'] %}
 
 ### Example
 ```js
