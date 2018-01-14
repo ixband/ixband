@@ -1,6 +1,11 @@
 {% assign title=include.title %}
 {% assign category=include.category %}
-{% assign categoryLabel={% if category == '$B' %}'B'{% else %}category{% endif %} %}
+
+{% if category == '$B' %}
+    {% assign categoryLabel='B' %}
+{% else %}
+    {% assign categoryLabel=category %}
+{% endif %}
 {% assign data=site.data[categoryLabel][title] %}
 
 <h1>{{ data.title }}</h1>
