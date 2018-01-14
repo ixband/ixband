@@ -5,7 +5,7 @@ title: Class
 tags: []
 ---
 
-{% include docs.html data=site.data['$B']['Class'] %}
+{% include docs.html model=site.data['$B']['Class'] %}
 
 ### Example
 ```js
