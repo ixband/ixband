@@ -1,5 +1,4 @@
-{% assign data = include.model %}
-<div>{{ include.model }}</div>
+{% assign data = site.data[include.category][include.title] %}
 <div class="docs-contents">
     <h1>{{ data.title }}</h1>
 
