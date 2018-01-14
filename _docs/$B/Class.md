@@ -5,7 +5,7 @@ title: Class
 tags: []
 ---
 
-{% include docs.html %}
+{% include docs.html model='Class' %}
 
 ### Example
 ```js
