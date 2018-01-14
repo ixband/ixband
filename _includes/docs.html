@@ -23,6 +23,7 @@
     </ul>
 </div>
 
+{% if data.methods %}
 <h3>Methods</h3>
 <div class="methods">
     <ul>
@@ -42,3 +43,36 @@
         {% endfor %}
     </ul>
 </div>
+{% endif %}
+
+{% if data.events %}
+<h3>Events</h3>
+<table>
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>type</th>
+            <th>detail</th>
+            <th>property</th>
+            <th>ver</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for event in data.events %}
+        <tr>
+            <td>{{ event.no }}</td>
+            <td>{{ event.type }}</td>
+            <td>{{ event.detail }}</td>
+            <td>
+                <ul>
+                    {% for prop in event.properties %}
+                    <li><strong>{{ prop.name }}:</strong>{{ prop.desc }}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td>{{ event.version }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endif %}
