@@ -5,7 +5,7 @@ title: Class
 tags: []
 ---
 
-{% include docs.html model=site.data['B'][page.title] title=page.title category=page.category %}
+{% include docs.html model=site.data.B[page.title] title=page.title category=page.category %}
 
 ### Example
 ```js
