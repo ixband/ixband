@@ -1,0 +1,30 @@
+
+<div class="docs-contents">
+    <h1>{{ data.title }}</h1>
+
+    <div>
+        <span>Type : {{ data.type }}</span>
+        <span>Support : {{ data.support }}</span>
+        <span>Extend : {{ data.extend.path }}</span>
+    </div>
+
+    <div class="description">
+        <ul>
+            {% for desc in data.description %}
+            <li>{{ desc }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="methods">
+        <ul>
+            {% for method in data.methods %}
+            <li>
+                {{ method.name }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+</div>
