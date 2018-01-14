@@ -10,7 +10,7 @@ description:
 #Methods
 methods:
   - name: extend
-    returns: Class
+    return: Class
     version: 1.0~
     params:
       - name: methods
