@@ -2,19 +2,13 @@
 {% assign title=include.title %}
 {% assign category=include.category %}
 
-<div>
-    <div class="title">{{ title }}</div>
-    <div>{{ category }}</div>
-    <div>{{ data | jsonify }}</div>
-    <div>{{ site.data | jsonify }}</div>
-</div>
 <div class="docs-contents">
     <h1>{{ data.title }}</h1>
 
     <div>
         <span>Type : {{ data.type }}</span>
         <span>Support : {{ data.support }}</span>
-        <span>Extend : {{ data.extend.path }}</span>
+        <span>Extend : <a href="{{ site.baseurl }}{{ data.extend.path }}">{{ data.extend.label }}</a></span>
     </div>
 
     <div class="description">

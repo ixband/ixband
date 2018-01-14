@@ -5,7 +5,7 @@ extend:
   path: /docs/event/CustomEvents/
 description:
   - 'Constructor 객체의 이벤트 관리 및 상속을 지원.'
-  - 'CustomEvents를 상속하여 리스너 관리기능을 사용한다.\n※주의 : instance 를 extend 하게되면 오류가 발생한다.'
+  - 'CustomEvents를 상속하여 리스너 관리기능을 사용한다.<br>※주의 : instance 를 extend 하게되면 오류가 발생한다.'
 
 #Methods
 methods:
