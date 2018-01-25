@@ -14,7 +14,7 @@
     <span>Type : {{ data.type }}</span>
     <span>Support : {{ data.support }}</span>
     {% if data.extend %}
-    <span>Extend : <a href="{{ site.baseurl }}docs/{{ data.extend.path }}">{{ data.extend.label }}</a></span>
+    <span>Extend : <a href="{{ site.baseurl }}/docs{{ data.extend.path }}">{{ data.extend.label }}</a></span>
     {% endif %}
     {% if data.return %}
     <span>Return : {{ data.return }}</span>
