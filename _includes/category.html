@@ -6,7 +6,7 @@
     {% for group in groups %}
         {% if group.name != 'DOM' %}
         <li class="{% if group.name == page.category %}active{% endif %}">
-            <button type="button" class="category-name"><span>{{ group.name }}</span></button>
+            <button type="button" class="category-name"><span>{% if group.name == 'B' %}${% endif %}{{ group.name }}</span></button>
             <ul class="category-items">
                 {% for item in group.items %}
                 <li class="{% if item.title == page.title %}active{% endif %}">
