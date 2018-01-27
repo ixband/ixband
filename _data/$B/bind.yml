@@ -25,7 +25,7 @@ methods:
       - name: fnc
         type:
           - Function
-        desc: 대상함수
+        desc: 대상 함수
       - name: thisArg
         type:
           - Function
@@ -37,7 +37,7 @@ methods:
 #    type:
 #    desc:
 #    properties:
-#      - name: 
+#      - name:
 #        desc:
 #    info:
 #    ver: 1.0

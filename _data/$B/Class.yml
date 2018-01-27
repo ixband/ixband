@@ -8,7 +8,7 @@ support: 1.0
 #return:
 extend:
   label: CustomEvents
-  path: /docs/event/CustomEvents/
+  path: /event/CustomEvents/
 
 ## Descriptions
 description:
