@@ -31,12 +31,12 @@ methods:
         desc: Class 객체의 name, console에서 확일할수 있는 name, 설정하지 않으면 랜덤한 값이 들어간다.
 
 ## Events
-events:
-  - no: 1
-    type: touchstart
-    desc: TouchEvent 시점
-    properties:
-      - name: target
-        desc:
-    info:
-    ver: 1.0
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name:
+#        desc:
+#    info:
+#    ver: 1.0

@@ -64,7 +64,7 @@
             <td>
                 <ul>
                     {% for prop in event.properties %}
-                    <li><strong>{{ prop.name }}:</strong>{{ prop.desc }}</li>
+                    <li><strong>{{ prop.name }}{% if rop.desc %}:{% endif %}</strong> {{ prop.desc }}</li>
                     {% endfor %}
                 </ul>
                 {% if event.info %}
