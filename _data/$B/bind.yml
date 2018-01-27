@@ -13,7 +13,7 @@ return: Function
 ## Descriptions
 description:
   - '호출될 때 그 this 키워드를 제공된 값으로 설정하고 새로운 함수가 호출될 때 제공되는 주어진 순서의 선행 인수가 있는 새로운 함수를 생성.'
-  - '<a href=\"https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function/bind\" target=\"_blank\">https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function/bind 참고</a>'
+  - '<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function/bind" target="_blank">https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function/bind 참고</a>'
   - '~IE7 Cross Browsing 처리'
 
 ## Methods

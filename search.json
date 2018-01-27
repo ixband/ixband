@@ -10,7 +10,7 @@ layout: null
         "title": "{{ data.title }}",
         "description": [
           {% for desc in data.description %}
-            "{{ desc }}"{% unless forloop.last %},{% endunless %}
+            "{{ desc | uri_escape }}"{% unless forloop.last %},{% endunless %}
           {% endfor %}
         ],
         "category": "{{ doc.category }}",

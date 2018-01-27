@@ -36,7 +36,7 @@
                             '<h3>' + doc.title + '</h3>',
                         '</a>',
                         '<div class="desc">',
-                            doc.description.join( '<br>' ),
+                            decodeURIComponent( doc.description.join('<br>') ),
                         '</div>',
                     '</li>'
                 ];
