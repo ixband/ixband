@@ -10,7 +10,7 @@ layout: null
         "title": "{{ data.title }}",
         "description": [{{ data.description | array_to_sentence_string }}],
         "category": "{{ doc.category }}",
-        "tags": [{{ doc.tags | array_to_sentence_string | smartify }}],
+        "tags": [{{ doc.tags | array_to_sentence_string }}],
         "path": "{{ site.baseurl }}{{ doc.id }}"
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
