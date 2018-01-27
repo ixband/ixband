@@ -22,7 +22,7 @@ methods:
     params:
       - name: value
         type:
-          - *
+          - '*'
         desc: 대상 값
 
 ## Events
