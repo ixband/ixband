@@ -8,17 +8,9 @@ layout: null
       {% assign data=site.data[doc.category][doc.title] %}
       {
         "title": "{{ data.title }}",
-        "description": [
-          {% for desc in data.description %}
-            "{{ desc }}"{% unless forloop.last %},{% endunless %}
-          {% endfor %}
-        ],
+        "description": [{{ data.description | array_to_sentence_string }}],
         "category": "{{ doc.category }}",
-        "tags": [
-          {% for tag in doc.tags %}
-            "{{ tag }}"{% unless forloop.last %},{% endunless %}
-          {% endfor %}
-        ],
+        "tags": [{{ doc.tags | array_to_sentence_string | smartify }}],
         "path": "{{ site.baseurl }}{{ doc.id }}"
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}

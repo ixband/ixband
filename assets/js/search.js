@@ -11,6 +11,7 @@
         $( '.search input[type=search]' ).val( keyword );
 
         $.ajax({
+            //cache: false,
             url: UI.BASE_URL + '/search.json'
         }).done(function ( data ) {
             drawList( keyword, data.docs );
