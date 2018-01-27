@@ -1,11 +1,11 @@
-title: 'Class'
+title: 'Class-'
 
 #Specification
 type: Object
 support: 1.0
 extend:
   label: CustomEvents
-  path: /event/CustomEvents/
+  path: {{ site.baseurl }}/docs/event/CustomEvents/
 
 #Descriptions
 description:

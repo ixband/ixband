@@ -1,27 +1,12 @@
-{% assign title=include.title %}
-{% assign category=include.category %}
+{% assign data=include.model %}
 
-{% if category == '$B' %}
-    {% assign categoryLabel='B' %}
-{% else %}
-    {% assign categoryLabel=category %}
-{% endif %}
-{% assign data=site.data[categoryLabel][title] %}
-
-{% assign includeData=include.model %}
-
-<div class="include_model">
-    <h2>IncludeData:</h2>
-    {{ includeData | jsonify }}
-</div>
-
-<h1>{{ title }}</h1>
+<h1>{{ data.title }}</h1>
 
 <div class="spec">
     <span>Type : {{ data.type }}</span>
     <span>Support : {{ data.support }}</span>
     {% if data.extend %}
-    <span>Extend : <a href="{{ site.baseurl }}/docs{{ data.extend.path }}">{{ data.extend.label }}</a></span>
+    <span>Extend : <a href="{{ data.extend.path }}">{{ data.extend.label }}</a></span>
     {% endif %}
     {% if data.return %}
     <span>Return : {{ data.return }}</span>
