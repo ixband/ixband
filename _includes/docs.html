@@ -8,9 +8,16 @@
 {% endif %}
 {% assign data=site.data[categoryLabel][title] %}
 
+{% assign includeData=include.model %}
+
+<div class="include_model">
+    <h2>IncludeData:</h2>
+    {{ includeData | jsonify }}
+</div>
+
 <h1>{{ title }}</h1>
 
-<div>
+<div class="spec">
     <span>Type : {{ data.type }}</span>
     <span>Support : {{ data.support }}</span>
     {% if data.extend %}
