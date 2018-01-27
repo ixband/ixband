@@ -1,0 +1,37 @@
+## contents를 구성하는 data ##
+
+title: isEmpty()
+
+## Specification
+type: public method
+support: 1.0
+return: Boolean
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - Data의 값이 비어있으면 true 반환<br>( Object, Array, Null, Undefined, String )
+
+## Methods
+methods:
+  - name: isEmpty
+    return: Boolean
+    version: 1.0~
+    params:
+      - name: value
+        type:
+          - '*'
+        desc: 대상 값
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name:
+#        desc:
+#    info:
+#    ver: 1.0

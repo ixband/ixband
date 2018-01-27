@@ -1,0 +1,41 @@
+## contents를 구성하는 data ##
+
+title: isEqual()
+
+## Specification
+type: public method
+support: 1.0
+return: Boolean
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - data 비교, Object, Array는 깊은 비교 (type까지 같아야 true)
+
+## Methods
+methods:
+  - name: isEqual
+    return: Boolean
+    version: 1.0~
+    params:
+      - name: val1
+        type:
+          - '*'
+        desc: 비교 data 1
+      - name: val2
+        type:
+          - '*'
+        desc: 비교 data 2
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name:
+#        desc:
+#    info:
+#    ver: 1.0
