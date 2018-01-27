@@ -3,6 +3,10 @@
     {% assign sortedDocs = site.docs | sort: 'category' %}
     {% assign groups = sortedDocs | group_by: 'category' %}
 
+    <li class="">
+        <a href="{{ site.baseurl }}started">Getting started</a>
+    </li>
+
     {% for group in groups %}
         {% if group.name != 'DOM' %}
         <li class="{% if group.name == page.category %}active{% endif %}">
