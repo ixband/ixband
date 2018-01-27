@@ -10,7 +10,7 @@
             <ul class="category-items">
                 {% for item in group.items %}
                 <li class="{% if item.title == page.title %}active{% endif %}">
-                    <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+                    <a href="{{ site.baseurl }}{{ item.url }}">{{ site.data[group.name][item.title].title }}</a>
                 </li>
                 {% endfor %}
             </ul>

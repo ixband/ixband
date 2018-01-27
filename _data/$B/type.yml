@@ -1,0 +1,38 @@
+## contents를 구성하는 data ##
+
+title: type()
+
+## Specification
+type: public method
+support: 1.0
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 'Data Type 반환<br>(Object, Array, String, Number, NaN, Null, Function, Date, Boolean, RegExp, Error, Element, Undefined, Color) 지원'
+  - 'String : Color형식의 String은 "Color"로 반환<br>Number : NaN은 Number로 반환하지 않고 "NaN"로 반환'
+
+## Methods
+methods:
+  - name: type
+    return: String
+    version: 1.0~
+    params:
+      - name: value
+        type:
+          - '*'
+        desc: 대상 값
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name:
+#        desc:
+#    info:
+#    ver: 1.0

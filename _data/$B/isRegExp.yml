@@ -1,0 +1,37 @@
+## contents를 구성하는 data ##
+
+title: isRegExp()
+
+## Specification
+type: public method
+support: 1.0
+return: Boolean
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - Data Type이 RegExp 이면 true 반환
+
+## Methods
+methods:
+  - name: isRegExp
+    return: Boolean
+    version: 1.0~
+    params:
+      - name: value
+        type:
+          - '*'
+        desc: 대상 값
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name:
+#        desc:
+#    info:
+#    ver: 1.0
