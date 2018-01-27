@@ -3,23 +3,23 @@ layout: null
 ---
 
 {
-  "docs": [
+  'docs': [
     {% for doc in site.docs %}
       {% assign data=site.data[doc.category][doc.title] %}
       {
-        "title": "{{ data.title }}",
-        "description": [
+        'title': '{{ data.title }}',
+        'description': [
           {% for desc in data.description %}
-            "{{ desc | smartify }}"{% unless forloop.last %},{% endunless %}
+            '{{ desc | smartify }}'{% unless forloop.last %},{% endunless %}
           {% endfor %}
         ],
-        "category": "{{ doc.category }}",
-        "tags": [
+        'category': '{{ doc.category }}',
+        'tags': [
           {% for tag in doc.tags %}
-            "{{ tag | smartify }}"{% unless forloop.last %},{% endunless %}
+            '{{ tag | smartify }}'{% unless forloop.last %},{% endunless %}
           {% endfor %}
         ],
-        "path": "{{ site.baseurl }}{{ doc.id }}"
+        'path': '{{ site.baseurl }}{{ doc.id }}'
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ]
