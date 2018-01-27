@@ -5,7 +5,7 @@ type: Object
 support: 1.0
 extend:
   label: CustomEvents
-  path: {{ site.baseurl }}/docs/event/CustomEvents/
+  path: /docs/event/CustomEvents/
 
 #Descriptions
 description:
