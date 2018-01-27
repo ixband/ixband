@@ -1,0 +1,43 @@
+## contents를 구성하는 data ##
+
+title: bind()
+
+## Specification
+type: public method
+support: 1.0
+return: Function
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - '호출될 때 그 this 키워드를 제공된 값으로 설정하고 새로운 함수가 호출될 때 제공되는 주어진 순서의 선행 인수가 있는 새로운 함수를 생성.'
+  - '<a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function/bind" target="_blank">https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Function/bind 참고</a>'
+  - '~IE7 Cross Browsing 처리'
+
+## Methods
+methods:
+  - name: bind
+    return: Function
+    version: 1.0~
+    params:
+      - name: fnc
+        type:
+          - Function
+        desc: 대상함수
+      - name: thisArg
+        type:
+          - Function
+        desc: 바인딩된 함수가 호출될 때 대상 함수에 this 매개변수로서 전달되는 값
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0

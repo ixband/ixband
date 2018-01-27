@@ -5,9 +5,10 @@ layout: null
 {
   "docs": [
     {% for doc in site.docs %}
+      {% assign data=site.data[doc.category][doc.title] %}
       {
-        "title": "{{ doc.title }}",
-        "description": "{{ doc.description }}",
+        "title": "{{ data.title }}",
+        "description": [{{ data.description }}],
         "category": "{{ doc.category }}",
         "tags": [{{ doc.tags }}],
         "path": "{{ site.baseurl }}{{ doc.id }}"

@@ -1,13 +1,11 @@
 ---
 layout: docs
-category: $B
-title: {{ site.data.B.Class.title }}
+category: B
+title: Class
 tags: []
 ---
 
-{% include docs.html model=site.data.B.Class %}
-
-<h2>Test: {{ page.title }}</h2>
+{% include docs.html model=site.data[page.category][page.title] %}
 
 ### Example
 ```js

@@ -1,18 +1,21 @@
-title: 'Class-'
+## contents를 구성하는 data ##
 
-#Specification
+title: Class
+
+## Specification
 type: Object
 support: 1.0
+#return:
 extend:
   label: CustomEvents
   path: /docs/event/CustomEvents/
 
-#Descriptions
+## Descriptions
 description:
   - 'Constructor 객체의 이벤트 관리 및 상속을 지원.'
   - 'CustomEvents를 상속하여 리스너 관리기능을 사용한다.<br>※주의 : instance 를 extend 하게되면 오류가 발생한다.'
 
-#Methods
+## Methods
 methods:
   - name: extend
     return: Class
@@ -26,3 +29,14 @@ methods:
         type:
           - String
         desc: Class 객체의 name, console에서 확일할수 있는 name, 설정하지 않으면 랜덤한 값이 들어간다.
+
+## Events
+events:
+  - no: 1
+    type: touchstart
+    desc: TouchEvent 시점
+    properties:
+      - name: target
+        desc:
+    info:
+    ver: 1.0

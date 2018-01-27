@@ -1,0 +1,37 @@
+## contents를 구성하는 data ##
+
+title: VERSION
+
+## Specification
+type: public method
+support: 0.6
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - ixBand 버전 반환
+
+## Methods
+#methods:
+#  - name:
+#    return:
+#    version: 1.0~
+#    params:
+#      - name:
+#        type:
+#          -
+#        desc:
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name:
+#        desc:
+#    info:
+#    ver: 1.0

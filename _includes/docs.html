@@ -60,15 +60,18 @@
         <tr>
             <td>{{ event.no }}</td>
             <td>{{ event.type }}</td>
-            <td>{{ event.detail }}</td>
+            <td>{{ event.desc }}</td>
             <td>
                 <ul>
                     {% for prop in event.properties %}
                     <li><strong>{{ prop.name }}:</strong>{{ prop.desc }}</li>
                     {% endfor %}
                 </ul>
+                {% if event.info %}
+                <span class="info">{{ event.info }}</span>
+                {% endif %}
             </td>
-            <td>{{ event.version }}</td>
+            <td>{{ event.ver }}</td>
         </tr>
     {% endfor %}
     </tbody>

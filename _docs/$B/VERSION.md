@@ -1,26 +1,13 @@
 ---
 layout: docs
-category: $B
-tags: []
+category: B
 title: VERSION
-description: ixBand 버전 반환.
+tags: []
 ---
 
-{{ page.title }}
----
-
-> _**Type :** public static const_  
-> _**Support version :** 0.6_  
-> _**Return :** String_
-
-<br/>
-<p class="description">
-    {{ page.description }}
-</p>
-
+{% include docs.html model=site.data[page.category][page.title] %}
 
 ### Example
-
 ```js
 var version = $B.VERSION;
 ```
