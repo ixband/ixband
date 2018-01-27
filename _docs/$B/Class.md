@@ -1,7 +1,7 @@
 ---
 layout: docs
 category: $B
-title: site.data.B.Class.title
+title: {{ site.data.B.Class.title }}
 tags: []
 ---
 
