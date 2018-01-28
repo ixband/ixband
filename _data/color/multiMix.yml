@@ -39,7 +39,7 @@ methods:
 
 ## Events
 #events:
-#  - no: 1
+#  - procedure: 1
 #    type:
 #    desc:
 #    properties:
