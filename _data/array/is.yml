@@ -17,7 +17,8 @@ description:
 ## Methods
 methods:
   - name: is
-    return: Boolean
+    return:
+      - Boolean
     version: 0.6~
     params:
       - name: value

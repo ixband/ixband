@@ -18,7 +18,8 @@ description:
 ## Methods
 methods:
   - name: forEach
-    return: void
+    return:
+      - void
     version: 0.6~
     params:
       - name: array

@@ -18,7 +18,8 @@ description:
 ## Methods
 methods:
   - name: map
-    return: Array
+    return:
+      - Array
     version: 0.6~
     params:
       - name: array

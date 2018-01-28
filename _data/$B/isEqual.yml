@@ -17,7 +17,8 @@ description:
 ## Methods
 methods:
   - name: isEqual
-    return: Boolean
+    return:
+      - Boolean
     version: 1.0~
     params:
       - name: val1

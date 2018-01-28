@@ -18,7 +18,8 @@ description:
 ## Methods
 methods:
   - name: isElement
-    return: Boolean
+    return:
+      - Boolean
     version: 1.0~
     params:
       - name: value

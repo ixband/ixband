@@ -1,30 +1,30 @@
 ## contents를 구성하는 data ##
 
-title: isNull()
+title: brighteness()
 
 ## Specification
 type: public method
 support: 1.0
-return: Boolean
+return: Number
 #extend:
 #  label:
 #  path:
 
 ## Descriptions
 description:
-  - Data Type이 null 이면 true 반환
+  - 해당 color의 밝기값 반환.<br>밝을수록 255에 가깝다. (0 ~ 255)
 
 ## Methods
 methods:
-  - name: isNull
+  - name: brighteness
     return:
-      - Boolean
+      - Number
     version: 1.0~
     params:
-      - name: value
+      - name: color
         type:
-          - '*'
-        desc: 대상 값
+          - String
+        desc: Color문자열 "hex", "rgb", "rgba", "keyword", "hsl", "hsla"
 
 ## Events
 #events:
@@ -32,7 +32,7 @@ methods:
 #    type:
 #    desc:
 #    properties:
-#      - name:
+#      - name: 
 #        desc:
 #    info:
 #    ver: 1.0

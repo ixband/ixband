@@ -1,34 +1,35 @@
 ## contents를 구성하는 data ##
 
-title: some()
+title: hexToRgb()
 
 ## Specification
 type: public method
 support: 0.6
-return: Boolean
+return: String | Object
 #extend:
 #  label:
 #  path:
 
 ## Descriptions
 description:
-  - 배열의 내용을 불규칙 적으로 썩어서 새로운 배열을 반환.
+  - 해당 color의 회색톤 반환.
 
 ## Methods
 methods:
-  - name: some
+  - name: hexToRgb
     return:
-      - Boolean
+      - String
+      - Object
     version: 0.6~
     params:
-      - name: array
+      - name: color
         type:
-          - Array
-        desc: 대상 배열
-      - name: callback
+          - String
+        desc: Hex Color문자열, 예)"#ffffff"
+      - name: parse
         type:
-          - Function
-        desc: function callback(item:*, index:int, array:Array):Boolean;
+          - Boolean
+        desc: 반환값을 Object{r, g, b, a}로 받을것인지 설정, (기본값 false)
 
 ## Events
 #events:

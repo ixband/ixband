@@ -1,0 +1,43 @@
+## contents를 구성하는 data ##
+
+title: convert()
+
+## Specification
+type: public method
+support: 0.6
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - Color문자열을 해당 Type Color문자열로 변환하여 반환.
+  - 16진수 or 10진수 Color문자열 반환.<br><a href="https://www.w3.org/wiki/CSS/Properties/color/keywords" target="_blank">https://www.w3.org/wiki/CSS/Properties/color/keywords</a>
+
+## Methods
+methods:
+  - name: convert
+    return:
+      - String
+    version: 0.6~
+    params:
+      - name: color
+        type:
+          - String
+        desc: Color문자열 "hex", "rgb", "rgba", "keyword", "hsl", "hsla"
+      - name: type
+        type:
+          - String
+        desc: 반환 받을 Color Type, "hex", "rgb", "rgba", "hsl", "hsla" (기본값 "hex")<br>(~IE8 에서는 rgba를 지원하지 않기때문에 rgb로 반환된다.)
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0

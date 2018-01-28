@@ -18,7 +18,8 @@ description:
 ## Methods
 methods:
   - name: type
-    return: String
+    return:
+      - String
     version: 1.0~
     params:
       - name: value

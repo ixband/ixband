@@ -19,7 +19,8 @@ description:
 ## Methods
 methods:
   - name: bind
-    return: Function
+    return:
+      - Function
     version: 1.0~
     params:
       - name: fnc

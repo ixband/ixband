@@ -1,0 +1,42 @@
+## contents를 구성하는 data ##
+
+title: grayscale()
+
+## Specification
+type: public method
+support: 1.0
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 해당 color의 회색톤 반환.
+
+## Methods
+methods:
+  - name: grayscale
+    return:
+      - String
+    version: 1.0~
+    params:
+      - name: color
+        type:
+          - String
+        desc: Color문자열 "hex", "rgb", "rgba", "keyword", "hsl", "hsla"
+      - name: type
+        type:
+          - String
+        desc: 반환 받을 Color Type, "hex", "rgb", "rgba", "hsl", "hsla" (기본값 "hex")
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0
