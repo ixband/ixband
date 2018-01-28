@@ -26,78 +26,78 @@ methods:
       - name: optionCheck
         type:
           - Boolean
-        desc: 'hasListener, removeListener에서 options를 체크할지 여부 설정, 기본값:false'
+        desc: hasListener, removeListener에서 options를 체크할지 여부 설정, 기본값:false
   - name: addListener
-      return:
-        - CustomEvents
-      version: 1.0~
-      desc: 리스너 등록
-      params:
-        - name: type
-          type:
-            - String
-          desc: Listener type
-        - name: listener
-          type:
-            - Function
-          desc: Listener
-        - name: options
-          type:
-            - Object
-            - Boolean
-          desc: useCapture, passive 등의 설정 용도
+    return:
+      - CustomEvents
+    version: 1.0~
+    desc: 리스너 등록
+    params:
+      - name: type
+        type:
+          - String
+        desc: Listener type
+      - name: listener
+        type:
+          - Function
+        desc: Listener
+      - name: options
+        type:
+          - Object
+          - Boolean
+        desc: useCapture, passive 등의 설정 용도
   - name: removeListener
-        return:
-          - CustomEvents
-        version: 1.0~
-        desc: 리스너 삭제
-        params:
-          - name: type
-            type:
-              - String
-            desc: Listener type, 입력하지 않으면 모든 리스너 삭제
-          - name: listener
-            type:
-              - Function
-            desc: Listener, 입력하지 않으면 모든 리스너 삭제
-          - name: options
-            type:
-              - Object
-              - Boolean
-            desc: useCapture, passive 등등, 입력하지 않으면 type과 listener만 비교하여 삭제
+    return:
+      - CustomEvents
+    version: 1.0~
+    desc: 리스너 삭제
+    params:
+      - name: type
+        type:
+          - String
+        desc: Listener type, 입력하지 않으면 모든 리스너 삭제
+      - name: listener
+        type:
+          - Function
+        desc: Listener, 입력하지 않으면 모든 리스너 삭제
+      - name: options
+        type:
+          - Object
+          - Boolean
+        desc: useCapture, passive 등등, 입력하지 않으면 type과 listener만 비교하여 삭제
   - name: hasListener
-        return:
+    return:
+      - Boolean
+    version: 1.0~
+    desc: 리스너 등록여부 반환
+    params:
+      - name: type
+        type:
+          - String
+        desc: Listener type, 입력하지 않으면 모든 리스너 체크
+      - name: listener
+        type:
+          - Function
+        desc: Listener, 입력하지 않으면 type만 체크
+      - name: options
+        type:
+          - Object
           - Boolean
-        version: 1.0~
-        desc: 리스너 등록여부 반환
-        params:
-          - name: type
-            type:
-              - String
-            desc: Listener type, 입력하지 않으면 모든 리스너 체크
-          - name: listener
-            type:
-              - Function
-            desc: Listener, 입력하지 않으면 type만 체크
-          - name: options
-            type:
-              - Object
-              - Boolean
-            desc: useCapture, passive 등등, 입력하지 않으면 type과 listener만 체크
+        desc: useCapture, passive 등등, 입력하지 않으면 type과 listener만 체크
   - name: dispatch
-        return:
-          - Boolean
-        version: 1.0~
-        desc: 등록 리스너 실행
-        params:
-          - name: type
-            type:
-              - String
-            desc: 실행시킬 Listener type
-          - name: data
-            type:
-              - Object
-            desc: Listener의 전달할 데이타, 리스너의 매개변수로 전달 받는다.
+    return:
+      - Boolean
+    version: 1.0~
+    desc: 등록 리스너 실행
+    params:
+      - name: type
+        type:
+          - String
+        desc: 실행시킬 Listener type
+      - name: data
+        type:
+          - Object
+        desc: Listener의 전달할 데이타, 리스너의 매개변수로 전달 받는다.
 
 ## Events
 #events:
