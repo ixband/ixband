@@ -1,0 +1,71 @@
+## contents를 구성하는 data ##
+
+title: DoubleTab
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - Double Tab Event 검출기.
+  - 스마트폰이나 태블릿처럼 Touch가 되는 Device에서 대상영역을 Double Tab 했는지 검출할때 사용.
+    Android, iOS 지원, Windows IE10~ Touch Device 지원.
+
+## Methods
+methods:
+  - name: DoubleTab
+    return:
+    version:
+    desc: DoubleTab 생성
+    params:
+      - name: target
+        type:
+          - Element
+          - Selector
+          - jQuery
+        desc: 터치이벤트 발생시킬 대상.
+              ※대상 개체는 단일 개체.
+  - name: sensitivity
+    return:
+      - DoubleTab
+    version: 1.0~
+    desc: 민감도 설정, 기본값 1.
+          민감도를 Number로 지정, 1보다 커질수록 둔감해지고 작아질수록 민감해진다.
+    params:
+      - name: value
+        type:
+          - Number
+        desc: 민감도 설정 0~1
+  - name: enable
+    return:
+      - DoubleTab
+    version: 1.0~
+    desc: DoubleTab 검출 허용 설정
+  - name: disable
+    return:
+      - DoubleTab
+    version: 1.0~
+    desc: DoubleTab 검출 비허용 설정
+  - name: clear
+    return:
+      - DoubleTab
+    version: 1.0~
+    desc: 이벤트 및 기본설정 삭제
+
+## Events
+events:
+  - no: 1
+    type: doubletab
+    desc: Double tab 시점
+    properties:
+      - name: target
+        desc: TouchEvent가 발생한 대상
+      - name: currentTarget
+        desc: 최초에 등록한 대상
+#    info:
+    ver: 1.0
