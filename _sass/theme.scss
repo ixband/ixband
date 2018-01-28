@@ -171,7 +171,7 @@ main {
 
   code {
     padding: 2px 4px;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace, "Open Sans", "Helvetica Neue", Helvetica, Arial;
     font-size: 0.8rem;
     color: $code-text-color;
     background-color: $code-bg-color;
@@ -182,7 +182,7 @@ main {
     padding: 0.8rem;
     margin-top: 0;
     margin-bottom: 1rem;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace, "Open Sans", "Helvetica Neue", Helvetica, Arial;
     font-size: 0.8rem;
     color: $code-text-color;
     word-wrap: normal;
