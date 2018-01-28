@@ -78,11 +78,13 @@
             <td>{{ event.type }}</td>
             <td>{{ event.desc }}</td>
             <td>
+                {% if event.properties %}
                 <ul>
                     {% for prop in event.properties %}
                     <li><span class="accent">{{ prop.name }}</span>{% if prop.desc %}: {{ prop.desc }}{% endif %}</li>
                     {% endfor %}
                 </ul>
+                {% endif %}
                 {% if event.info %}
                 <span class="info">{{ event.info }}</span>
                 {% endif %}

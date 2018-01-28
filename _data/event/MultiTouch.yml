@@ -1,0 +1,98 @@
+## contents를 구성하는 data ##
+
+title: MultiTouch
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - 터치 디바이스에서 대상영역의 Multi Touch Gesture검출기<br>
+    Pointer가 1개 이상일때만 이벤트가 검출된다.
+  - 스마트폰이나 태블릿처럼 Touch가 되는 Device에서 대상영역의 MultiTouch Pan, Rotation, Zoom Event 검출<br>
+    Android, iOS, Touch Device 지원. (Android 2.*에서는 지원하지 않는다.)<br>
+    Windows IE10~ 지원 (IE 에서는 해당 영역의 스크롤 차단 문제가 있다. touch-action:none)
+
+## Methods
+methods:
+  - name: MultiTouch
+    return:
+    version:
+    desc: MultiTouch 생성
+    params:
+      - name: target
+        type:
+          - Element
+          - Selector
+          - jQuery
+        desc: 터치이벤트 발생시킬 대상.<br>
+              ※대상 개체는 단일 개체.
+  - name: enable
+    return:
+      - MultiTouch
+    version: 1.0~
+    desc: MultiTouch 검출 허용 설정
+  - name: disable
+    return:
+      - MultiTouch
+    version: 1.0~
+    desc: MultiTouch 검출 비허용 설정
+  - name: clear
+    return:
+      - MultiTouch
+    version: 1.0~
+    desc: 이벤트 및 기본설정 삭제
+
+## Events
+events:
+  - procedure: 1
+    type: multitouchstart
+    desc: MultiTouch 시작 시점
+    properties:
+      - name: angle
+        desc: pointer간의 각도 (0~360)
+      - name: growAngle
+        desc: 1회 움직인 각도
+      - name: pageX, pageY
+        desc: clientX, clientY와 같지만, 문서가 스크롤되는 경우, 스크롤될 부분까지 포함한 두 pointer간의 중심 좌표.(IE9~)
+      - name: clientX, clientY
+        desc: 브라우저의 화면상 가장 위쪽 지점에서 부터 두 pointer간의 중심 좌표. (스크롤된 부분 제외)
+      - name: growX, growY
+        desc: Touch가 1회 움직인량
+      - name: pan
+        desc: pan 여부 (touch pointer간의 거리가 일정하게 같이 움직일때)
+      - name: distance
+        desc: pointer간의 거리
+      - name: distanceH, distanceV
+        desc: 가로, 세로 pointer간의 거리
+      - name: degree
+        desc: pointer간의 각도 (0~180)
+      - name: radian
+        desc: pointer간의 radian값
+      - name: radius
+        desc: pointer간의 반지름
+      - name: scale
+        desc: pointer간격을 기준 scale 계산 (100% == 1))
+      - name: growScale
+        desc: scale이 1회 변경된 값
+      - name: pointers
+        desc: Touchevent Pointer 객체 (Array : [{target, pageX, pageY, clientX, clientY, growX, growY}])
+#    info:
+    ver: 1.0
+  - procedure: 2
+    type: multitouchmove
+    desc: MultiTouch 이동 시점
+#    properties:
+    info: multitouchstart 와 동일
+    ver: 1.0
+  - procedure: 3
+    type: multitouchend
+    desc: MultiTouch 끝나는 시점
+#    properties:
+    info: multitouchstart 와 동일
+    ver: 1.0
