@@ -1,0 +1,75 @@
+## contents를 구성하는 data ##
+
+title: GestureAxis
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - 대상영역의 Touch 방향을 dispatch 한다.
+  - Android, iOS 지원. (Windows기반 터치 디바이스 미지원, CSS touch-action:none을 설정하면 이벤트를 받을수는 있다.)<br>
+    chrome, safari touchmove event e.preventDefault() 문제 대응
+
+## Methods
+methods:
+  - name: GestureAxis
+    return:
+    version:
+    desc: GestureAxis 생성
+    params:
+      - name: target
+        type:
+          - Element
+          - Selector
+          - jQuery
+        desc: 터치이벤트 발생시킬 대상.<br>
+              ※대상 개체는 단일 개체.
+      - name: options
+        type:
+          - Object
+        desc:
+        props:
+          - name: preventDefault
+            type:
+              - Boolean
+            desc: safari v10 에서 세로축 touchstart를 막고 싶을때만 설정한다. (safari 오류 임시처방)
+  - name: enable
+    return:
+      - GestureAxis
+    version: 1.0~
+    desc: GestureAxis 검출 허용 설정
+  - name: disable
+    return:
+      - GestureAxis
+    version: 1.0~
+    desc: GestureAxis 검출 비허용 설정
+  - name: clear
+    return:
+      - GestureAxis
+    version: 1.0~
+    desc: 이벤트 및 기본설정 삭제
+
+## Events
+events:
+  - procedure: 1
+    type: axis
+    desc: Touch 방향 추출 시점
+    properties:
+      - name: target
+        desc: TouchEvent가 발생한 대상
+      - name: currentTarget
+        desc: 최초에 등록한 대상
+      - name: axis
+        desc: vertical, horizontal, none
+      - name: direction
+        desc: top, right, bottom, left, none
+      - name: pageX, pageY
+        desc: TouchEvent가 발생한 죄표
+#    info:
+    ver: 1.0

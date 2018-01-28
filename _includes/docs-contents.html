@@ -35,8 +35,20 @@
             <ul class="params">
                 {% for param in method.params %}
                 <li class="param">
-                    <h5><span class="accent">{{ param.name }}</span> : {% for pType in param.type %}<span class="type">{{pType}}</span>{% endfor %}</h5>
+                    <div><span class="accent">{{ param.name }}</span> : {% for pType in param.type %}<span class="type">{{pType}}</span>{% endfor %}</div>
+                    {% if param.desc %}
                     <div class="desc">{{ param.desc }}</div>
+                    {% endif %}
+                    {% if param.props %}
+                    <ul class="props">
+                        {% for prop in param.props %}
+                        <li class="prop">
+                            <div><span class="accent">{{ prop.name }}</span> : {% for ppType in prop.type %}<span class="type">{{ppType}}</span>{% endfor %}</div>
+                            <div class="desc">{{ prop.desc }}</div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
                 </li>
                 {% endfor %}
             </ul>
