@@ -13,7 +13,7 @@ extend:
 ## Descriptions
 description:
   - Double Tab Event 검출기.
-  - 스마트폰이나 태블릿처럼 Touch가 되는 Device에서 대상영역을 Double Tab 했는지 검출할때 사용.
+  - 스마트폰이나 태블릿처럼 Touch가 되는 Device에서 대상영역을 Double Tab 했는지 검출할때 사용.<br>
     Android, iOS 지원, Windows IE10~ Touch Device 지원.
 
 ## Methods
@@ -28,13 +28,13 @@ methods:
           - Element
           - Selector
           - jQuery
-        desc: 터치이벤트 발생시킬 대상.
+        desc: 터치이벤트 발생시킬 대상.<br>
               ※대상 개체는 단일 개체.
   - name: sensitivity
     return:
       - DoubleTab
     version: 1.0~
-    desc: 민감도 설정, 기본값 1.
+    desc: 민감도 설정, 기본값 1.<br>
           민감도를 Number로 지정, 1보다 커질수록 둔감해지고 작아질수록 민감해진다.
     params:
       - name: value

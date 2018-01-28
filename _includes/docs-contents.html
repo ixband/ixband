@@ -68,7 +68,7 @@
             <td>
                 <ul>
                     {% for prop in event.properties %}
-                    <li><span class="accent">{{ prop.name }}{% if rop.desc %}</span>:{% endif %} {{ prop.desc }}</li>
+                    <li><span class="accent">{{ prop.name }}</span>{% if prop.desc %}: {{ prop.desc }}{% endif %}</li>
                     {% endfor %}
                 </ul>
                 {% if event.info %}
