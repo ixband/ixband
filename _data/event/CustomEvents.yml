@@ -7,7 +7,7 @@ type: Constructor
 support: 1.0
 #return:
 extend:
-#  label:
+  label:
 #  path:
 
 ## Descriptions
