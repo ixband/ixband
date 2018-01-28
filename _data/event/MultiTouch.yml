@@ -81,7 +81,7 @@ events:
       - name: growScale
         desc: scale이 1회 변경된 값
       - name: pointers
-        desc: Touchevent Pointer 객체 (Array : [{target, pageX, pageY, clientX, clientY, growX, growY}])
+        desc: 'Touchevent Pointer 객체 [{target, pageX, pageY, clientX, clientY, growX, growY}]'
 #    info:
     ver: 1.0
   - procedure: 2
