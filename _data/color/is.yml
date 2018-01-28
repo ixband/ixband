@@ -13,7 +13,8 @@ return: Boolean
 ## Descriptions
 description:
   - '해당개체가 Color이면 true 반환.'
-  - '"hex", "rgb", "rgba", "hsl", "hsla", "keyword" 지원<br><a href="https://www.w3.org/wiki/CSS/Properties/color/keywords" target="_blank">https://www.w3.org/wiki/CSS/Properties/color/keywords</a> 에 정의된 모든 color keyword 지원'
+  - '"hex", "rgb", "rgba", "hsl", "hsla", "keyword" 지원<br>
+    <a href="https://www.w3.org/wiki/CSS/Properties/color/keywords" target="_blank">https://www.w3.org/wiki/CSS/Properties/color/keywords</a> 에 정의된 모든 color keyword 지원'
 
 ## Methods
 methods:

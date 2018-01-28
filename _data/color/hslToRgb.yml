@@ -12,7 +12,8 @@ return: String | Object
 
 ## Descriptions
 description:
-  - 'HSL문자열을 RGB문자열 이나 Object데이타로 반환.<br>반환 되는 데이타 형태 "rgb(255, 255, 255)" or Object {r: 255, g: 255, b: 255 }'
+  - 'HSL문자열을 RGB문자열 이나 Object데이타로 반환.<br>
+    반환 되는 데이타 형태 "rgb(255, 255, 255)" or Object {r: 255, g: 255, b: 255 }'
 
 ## Methods
 methods:

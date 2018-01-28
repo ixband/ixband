@@ -12,7 +12,8 @@ return: Object
 
 ## Descriptions
 description:
-  - 'hsl, hsla Color문자열을 Object데이타로 반환.<br>반환 되는 데이타 형태 Object {h: 360, s: 90, l: 10, a: 1 }'
+  - 'hsl, hsla Color문자열을 Object데이타로 반환.<br>
+    반환 되는 데이타 형태 Object {h: 360, s: 90, l: 10, a: 1 }'
 
 ## Methods
 methods:
