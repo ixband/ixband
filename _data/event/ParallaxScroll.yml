@@ -1,0 +1,117 @@
+## contents를 구성하는 data ##
+
+title: ParallaxScroll
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.utils.Between
+  path: /utils/Between/
+
+## Descriptions
+description:
+  - Parallax Scroll 이벤트 검출기
+
+## Methods
+methods:
+  - name: ParallaxScroll
+    return:
+    version:
+    desc: ParallaxScroll 생성
+    params:
+      - name: positions
+        type:
+          - Array
+        desc: 포지션 데이타 배열, [{min:Number, max:Number, data:*}, ...
+      - name: scrollType
+        type:
+          - String
+        desc: vertical, horizontal (기본값 vertical)
+      - name: scrollTarget
+        type:
+          - Element
+          - Selector
+          - jQuery
+  - name: update
+    return:
+      - ParallaxScroll
+    version: 1.0~
+    desc: 포지션 데이타 갱신
+    params:
+      - name: positions
+        type:
+          - Array
+        desc: 포지션 데이타 배열, [{min:Number, max:Number, data:*}, ...
+  - name: trigger
+    return:
+      - ParallaxScroll
+    version: 1.0~
+    desc: 강제로 실행시킬때 사용, 포지션 데이타 갱신 이후에 주로 사용
+  - name: enable
+    return:
+      - ParallaxScroll
+    version: 1.0~
+    desc: ParallaxScroll 검출 허용 설정
+  - name: disable
+    return:
+      - ParallaxScroll
+    version: 1.0~
+    desc: ParallaxScroll 검출 비허용 설정
+  - name: clear
+    return:
+      - ParallaxScroll
+    version: 1.0~
+    desc: 이벤트 및 기본설정 삭제
+
+## Events
+events:
+  - procedure: 1
+    type: activate
+    desc: 구간에 진입시 한번만 발생
+    properties:
+      - name: index
+        desc: 현재 구간의 배열 index
+      - name: data
+        desc: positons에 등록했던 각 data들
+      - name: percent
+        desc: 구간에서의 scroll 진행률값 0~1
+      - name: totalPercent
+        desc: 전체 구간에서의 scroll 진행률값 0~1
+      - name: value
+        desc: 해당 시점의 scrollTop이나 scrollLeft값
+#    info:
+    ver: 1.0
+  - procedure: 2
+    type: between
+    desc: 구간에 진입시 계속해서 발생
+    properties:
+      - name: index
+        desc: 현재 구간의 배열 index
+      - name: data
+        desc: positons에 등록했던 각 data들
+      - name: percent
+        desc: 구간에서의 scroll 진행률값 0~1
+      - name: totalPercent
+        desc: 전체 구간에서의 scroll 진행률값 0~1
+      - name: value
+        desc: 해당 시점의 scrollTop이나 scrollLeft값
+#    info:
+    ver: 1.0
+  - procedure: 3
+    type: deactivate
+    desc: 전체 구간에서 벗어날시 한번만 발생
+    properties:
+      - name: index
+        desc: 이전 activate 구간의 배열 index
+      - name: data
+        desc: positons에 등록했던 각 data들
+      - name: percent
+        desc: 구간에서의 scroll 진행률값 0~1
+      - name: totalPercent
+        desc: 전체 구간에서의 scroll 진행률값 0~1
+      - name: value
+        desc: 해당 시점의 scrollTop이나 scrollLeft값
+#    info:
+    ver: 1.0
