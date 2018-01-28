@@ -1,0 +1,40 @@
+## contents를 구성하는 data ##
+
+title: pageY()
+
+## Specification
+type: public method
+support: 0.6
+return: Number
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 문서의 가장 왼쪽 지점에서 부터 y값 반환.
+  - 문서가 스크롤되는 경우, 스크롤될 부분까지 포함<br>
+    event.pageY IE9 미만에서 지원하지 않는 문제 해결.
+
+## Methods
+methods:
+  - name: pageY
+    return:
+      - Number
+    version: 0.6~
+    params:
+      - name: event
+        type:
+          - Object
+        desc: 이벤트 핸들러의 이벤트 객체
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0

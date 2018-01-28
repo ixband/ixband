@@ -1,0 +1,40 @@
+## contents를 구성하는 data ##
+
+title: offsetX()
+
+## Specification
+type: public method
+support: 0.6
+return: Number
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 이벤트가 발생한 개체 내부의 x값 반환.
+  - event.offsetX 크로스브라우징 해결하여 반환.<br>
+    파이어폭스에서 지원하지 않는 문제 해결.
+
+## Methods
+methods:
+  - name: offsetX
+    return:
+      - Number
+    version: 0.6~
+    params:
+      - name: event
+        type:
+          - Object
+        desc: 이벤트 핸들러의 이벤트 객체
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0
