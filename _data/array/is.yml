@@ -1,0 +1,37 @@
+## contents를 구성하는 data ##
+
+title: is()
+
+## Specification
+type: public method
+support: 0.6
+return: Boolean
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 해당개체가 배열이면 true 반환.<br>HTMLCollection은 false
+
+## Methods
+methods:
+  - name: is
+    return: Boolean
+    version: 0.6~
+    params:
+      - name: value
+        type:
+          - '*'
+        desc: 대상 값
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0

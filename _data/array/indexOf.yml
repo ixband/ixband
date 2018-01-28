@@ -1,0 +1,42 @@
+## contents를 구성하는 data ##
+
+title: indexOf()
+
+## Specification
+type: public method
+support: 0.6
+return: Int
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 대상배열안에 value와 같은요소가 존재하면 해당 Index를 반환.
+  - 일부 낮은 버전의 브라우저에서 지원하지 않는 문제 해결.<br>일치하는 요소가 없으면 -1
+
+## Methods
+methods:
+  - name: indexOf
+    return: Int
+    version: 0.6~
+    params:
+      - name: array
+        type:
+          - Array
+        desc: 대상 배열
+      - name: value
+        type:
+          - '*'
+        desc: 배열에서 찾을 값
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0

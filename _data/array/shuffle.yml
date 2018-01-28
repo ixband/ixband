@@ -1,0 +1,37 @@
+## contents를 구성하는 data ##
+
+title: shuffle()
+
+## Specification
+type: public method
+support: 0.6
+return: Array
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 배열의 내용을 불규칙 적으로 썩어서 새로운 배열을 반환.
+
+## Methods
+methods:
+  - name: shuffle
+    return: Array
+    version: 0.6~
+    params:
+      - name: array
+        type:
+          - Array
+        desc: 대상 배열
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0
