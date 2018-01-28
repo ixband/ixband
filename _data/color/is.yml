@@ -1,0 +1,39 @@
+## contents를 구성하는 data ##
+
+title: is()
+
+## Specification
+type: public method
+support: 1.0
+return: Boolean
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - '해당개체가 Color이면 true 반환.'
+  - '"hex", "rgb", "rgba", "hsl", "hsla", "keyword" 지원<br><a href="https://www.w3.org/wiki/CSS/Properties/color/keywords" target="_blank">https://www.w3.org/wiki/CSS/Properties/color/keywords</a> 에 정의된 모든 color keyword 지원'
+
+## Methods
+methods:
+  - name: is
+    return:
+      - Boolean
+    version: 1.0~
+    params:
+      - name: color
+        type:
+          - String
+        desc: 대상 Color String
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0
