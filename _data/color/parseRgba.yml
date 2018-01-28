@@ -1,0 +1,39 @@
+## contents를 구성하는 data ##
+
+title: parseRgba()
+
+## Specification
+type: public method
+support: 0.6
+return: Object
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 'RGB, RGBA Color문자열을 Object데이타로 반환.<br>
+     반환 되는 데이타 형태 Object {r: 255, g: 255, b: 255, a: 1 }'
+
+## Methods
+methods:
+  - name: parseRgba
+    return:
+      - Object
+    version: 0.6~
+    params:
+      - name: color
+        type:
+          - String
+        desc: RGB, RGBA Color문자열, 예) "rgba(255, 255, 255, 1)"
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0

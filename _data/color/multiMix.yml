@@ -1,0 +1,47 @@
+## contents를 구성하는 data ##
+
+title: multiMix()
+
+## Specification
+type: public method
+support: 0.6
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - '여러가지 색상을 정비율로 혼합하여 해당 구간의 색상을 반환.'
+  - '16진수 or 10진수 Color문자열 반환.<br><a href="https://www.w3.org/wiki/CSS/Properties/color/keywords" target="_blank">https://www.w3.org/wiki/CSS/Properties/color/keywords</a> 에 정의된 모든 color keyword 지원'
+
+## Methods
+methods:
+  - name: multiMix
+    return:
+      - String
+    version: 0.6~
+    params:
+      - name: colors
+        type:
+          - Array
+        desc: 색상배열
+      - name: progress
+        type:
+          - Number
+        desc: 색상들의 혼합 비율, 0~1
+      - name: type
+        type:
+          - String
+        desc: 반환 받을 Color Type, "hex", "rgb", "rgba", "hsl", "hsla" (기본값 "hex")<br>(~IE8 에서는 rgba를 지원하지 않기때문에 rgb로 반환된다.)
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0

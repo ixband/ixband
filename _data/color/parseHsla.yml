@@ -1,0 +1,38 @@
+## contents를 구성하는 data ##
+
+title: parseHsla()
+
+## Specification
+type: public method
+support: 1.0
+return: Object
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 'hsl, hsla Color문자열을 Object데이타로 반환.<br>반환 되는 데이타 형태 Object {h: 360, s: 90, l: 10, a: 1 }'
+
+## Methods
+methods:
+  - name: parseHsla
+    return:
+      - Object
+    version: 1.0~
+    params:
+      - name: color
+        type:
+          - String
+        desc: hsl, hsla Color문자열, 예) "hsla(360, 90%, 10%, 0.5)"
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0
