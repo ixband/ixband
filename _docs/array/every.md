@@ -5,7 +5,7 @@ title: every
 tags: []
 ---
 
-{% include docs.html %}
+{% include docs-contents.html %}
 
 ### Example
 다음 예제에서는 두 배열을 테스트하여 각 배열의 모든 항목이 숫자인지 확인.

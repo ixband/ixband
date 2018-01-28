@@ -5,7 +5,7 @@ title: filter
 tags: []
 ---
 
-{% include docs.html %}
+{% include docs-contents.html %}
 
 ### Example
 ```js

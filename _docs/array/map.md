@@ -5,7 +5,7 @@ title: map
 tags: []
 ---
 
-{% include docs.html %}
+{% include docs-contents.html %}
 
 ### Example
 다음 예제에서는 배열을 테스트하여 각 배열의 모든 항목의 단어 첫글짜를 대문자로 변환.
