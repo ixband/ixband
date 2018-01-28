@@ -7,7 +7,7 @@ type: Object
 support: 1.0
 #return:
 extend:
-  label: CustomEvents
+  label: $B.event.CustomEvents
   path: /event/CustomEvents/
 
 ## Descriptions
