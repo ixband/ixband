@@ -5,9 +5,9 @@ title: CustomEvents
 ## Specification
 type: Constructor
 support: 1.0
-return: void
-#extend:
-#  label:
+#return:
+extend:
+  label: '-'
 #  path:
 
 ## Descriptions

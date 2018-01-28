@@ -6,7 +6,7 @@
     <p><span class="accent">Type</span> : {{ data.type }}</p>
     <p><span class="accent">Support</span> : {{ data.support }}</p>
     {% if data.extend %}
-    <p><span class="accent">Extend</span> : <a href="{{ site.baseurl }}/docs{{ data.extend.path }}">{{ data.extend.label }}</a></p>
+    <p><span class="accent">Extend</span> : {% less data.extend.path %}-{% else %}<a href="{{ site.baseurl }}/docs{{ data.extend.path }}">{{ data.extend.label }}</a>{% endless %}</p>
     {% endif %}
     {% if data.return %}
     <p><span class="accent">Return</span> : {{ data.return }}</p>
