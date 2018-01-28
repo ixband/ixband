@@ -1,0 +1,45 @@
+## contents를 구성하는 data ##
+
+title: toRgb()
+
+## Specification
+type: public method
+support: 0.6
+return: String | Object
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 'Color문자열을 RGB문자열 이나 Object데이타로 반환.'
+  - '반환 되는 데이타 형태 "rgb(255, 255, 255)" or Object {r: 255, g: 255, b: 255 }<br>
+    <a href="https://www.w3.org/wiki/CSS/Properties/color/keywords" target="_blank">https://www.w3.org/wiki/CSS/Properties/color/keywords</a>'
+
+## Methods
+methods:
+  - name: toRgb
+    return:
+      - String
+      - Object
+    version: 0.6~
+    params:
+      - name: color
+        type:
+          - String
+        desc: Color문자열 ("hex", "rgb", "rgba", "keyword", "hsl", "hsla")
+      - name: parse
+        type:
+          - Boolean
+        desc: 반환값을 Object{r, g, b}로 받을것인지 설정, (기본값 false)
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0

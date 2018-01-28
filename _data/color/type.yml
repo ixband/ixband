@@ -1,0 +1,45 @@
+## contents를 구성하는 data ##
+
+title: type()
+
+## Specification
+type: public method
+support: 0.6
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 'Color문자열의 Color Type을 반환.'
+  - '지원하는 타입, "hex", "rgb", "rgba", "keyword", "hsl", "hsla"<br>
+    지원하는 칼라 타입이 아닐 경우 에러메세지를 표시하게 설정할 수 있다.<br>
+    <a href="https://www.w3.org/wiki/CSS/Properties/color/keywords" target="_blank">https://www.w3.org/wiki/CSS/Properties/color/keywords</a>'
+
+## Methods
+methods:
+  - name: type
+    return:
+      - String
+    version: 0.6~
+    params:
+      - name: color
+        type:
+          - String
+        desc: Color문자열 ("hex", "rgb", "rgba", "keyword", "hsl", "hsla")
+      - name: errorMsg
+        type:
+          - String
+        desc: 해당 타입이 없을때 발생시킬 에러 메세지. 설정하지 않으면 해당 타입이 없을때 undefined반환
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0

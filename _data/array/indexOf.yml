@@ -13,7 +13,8 @@ return: Int
 ## Descriptions
 description:
   - 대상배열안에 value와 같은요소가 존재하면 해당 Index를 반환.
-  - 일부 낮은 버전의 브라우저에서 지원하지 않는 문제 해결.<br>일치하는 요소가 없으면 -1
+  - 일부 낮은 버전의 브라우저에서 지원하지 않는 문제 해결.<br>
+    일치하는 요소가 없으면 -1
 
 ## Methods
 methods:

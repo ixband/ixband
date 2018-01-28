@@ -1,31 +1,30 @@
 ## contents를 구성하는 data ##
 
-title: isEmpty()
+title: rgbToHex()
 
 ## Specification
 type: public method
-support: 1.0
-return: Boolean
+support: 0.6
+return: String
 #extend:
 #  label:
 #  path:
 
 ## Descriptions
 description:
-  - Data의 값이 비어있으면 true 반환<br>
-    ( Object, Array, Null, Undefined, String )
+  - RGB문자열을 Hex문자열로 반환.
 
 ## Methods
 methods:
-  - name: isEmpty
+  - name: rgbToHex
     return:
-      - Boolean
-    version: 1.0~
+      - String
+    version: 0.6~
     params:
-      - name: value
+      - name: color
         type:
-          - '*'
-        desc: 대상 값
+          - String
+        desc: RGB Color문자열, 예)"rgb(255, 255, 255)"
 
 ## Events
 #events:
@@ -33,7 +32,7 @@ methods:
 #    type:
 #    desc:
 #    properties:
-#      - name:
+#      - name: 
 #        desc:
 #    info:
 #    ver: 1.0

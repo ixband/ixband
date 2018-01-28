@@ -12,7 +12,8 @@ return: Boolean
 
 ## Descriptions
 description:
-  - Data Type이 Element 객체 이면 true 반환<br>( Element, HTMLElement, NodeElement )
+  - Data Type이 Element 객체 이면 true 반환<br>
+    ( Element, HTMLElement, NodeElement )
   - window, document는 false 반환.
 
 ## Methods

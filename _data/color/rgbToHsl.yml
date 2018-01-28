@@ -1,0 +1,44 @@
+## contents를 구성하는 data ##
+
+title: rgbToHsl()
+
+## Specification
+type: public method
+support: 1.0
+return: String | Object
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 'RGB문자열을 HSL문자열로 반환.<br>
+    반환 되는 데이타 형태 "hsl(240, 30%, 70%)" or Object {h: 240, s: 30, l: 70, a: 1}'
+
+## Methods
+methods:
+  - name: rgbToHsl
+    return:
+      - String
+      - Object
+    version: 1.0~
+    params:
+      - name: color
+        type:
+          - String
+        desc: RGB Color문자열, 예)"rgb(255, 255, 255)"
+      - name: parse
+        type:
+          - Boolean
+        desc: 반환값을 Object{h, s, l, a}로 받을것인지 설정, (기본값 false)
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0

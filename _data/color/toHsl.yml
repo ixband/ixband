@@ -1,0 +1,45 @@
+## contents를 구성하는 data ##
+
+title: toHsl()
+
+## Specification
+type: public method
+support: 1.0
+return: String | Object
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 'Color문자열을 HSL문자열 이나 Object데이타로 반환.'
+  - '반환 되는 데이타 형태 "hsla(255, 20%, 80%)" or Object {h: 255, s: 20, l: 80}<br>
+    <a href="https://www.w3.org/wiki/CSS/Properties/color/keywords" target="_blank">https://www.w3.org/wiki/CSS/Properties/color/keywords</a>'
+
+## Methods
+methods:
+  - name: toHsl
+    return:
+      - String
+      - Object
+    version: 1.0~
+    params:
+      - name: color
+        type:
+          - String
+        desc: Color문자열 ("hex", "rgb", "rgba", "keyword", "hsl", "hsla")
+      - name: parse
+        type:
+          - Boolean
+        desc: 반환값을 Object{h, s, l}로 받을것인지 설정, (기본값 false)
+
+## Events
+#events:
+#  - no: 1
+#    type:
+#    desc:
+#    properties:
+#      - name: 
+#        desc:
+#    info:
+#    ver: 1.0

@@ -13,7 +13,8 @@ return: String
 ## Descriptions
 description:
   - 'Data Type 반환<br>(Object, Array, String, Number, NaN, Null, Function, Date, Boolean, RegExp, Error, Element, Undefined, Color) 지원'
-  - 'String : Color형식의 String은 "Color"로 반환<br>Number : NaN은 Number로 반환하지 않고 "NaN"로 반환'
+  - 'String : Color형식의 String은 "Color"로 반환<br>
+    Number : NaN은 Number로 반환하지 않고 "NaN"로 반환'
 
 ## Methods
 methods:
