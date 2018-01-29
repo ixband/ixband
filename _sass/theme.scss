@@ -347,10 +347,11 @@ main {
   }
   
   .spec {
-    background: $table-head-color;
+    background: #fff6c1;
     padding: 10px 20px;
-    border-radius: 0 5px 5px 5px;
+    border-radius: 0 0 5px 5px;
     font-size: 0.95em;
+    border-top: #FFEB3B solid 2px;
     
     p {
       margin: 0;
