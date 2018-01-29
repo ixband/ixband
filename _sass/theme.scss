@@ -47,11 +47,16 @@ a {
   background: $type-bg-color;
   border-radius: 3px;
   padding: 0.1em 0.6em 0.2em 0.6em;
+  margin-right: 4px;
   font-size: 0.85em;
 }
 
 .type.return {
   color: #7c7c7c;
+}
+
+.ver {
+  right: 0;
 }
 
 .btn {
