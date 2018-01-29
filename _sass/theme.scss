@@ -166,6 +166,10 @@ main {
   &:first-child {
     margin-top: 0;
   }
+  
+  & > p {
+    margin-left: 10px;
+  }
 
   @include large {
     width: 80%;
