@@ -350,9 +350,18 @@ main {
     background: $table-head-color;
     padding: 10px 20px;
     border-radius: 0 5px 5px 5px;
+    font-size: 0.95em;
     
     p {
       margin: 0;
+    }
+  }
+  
+  .description {
+    padding: 20px;
+    
+    li {
+      margin-bottom: 5px;
     }
   }
   
