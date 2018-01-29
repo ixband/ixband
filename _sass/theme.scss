@@ -429,12 +429,16 @@ main {
 }
 
 #category-area {
+  button {
+    border: 0;
+    background: transparent;
+  }
 
   ul.categories {
 
     & > li {
       .category-name:before {
-        content: f07b;
+        content: '\f07b';
         padding: 0 0 0 15px;
       }
 
@@ -445,7 +449,7 @@ main {
 
     & > li.active {
       .category-name:before {
-        content: f07c;
+        content: '\f07c';
         padding: 0 0 0 15px;
       }
 
