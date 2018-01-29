@@ -435,6 +435,9 @@ main {
   }
 
   ul.categories {
+    a {
+      color: $body-text-color;
+    }
 
     & > li {
       .category-name span {
@@ -469,11 +472,7 @@ main {
           font-family: "Font Awesome 5 Free";
           font-size: 1.1em;
           font-weight: 400;
-          content: '\f15b';
-        }
-
-        a {
-          margin-left: 8px;
+          content: '\f15b  ';
         }
       }
 
