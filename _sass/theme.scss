@@ -431,16 +431,27 @@ main {
 #category-area {
 
   ul.categories {
+
     & > li {
+      .category-name:before {
+        content: f07b;
+        padding: 0 0 0 15px;
+      }
 
+      .category-items {
+        display: none;
+      }
     }
 
-    & > li .category-items {
-      display: none;
-    }
+    & > li.active {
+      .category-name:before {
+        content: f07c;
+        padding: 0 0 0 15px;
+      }
 
-    & > li.active .category-items {
-      display: block;
+      .category-items {
+        display: block;
+      }
     }
   }
 
