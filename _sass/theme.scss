@@ -428,6 +428,24 @@ main {
   }
 }
 
+#category-area {
+
+  ul.categories {
+    & > li {
+
+    }
+
+    & > li .category-items {
+      display: none;
+    }
+
+    & > li.active .category-items {
+      display: block;
+    }
+  }
+
+}
+
 footer {
   padding-top: 2rem;
   margin-top: 2rem;
