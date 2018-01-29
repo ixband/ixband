@@ -378,7 +378,7 @@ footer {
 
   .ver {
     position: absolute;
-    right: 5px;
+    right: 7px;
     font-size: 0.85em;
   }
   .desc {
@@ -387,9 +387,10 @@ footer {
   
   .params {
     padding: 0 0 20px 16px;
+    list-style: disc;
   }
   
-  ul {
-    list-style: disc;
+  .props {
+    list-style: circle;
   }
 }
