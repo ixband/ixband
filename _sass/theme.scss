@@ -438,6 +438,7 @@ main {
 
     & > li {
       .category-name:before {
+        font-family: "Font Awesome 5 Free";
         content: '\f07b';
         padding: 0 0 0 15px;
       }
@@ -449,6 +450,7 @@ main {
 
     & > li.active {
       .category-name:before {
+        font-family: "Font Awesome 5 Free";
         content: '\f07c';
         padding: 0 0 0 15px;
       }
