@@ -446,7 +446,6 @@ main {
         font-size: 1.2em;
         font-weight: 900;
         content: '\f07b';
-        padding: 0 0 0 15px;
       }
 
       .category-items {
@@ -461,6 +460,27 @@ main {
 
       .category-items {
         display: block;
+      }
+    }
+
+    .category-items {
+      & > li {
+        a {
+          margin-left: 5px;
+        }
+
+        & :before {
+          font-family: "Font Awesome 5 Free";
+          font-size: 1.2em;
+          font-weight: 900;
+          content: '\f15c';
+        }
+      }
+
+      & > li.active {
+        & :before {
+          font-weight: 400;
+        }
       }
     }
   }
