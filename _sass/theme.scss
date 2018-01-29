@@ -43,6 +43,15 @@ a {
   }
 }
 
+.type {
+  background: $type-bg-color;
+  border-radius: 3px;
+}
+
+.type.return {
+  color: #8d8d8d;
+}
+
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
@@ -200,6 +209,9 @@ main {
   
   h4 {
     margin: 1em 0 0.5em 0;
+    background: $method-h-color;
+    border-radius: 0 5px 0 5px;
+    padding: 6px 16px;
   }
 
   p {
