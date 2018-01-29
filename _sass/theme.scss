@@ -381,16 +381,29 @@ footer {
     right: 7px;
     font-size: 0.85em;
   }
-  .desc {
+  > .desc {
     padding: 10px 16px;
   }
   
   .params {
     padding: 0 0 20px 16px;
     list-style: disc;
+    
+    .desc {
+      padding: 10px 7px;
+    }
   }
   
   .props {
     list-style: circle;
+    font-weight: normal;
+    
+    .prop {
+      margin: 10px 0 0 0;
+      
+      .desc {
+        padding: 2px 0 0 5px
+      }
+    }
   }
 }
