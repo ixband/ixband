@@ -381,6 +381,7 @@ footer {
     right: 7px;
     font-size: 0.85em;
   }
+  
   > .desc {
     padding: 10px 16px;
   }
@@ -396,10 +397,14 @@ footer {
   
   .props {
     list-style: circle;
-    font-weight: normal;
+    margin: 0 0 0 15px;
+    
+    .accent {
+      font-weight: normal;
+    }
     
     .prop {
-      margin: 10px 0 0 0;
+      margin: 8px 0 0 0;
       
       .desc {
         padding: 2px 0 0 5px
