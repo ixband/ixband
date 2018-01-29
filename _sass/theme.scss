@@ -91,7 +91,9 @@ header {
   text-align: center;
   background-color: $header-bg-color;
   
-  &:after{content:''; display:block; clear:both;}
+  &:after{
+    content:''; display:block; clear:both;
+  }
   
   .logo{float:left}
   .menu{float:left;}
@@ -101,15 +103,21 @@ header {
   .etc{float:right;}
 
   @include large {
-    padding: 5rem 6rem;
+    padding: 20px;
+    
+    .header-wrap {
+      max-width: $large-breakpoint;
+    }
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding: 20px;
+    max-width: 100%;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 20px;
+    max-width: 100%;
   }
 }
 
@@ -257,7 +265,6 @@ main {
   }
 
   table {
-    display: block;
     width: 100%;
     overflow: auto;
     word-break: normal;
@@ -266,6 +273,7 @@ main {
 
     th {
       font-weight: bold;
+      background: $table-th-color
     }
 
     th,
