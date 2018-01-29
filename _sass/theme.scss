@@ -129,46 +129,66 @@ main {
 }
 
 #category-area {
-  float:left; width:20%
+  float:left;
+  width:20%
+    
+  @include large {
+    
+  }
+
+  @include medium {
+    
+  }
+
+  @include small {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 #contents-area {
   word-wrap: break-word;
   float:right;
+  width: 100%;
+  padding: 20px;
 
   &:first-child {
     margin-top: 0;
   }
 
   @include large {
-    max-width: 80%;
-    padding: 20px;
+    width: 80%;
   }
 
   @include medium {
-    max-width: 100%;
-    padding: 20px;
+    width: 100%;
   }
 
   @include small {
-    max-width: 100%;
-    padding: 20px;
+    width: 100%;
   }
 
   img {
     max-width: 100%;
   }
-
+  
+  h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    font-weight: bold;
+    font-weight: nomal;
     color: $section-headings-color;
   }
   
   h3 {
+    font-size: 1.5em;
+    font-weight: bold;
     margin: 1em 0 0.5em 0;
   }
   
