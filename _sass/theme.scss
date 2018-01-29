@@ -135,7 +135,6 @@ main {
 #contents-area {
   word-wrap: break-word;
   float:right;
-  width:75%;
 
   &:first-child {
     margin-top: 0;
@@ -160,7 +159,6 @@ main {
     max-width: 100%;
   }
 
-  h1,
   h2,
   h3,
   h4,
@@ -168,6 +166,14 @@ main {
   h6 {
     font-weight: bold;
     color: $section-headings-color;
+  }
+  
+  h3 {
+    margin: 1em 0 0.5em 0;
+  }
+  
+  h4 {
+    margin: 1em 0 0.5em 0;
   }
 
   p {
