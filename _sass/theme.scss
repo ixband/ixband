@@ -46,6 +46,8 @@ a {
 .type {
   background: $type-bg-color;
   border-radius: 3px;
+  padding: 0.2em;
+  font-size: 0.85em;
 }
 
 .type.return {
