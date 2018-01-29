@@ -43,24 +43,6 @@ a {
   }
 }
 
-.type {
-  background: $type-bg-color;
-  border-radius: 3px;
-  padding: 0.05em 0.6em 0.15em 0.6em;
-  margin-right: 4px;
-  font-size: 0.85em;
-}
-
-.type.return {
-  color: #7c7c7c;
-}
-
-.ver {
-  position: absolute;
-  right: 5px;
-  font-size: 0.85em;
-}
-
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
@@ -381,12 +363,33 @@ footer {
 }
 
 .methods {
+  
+  .type {
+    background: $type-bg-color;
+    border-radius: 3px;
+    padding: 0.05em 0.6em 0.15em 0.6em;
+    margin-right: 4px;
+    font-size: 0.85em;
+  }
 
+  .type.return {
+    color: #7c7c7c;
+  }
+
+  .ver {
+    position: absolute;
+    right: 5px;
+    font-size: 0.85em;
+  }
   .desc {
     padding: 10px 16px;
   }
   
   .params {
-    padding: 16px 0 0 20px;
+    padding: 0 0 20px 16px;
+  }
+  
+  ul {
+    list-style: disc;
   }
 }
