@@ -437,8 +437,14 @@ main {
   ul.categories {
 
     & > li {
+      .category-name span {
+        margin-left: 5px;
+      }
+
       .category-name:before {
         font-family: "Font Awesome 5 Free";
+        font-size: 1.2em;
+        font-weight: 900;
         content: '\f07b';
         padding: 0 0 0 15px;
       }
@@ -450,9 +456,7 @@ main {
 
     & > li.active {
       .category-name:before {
-        font-family: "Font Awesome 5 Free";
         content: '\f07c';
-        padding: 0 0 0 15px;
       }
 
       .category-items {
