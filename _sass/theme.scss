@@ -46,12 +46,12 @@ a {
 .type {
   background: $type-bg-color;
   border-radius: 3px;
-  padding: 0.2em;
+  padding: 0.1em 0.6em 0.2em 0.6em;
   font-size: 0.85em;
 }
 
 .type.return {
-  color: #8d8d8d;
+  color: #7c7c7c;
 }
 
 .btn {
