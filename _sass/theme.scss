@@ -193,9 +193,13 @@ main {
     color: $section-headings-color;
   }
   
+  h1 {
+    margin-left: 5px;
+  }
+  
   h3 {
     font-size: 1.5em;
-    margin: 2.2em 0 0.5em 0;
+    margin: 2.2em 0 0.5em 5px;
   }
   
   h4 {
