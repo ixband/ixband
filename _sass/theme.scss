@@ -382,16 +382,17 @@ footer {
     font-size: 0.85em;
   }
   
-  > .desc {
-    padding: 10px 16px;
+  .method > .desc {
+    margin: 10px 16px;
   }
   
   .params {
+    margin-left: 10px;
     padding: 0 0 20px 16px;
     list-style: disc;
     
     .desc {
-      padding: 10px 7px;
+      padding: 10px 17px;
     }
   }
   
