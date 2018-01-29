@@ -142,20 +142,18 @@ main {
   }
 
   @include large {
-    max-width: 64rem;
-    padding: 2rem 6rem;
-    margin: 0 auto;
-    font-size: 1.1rem;
+    max-width: 80%;
+    padding: 20px;
   }
 
   @include medium {
-    padding: 2rem 4rem;
-    font-size: 1.1rem;
+    max-width: 100%;
+    padding: 20px;
   }
 
   @include small {
-    padding: 2rem 1rem;
-    font-size: 1rem;
+    max-width: 100%;
+    padding: 20px;
   }
 
   img {
