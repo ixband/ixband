@@ -443,7 +443,7 @@ main {
 
       .category-name:before {
         font-family: "Font Awesome 5 Free";
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-weight: 900;
         content: '\f07b';
       }
@@ -465,21 +465,21 @@ main {
 
     .category-items {
       & > li {
-        a {
-          margin-left: 5px;
-        }
-
         & :before {
           font-family: "Font Awesome 5 Free";
-          font-size: 1.2em;
-          font-weight: 900;
-          content: '\f15c';
+          font-size: 1.1em;
+          font-weight: 400;
+          content: '\f15b';
+        }
+
+        a {
+          margin-left: 8px;
         }
       }
 
       & > li.active {
         & :before {
-          font-weight: 400;
+          font-weight: 900;
         }
       }
     }
