@@ -107,6 +107,7 @@ header {
     
     .header-wrap {
       max-width: $large-breakpoint;
+      margin: 0 auto;
     }
   }
 
@@ -271,9 +272,12 @@ main {
     word-break: keep-all; // For Firefox to horizontally scroll wider tables.
     -webkit-overflow-scrolling: touch;
 
+    thead tr {
+      background: $table-head-color
+    }
+    
     th {
       font-weight: bold;
-      background: $table-th-color
     }
 
     th,
