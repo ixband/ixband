@@ -86,6 +86,10 @@ a {
   }
 }
 
+.accent {
+  font-weight: bold;
+}
+
 header {
   color: $header-heading-color;
   text-align: center;
@@ -143,6 +147,7 @@ main {
 
   @include small {
     position: fixed;
+    width: 100%;
     display: none;
     top: 0;
     left: 0;
@@ -166,7 +171,7 @@ main {
   }
 
   @include medium {
-    width: 100%;
+    width: 80%;
   }
 
   @include small {
@@ -183,7 +188,7 @@ main {
   h4,
   h5,
   h6 {
-    font-weight: nomal;
+    font-weight: normal;
     color: $section-headings-color;
   }
   
