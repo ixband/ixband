@@ -439,6 +439,10 @@ main {
       color: $body-text-color;
     }
 
+    a:hover {
+      text-decoration: none;
+    }
+
     & > li {
       .category-name span {
         margin-left: 5px;
@@ -473,6 +477,7 @@ main {
           font-size: 1.1em;
           font-weight: 400;
           content: '\f15b  ';
+          margin-left: 10px;
         }
       }
 
