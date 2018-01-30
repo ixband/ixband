@@ -96,16 +96,45 @@ header {
   text-align: center;
   background-color: $header-bg-color;
   
-  &:after{
+  &:after {
     content:''; display:block; clear:both;
   }
   
-  .logo{float:left}
-  .menu{float:left;}
-  .menu {
-    li{float:left;}
+  .logo {
+    float: left
   }
-  .etc{float:right;}
+  
+  .menu-group {
+    float: right;
+  }
+  
+  .menu {
+    li {
+      float: left;
+    }
+  }
+  
+  .etc{
+    float: left;
+    
+    .search {
+      border-bottom: #d1c5d8 solid 1px;
+      
+      input {
+        backgrund: transparent;
+        border: 0;
+        padding: 5px;
+        
+        & ::-webkit-input-placeholder {
+          color: rgba(255,255,255,0.5);
+        }
+      }
+      
+      .github {
+        float: left;
+      }
+    }
+  }
 
   @include large {
     padding: 20px;
