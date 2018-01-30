@@ -109,8 +109,19 @@ header {
   }
   
   .menu {
+    float: left;
+    
     li {
       float: left;
+      margin: 5px 10px;
+      
+      a {
+        color: rgba(255,255,255,0.7);
+      }
+      
+      a:hover, a.active {
+        color: rgba(255,255,255,1);
+      }
     }
   }
   
@@ -118,10 +129,12 @@ header {
     float: left;
     
     .search {
+      float: left;
       border-bottom: #d1c5d8 solid 1px;
+      margin: 0 20px;
       
       input {
-        backgrund: transparent;
+        background: transparent;
         border: 0;
         padding: 5px;
         
@@ -132,6 +145,14 @@ header {
       
       .github {
         float: left;
+        margin: 5px 10px;
+        
+        a {
+          color: rgba(255,255,255,0.7);
+        }
+        a:hover, a.active {
+          color: rgba(255,255,255,1);
+        }
       }
     }
   }
@@ -142,17 +163,35 @@ header {
     .header-wrap {
       max-width: $large-breakpoint;
       margin: 0 auto;
+      
+      .btn-category {
+        display: none;
+      }
     }
   }
 
   @include medium {
     padding: 20px;
     max-width: 100%;
+    
+    .btn-category {
+      display: none;
+    }
   }
 
   @include small {
     padding: 20px;
     max-width: 100%;
+    
+    .btn-category {
+      display: block;
+      position: absolute;
+      left: 0;
+      border: 0;
+      background: transparent;
+      font-size: 16px;
+      margin: 4px 15px;
+    }
   }
 }
 
