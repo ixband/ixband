@@ -106,7 +106,7 @@ header {
   
   .menu-group {
     float: right;
-    font-size: 1.05em;
+    font-size: 1.15em;
   }
   
   .menu {
@@ -152,18 +152,22 @@ header {
 
       a {
         color: rgba(255,255,255,0.7);
+        
+        i {
+          margin-right: 5px;
+        }
       }
 
       a:hover, a.active {
         color: rgba(255,255,255,1);
         text-decoration: none;
-      } 
+      }
     }
     
   }
 
   @include large {
-    padding: 20px;
+    padding: 16px;
     
     .header-wrap {
       max-width: $large-breakpoint;
@@ -176,7 +180,7 @@ header {
   }
 
   @include medium {
-    padding: 20px;
+    padding: 16px;
     max-width: 100%;
     
     .btn-category {
@@ -185,7 +189,7 @@ header {
   }
 
   @include small {
-    padding: 20px;
+    padding: 16px;
     max-width: 100%;
     
     .btn-category {
