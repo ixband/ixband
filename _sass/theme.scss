@@ -144,22 +144,22 @@ header {
       input::-webkit-input-placeholder {
         color: rgba(255,255,255,0.5);
       }
-      
-      .github {
-        float: left;
-        margin: 5px 10px;
-        
-        a {
-          color: rgba(255,255,255,0.7);
-        }
-        
-        a:hover, a.active {
-          color: rgba(255,255,255,1);
-          text-decoration: none;
-        }
-      }
-      
     }
+    
+    .github {
+      float: left;
+      margin: 5px 10px;
+
+      a {
+        color: rgba(255,255,255,0.7);
+      }
+
+      a:hover, a.active {
+        color: rgba(255,255,255,1);
+        text-decoration: none;
+      } 
+    }
+    
   }
 
   @include large {
