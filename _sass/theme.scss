@@ -234,17 +234,69 @@ main {
     left: 0;
   }
   
-  .categories {
+  button {
+    border: 0;
+    background: transparent;
+  }
+
+  ul.categories {
     margin: 40px 20px;
+    
+    a {
+      color: $body-text-color;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
     
     li {
       margin: 6px 0;
     }
-    
+
     & > li {
       font-weight: bold;
+      
+      .category-name span {
+        margin-left: 5px;
+      }
+
+      .category-name:before {
+        font-family: "Font Awesome 5 Free";
+        font-size: 1.1em;
+        font-weight: 900;
+        content: '\f07b';
+      }
+
+      .category-items {
+        display: none;
+      }
+    }
+
+    & > li.active {
+      .category-name:before {
+        content: '\f07c';
+      }
+
+      .category-items {
+        display: block;
+      }
+    }
+
+    .category-items {
+      font-weight: normal;
+      margin: 0 7px;
+      
+      & > li {
+        
+      }
+
+      & > li.active {
+        
+      }
     }
   }
+
 }
 
 #contents-area {
@@ -516,69 +568,6 @@ main {
       }
     }
   }
-}
-
-#category-area {
-  button {
-    border: 0;
-    background: transparent;
-  }
-
-  ul.categories {
-    a {
-      color: $body-text-color;
-    }
-
-    a:hover {
-      text-decoration: none;
-    }
-
-    & > li {
-      .category-name span {
-        margin-left: 5px;
-      }
-
-      .category-name:before {
-        font-family: "Font Awesome 5 Free";
-        font-size: 1.1em;
-        font-weight: 900;
-        content: '\f07b';
-      }
-
-      .category-items {
-        display: none;
-      }
-    }
-
-    & > li.active {
-      .category-name:before {
-        content: '\f07c';
-      }
-
-      .category-items {
-        display: block;
-      }
-    }
-
-    .category-items {
-      & > li {
-        & :before {
-          font-family: "Font Awesome 5 Free";
-          font-size: 1.1em;
-          font-weight: 400;
-          content: '\f15b  ';
-          margin-left: 10px;
-        }
-      }
-
-      & > li.active {
-        & :before {
-          font-weight: 900;
-        }
-      }
-    }
-  }
-
 }
 
 footer {
