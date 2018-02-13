@@ -103,27 +103,27 @@ methods:
 ## Events
 events:
   - procedure: 1
-      type: touchstart
-      desc: TouchEvent 시점
-      properties:
-        - name: target
-          desc:
-        - name: currentTarget
-          desc:
-        - name: relatedTarget
-          desc:
-        - name: eventPhase
-          desc:
-        - name: shiftKey
-          desc:
-        - name: altKey
-          desc:
-        - name: ctrlKey
-          desc:
-        - name: touches
-          desc:
-      info: '<a href="https://developer.mozilla.org/en-US/docs/Web/Events/touchstart" target="_blank">https://developer.mozilla.org/en-US/docs/Web/Events/touchstart 와 유사</a>'
-      ver: 1.0
+    type: touchstart
+    desc: TouchEvent 시점
+    properties:
+      - name: target
+        desc:
+      - name: currentTarget
+        desc:
+      - name: relatedTarget
+        desc:
+      - name: eventPhase
+        desc:
+      - name: shiftKey
+        desc:
+      - name: altKey
+        desc:
+      - name: ctrlKey
+        desc:
+      - name: touches
+        desc:
+    info: '<a href="https://developer.mozilla.org/en-US/docs/Web/Events/touchstart" target="_blank">https://developer.mozilla.org/en-US/docs/Web/Events/touchstart 와 유사</a>'
+    ver: 1.0
 
   - procedure: 2
     type: touchmove
@@ -149,47 +149,47 @@ events:
     ver: 1.0
 
   - procedure: 3
-      type: touchend
-      desc: TouchEvent 끝나는 시점
-      properties:
-        - name: target
-          desc:
-        - name: currentTarget
-          desc:
-        - name: relatedTarget
-          desc:
-        - name: eventPhase
-          desc:
-        - name: shiftKey
-          desc:
-        - name: altKey
-          desc:
-        - name: ctrlKey
-          desc:
-        - name: touches
-          desc:
-      info: '<a href="https://developer.mozilla.org/en-US/docs/Web/Events/touchend" target="_blank">https://developer.mozilla.org/en-US/docs/Web/Events/touchend 와 유사</a>'
-      ver: 1.0
+    type: touchend
+    desc: TouchEvent 끝나는 시점
+    properties:
+      - name: target
+        desc:
+      - name: currentTarget
+        desc:
+      - name: relatedTarget
+        desc:
+      - name: eventPhase
+        desc:
+      - name: shiftKey
+        desc:
+      - name: altKey
+        desc:
+      - name: ctrlKey
+        desc:
+      - name: touches
+        desc:
+    info: '<a href="https://developer.mozilla.org/en-US/docs/Web/Events/touchend" target="_blank">https://developer.mozilla.org/en-US/docs/Web/Events/touchend 와 유사</a>'
+    ver: 1.0
 
   - procedure: 3
-      type: touchcancel
-      desc: TouchEvent를 잃어 버린 시점
-      properties:
-        - name: target
-          desc:
-        - name: currentTarget
-          desc:
-        - name: relatedTarget
-          desc:
-        - name: eventPhase
-          desc:
-        - name: shiftKey
-          desc:
-        - name: altKey
-          desc:
-        - name: ctrlKey
-          desc:
-        - name: touches
-          desc:
-      info: '<a href="https://developer.mozilla.org/en-US/docs/Web/Events/touchcancel" target="_blank">https://developer.mozilla.org/en-US/docs/Web/Events/touchcancel 와 유사</a>'
-      ver: 1.0
+    type: touchcancel
+    desc: TouchEvent를 잃어 버린 시점
+    properties:
+      - name: target
+        desc:
+      - name: currentTarget
+        desc:
+      - name: relatedTarget
+        desc:
+      - name: eventPhase
+        desc:
+      - name: shiftKey
+        desc:
+      - name: altKey
+        desc:
+      - name: ctrlKey
+        desc:
+      - name: touches
+        desc:
+    info: '<a href="https://developer.mozilla.org/en-US/docs/Web/Events/touchcancel" target="_blank">https://developer.mozilla.org/en-US/docs/Web/Events/touchcancel 와 유사</a>'
+    ver: 1.0
