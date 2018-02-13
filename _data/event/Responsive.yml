@@ -24,7 +24,7 @@ methods:
       - name: type
         type:
           - String
-        desc: 이벤트 발생시킬 기준
+        desc: 이벤트 발생시킬 기준<br>
               ex) 'width' or 'height'
       - name: positions
         type:
@@ -35,7 +35,7 @@ methods:
     return:
       - String
     version: 1.0~
-    desc: 현재 해상도의 Type을 반환.
+    desc: 현재 해상도의 Type을 반환.<br>
           positions 데이타 등록시 설정한 type속성 중에 해당하는 값을 반환
 
   - name: enable

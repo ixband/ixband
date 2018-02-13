@@ -26,7 +26,7 @@ methods:
           - Element
           - Selector
           - jQuery
-        desc: scroll이벤트 발생시킬 대상
+        desc: scroll이벤트 발생시킬 대상<br>
               ※대상 개체는 단일 개체.
 
   - name: gap

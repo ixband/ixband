@@ -1,0 +1,158 @@
+## contents를 구성하는 data ##
+
+title: Swipe
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - Touch Device에서 swipe, axis등의 Swipe를 생성하여 dispatch 한다.
+  - 스마트폰이나 태블릿처럼 Touch가 되는 Device에서 대상영역을 Swipe시킬때 사용<br>
+    Android, iOS, Windows IE10~ Touch Device 지원.<br>
+    Mobile Safari v10, Mobile Chrome v56 에서 한쪽방향 Touch Scroll 차단 안되는 문제 해결
+
+## Methods
+methods:
+  - name: Swipe
+    return:
+    version:
+    desc: Swipe 생성
+    params:
+      - name: target
+        type:
+          - Element
+          - Selector
+          - jQuery
+        desc: 터치이벤트 발생시킬 대상<br>
+              ※대상 개체는 단일 개체.
+      - name: option
+        type:
+          - Object
+        desc:
+        props:
+          - name: axiz
+            type: String
+            desc: 'Swipe 발생 축 설정, "vertical", "horizontal", "auto" (기본값 = "horizontal")'
+          - name: preventDefault
+            type: Boolean
+            desc: safari v10~ 에서 세로축 touchstart를 막고 싶을때만 설정한다. (safari 오류 임시처방)
+
+  - name: sensitivity
+    return:
+      - Swipe
+    version: 1.0~
+    desc: 민감도 설정, devicePixelRatio 기준, 기본값 1. 민감도를 Number로 지정, 1보다 커질수록 둔감해지고 작아질수록 민감해진다.
+    params:
+      - name: h
+        type:
+          - Number
+        desc: 가로축 민감도 설정
+      - name: v
+        type:
+          - Number
+        desc: 세로축 민감도 설정, 설정하지 않으면 가로축을 따라간다.
+
+  - name: swipeWidth
+    return:
+      - Number
+    version: 1.0~
+    desc: 현재 디바이스 해상도에 맞게 민감도 보정이된 swipeWidth 기준값을 반환. ※ 기본 swipeWidth값은 '40'
+
+  - name: swipeHeight
+    return:
+      - Number
+    version: 1.0~
+    desc: 현재 디바이스 해상도에 맞게 민감도 보정이된 swipeHeight 기준값을 반환. ※ 기본 swipeHeight값은 '40'
+
+  - name: enable
+    return:
+      - Swipe
+    version: 1.0~
+    desc: Swipe 검출 허용 설정
+
+  - name: disable
+    return:
+      - Swipe
+    version: 1.0~
+    desc: Swipe 검출 비허용 설정
+
+  - name: clear
+    return:
+      - Swipe
+    version: 1.0~
+    desc: 이벤트 및 기본설정 삭제
+
+## Events
+events:
+  - procedure: 1
+    type: axis
+    desc: Touch 방향 추출 시점
+    properties:
+      - name: target
+        desc: TouchEvent가 발생한 대상
+      - name: currentTarget
+        desc: 최초에 등록한 대상
+      - name: axis
+        desc: vertical, horizontal, none
+      - name: direction
+        desc: top, right, bottom, left, none
+      - name: pageX, e.pageY
+        desc: TouchEvent가 발생한 죄표
+#    info:
+    ver: 1.0
+
+  - procedure: 2
+    type: move
+    desc: Touch 이동 시점
+    properties:
+      - name: target
+        desc: TouchEvent가 발생한 대상
+      - name: currentTarget
+        desc: 최초에 등록한 대상
+      - name: axis
+        desc: 방향축
+      - name: swipe
+        desc: left, right, up, down, none
+      - name: moveX, moveY
+        desc: Touch가 움직인 총량
+      - name: growX, growY
+        desc: Touch가 1회 움직인량
+      - name: pageX, e.pageY
+        desc: TouchEvent가 발생한 죄표
+      - name: duration
+        desc: swipe가 발생하기 위해서 걸린 시간
+      - name: speed
+        desc: swipe의 속도 (수치가 클수록 빠르다)
+#    info:
+    ver: 1.0
+
+  - procedure: 3
+    type: swipe
+    desc: swipe 발생 시점
+    properties:
+      - name: target
+        desc: TouchEvent가 발생한 대상
+      - name: currentTarget
+        desc: 최초에 등록한 대상
+      - name: axis
+        desc: 방향축
+      - name: swipe
+        desc: left, right, up, down, none
+      - name: moveX, moveY
+        desc: Touch가 움직인 총량
+      - name: growX, growY
+        desc: Touch가 1회 움직인량
+      - name: pageX, e.pageY
+        desc: TouchEvent가 발생한 죄표
+      - name: duration
+        desc: swipe가 발생하기 위해서 걸린 시간
+      - name: speed
+        desc: swipe의 속도 (수치가 클수록 빠르다)
+#    info:
+    ver: 1.0

@@ -13,7 +13,7 @@ extend:
 ## Descriptions
 description:
   - RotationEvent 검출기
-  - 대상영역의 RotationEvent 검출
+  - 대상영역의 RotationEvent 검출<br>
     Android, iOS, Touch Device, Windows 지원
 
 ## Methods
@@ -28,7 +28,7 @@ methods:
           - Element
           - Selector
           - jQuery
-        desc: 터치이벤트 발생시킬 대상.
+        desc: 터치이벤트 발생시킬 대상.<br>
               ※대상 개체는 단일 개체.
       - name: options
         type:
