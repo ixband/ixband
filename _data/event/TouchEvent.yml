@@ -1,0 +1,195 @@
+## contents를 구성하는 data ##
+
+title: TouchEvent
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - Touch Device에서 대상영역의 TouchEvent 검출기
+  - '스마트폰이나 태블릿처럼 Touch가 되는 Device에서 대상영역의 TouchEvent 검출<br>
+    Android, iOS, Touch Device, Windows IE10~ 지원<br>
+    *IE는 CSS "touch-action"을 설정해 줘야 touchmove Event가 제대로 발생한다. ex) "-ms-touch-action:pan-x; touch-action:pan-x;"<br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action</a>'
+
+## Methods
+methods:
+  - name: TouchEvent
+    return:
+    version:
+    desc: TouchEvent 생성
+    params:
+      - name: target
+        type:
+          - Element
+          - Selector
+          - jQuery
+        desc: 터치이벤트 발생시킬 대상 (하나의 대상의 하나의 TouchEvent생성)<br>
+              ※대상 개체는 단일 개체.
+
+  - name: addListener
+    return:
+      - TouchEvent
+    version: 1.0~
+    desc: 리스너 등록
+    params:
+      - name: type
+        type:
+          - String
+        desc: Listener type
+      - name: listener
+        type:
+          - Function
+        desc: Listener
+      - name: options
+        type:
+          - Object
+          - Boolean
+        desc: 'useCapture, passive 등의 설정 용도, 기본설정 false<br>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" target="_blank">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener 참조</a>'
+
+  - name: removeListener
+    return:
+      - TouchEvent
+    version: 1.0~
+    desc: 리스너 삭제
+    params:
+      - name: type
+        type:
+          - String
+        desc: Listener type, 입력하지 않으면 모든 리스너 삭제
+      - name: listener
+        type:
+          - Function
+        desc: Listener, 입력하지 않으면 모든 리스너 삭제
+      - name: options
+        type:
+          - Object
+          - Boolean
+        desc: useCapture, passive 등등, 입력하지 않으면 type과 listener만 비교하여 삭제
+
+  - name: hasListener
+    return:
+      - Boolean
+    version: 1.0~
+    desc: 리스너 등록여부 반환
+    params:
+      - name: type
+        type:
+          - String
+        desc: Listener type, 입력하지 않으면 모든 리스너 체크
+      - name: listener
+        type:
+          - Function
+        desc: Listener, 입력하지 않으면 type만 체크
+      - name: options
+        type:
+          - Object
+          - Boolean
+        desc: useCapture, passive 등등, 입력하지 않으면 type과 listener만 체크
+
+  - name: clear
+    return:
+      - TouchEvent
+    version: 1.0~
+    desc: 이벤트 및 기본설정 삭제
+
+## Events
+events:
+  - procedure: 1
+      type: touchstart
+      desc: TouchEvent 시점
+      properties:
+        - name: target
+          desc:
+        - name: currentTarget
+          desc:
+        - name: relatedTarget
+          desc:
+        - name: eventPhase
+          desc:
+        - name: shiftKey
+          desc:
+        - name: altKey
+          desc:
+        - name: ctrlKey
+          desc:
+        - name: touches
+          desc:
+      info: '<a href="https://developer.mozilla.org/en-US/docs/Web/Events/touchstart" target="_blank">https://developer.mozilla.org/en-US/docs/Web/Events/touchstart 와 유사</a>'
+      ver: 1.0
+
+  - procedure: 2
+    type: touchmove
+    desc: TouchEvent 이동 시점
+    properties:
+      - name: target
+        desc:
+      - name: currentTarget
+        desc:
+      - name: relatedTarget
+        desc:
+      - name: eventPhase
+        desc:
+      - name: shiftKey
+        desc:
+      - name: altKey
+        desc:
+      - name: ctrlKey
+        desc:
+      - name: touches
+        desc:
+    info: '<a href="https://developer.mozilla.org/en-US/docs/Web/Events/touchmove" target="_blank">https://developer.mozilla.org/en-US/docs/Web/Events/touchmove 와 유사</a>'
+    ver: 1.0
+
+  - procedure: 3
+      type: touchend
+      desc: TouchEvent 끝나는 시점
+      properties:
+        - name: target
+          desc:
+        - name: currentTarget
+          desc:
+        - name: relatedTarget
+          desc:
+        - name: eventPhase
+          desc:
+        - name: shiftKey
+          desc:
+        - name: altKey
+          desc:
+        - name: ctrlKey
+          desc:
+        - name: touches
+          desc:
+      info: '<a href="https://developer.mozilla.org/en-US/docs/Web/Events/touchend" target="_blank">https://developer.mozilla.org/en-US/docs/Web/Events/touchend 와 유사</a>'
+      ver: 1.0
+
+  - procedure: 3
+      type: touchcancel
+      desc: TouchEvent를 잃어 버린 시점
+      properties:
+        - name: target
+          desc:
+        - name: currentTarget
+          desc:
+        - name: relatedTarget
+          desc:
+        - name: eventPhase
+          desc:
+        - name: shiftKey
+          desc:
+        - name: altKey
+          desc:
+        - name: ctrlKey
+          desc:
+        - name: touches
+          desc:
+      info: '<a href="https://developer.mozilla.org/en-US/docs/Web/Events/touchcancel" target="_blank">https://developer.mozilla.org/en-US/docs/Web/Events/touchcancel 와 유사</a>'
+      ver: 1.0
