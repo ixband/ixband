@@ -35,10 +35,3 @@ defaults:
       type: 'docs'
     values:
       layout: 'docs'
-
-
-
-# Plugins
-## https://help.github.com/articles/configuring-jekyll-plugins/
-plugins:
- - jekyll-sitemap
