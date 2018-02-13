@@ -1,0 +1,128 @@
+## contents를 구성하는 data ##
+
+title: ScrollEnd
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - 대상영역의 ScrollEnd 이벤트 검출기.
+
+## Methods
+methods:
+  - name: ScrollEnd
+    return:
+    version:
+    desc: ScrollEnd 생성
+    params:
+      - name: target
+        type:
+          - Element
+          - Selector
+          - jQuery
+        desc: scroll이벤트 발생시킬 대상
+              ※대상 개체는 단일 개체.
+
+  - name: gap
+    return:
+      - ScrollEnd
+    version: 1.0~
+    desc: 이벤트를 발생시키는 시점을 조절할 수치 설정
+    params:
+      - name: values
+        type:
+          - Object
+        desc: 0 ~ 360 설정할 각도, 설정하지 않으면 현재의 degree를 반환.
+        props:
+          - name: left
+            type: Number
+            desc: 왼쪽 수치
+          - name: right
+            type: Number
+            desc: 오른쪽 수치
+          - name: top
+            type: Number
+            desc: 상단 수치
+          - name: bottom
+            type: Number
+            desc: 하단 수치
+
+  - name: trigger
+    return:
+      - ScrollEnd
+    version: 1.0~
+    desc: 강제로 실행시켜 해당 조건에 부합되면 이벤트를 발생시킨다.
+    params:
+      - name: type
+        type:
+          - String
+        desc: 발생시킬 event type, 설정하지 않으면 등록된 모든이벤트를 대상으로 한다.
+
+  - name: isScrollContent
+    return:
+      - Boolean
+    version: 1.0~
+    desc: 내부의 컨텐츠가 스크롤이 발생할 수 있는 만큼 긴 컨텐츠인지 여부 반환
+    params:
+      - name: type
+        type:
+          - String
+        desc: "'scrollleft', 'scrollright'는 가로사이즈, 'scrolltop', 'scrollbottom'은 세로사이즈를 체크하여 반환"
+
+  - name: enable
+    return:
+      - ScrollEnd
+    version: 1.0~
+    desc: ScrollEnd 검출 허용 설정
+
+  - name: disable
+    return:
+      - ScrollEnd
+    version: 1.0~
+    desc: ScrollEnd 검출 비허용 설정
+
+  - name: clear
+    return:
+      - ScrollEnd
+    version: 1.0~
+    desc: 이벤트 및 기본설정 삭제
+
+## Events
+events:
+  - procedure: 1
+    type: scrolltop
+    desc: scrolltop의 도달시 반환
+    properties:
+      - name: target
+        desc: scroll이벤트가 발생한 대상
+      - name: currentTarget
+        desc: 최초에 등록한 대상
+#    info:
+    ver: 1.0
+
+  - procedure: 1
+    type: scrollbottom
+    desc: scrollbottom의 도달시 반환
+#    properties:
+    info: scrolltop 과 동일
+    ver: 1.0
+
+  - procedure: 1
+    type: scrollleft
+    desc: scrollleft의 도달시 반환
+#    properties:
+    info: scrolltop 과 동일
+    ver: 1.0
+
+  - procedure: 1
+    type: scrollright
+    desc: scrollright의 도달시 반환
+#    properties:
+    info: scrolltop 과 동일
+    ver: 1.0
