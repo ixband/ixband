@@ -1,0 +1,178 @@
+## contents를 구성하는 data ##
+
+title: Rotation
+
+## Specification
+type: Constructor
+support: 1.1
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - RotationEvent 검출기
+  - 대상영역의 RotationEvent 검출
+    Android, iOS, Touch Device, Windows 지원
+
+## Methods
+methods:
+  - name: Rotation
+    return:
+    version:
+    desc: Rotation 생성
+    params:
+      - name: target
+        type:
+          - Element
+          - Selector
+          - jQuery
+        desc: 터치이벤트 발생시킬 대상.
+              ※대상 개체는 단일 개체.
+      - name: options
+        type:
+          - Object
+        desc:
+        props:
+          - name: datumPoint
+            type:
+              - Array
+            desc: 기준 중심 좌표 x, y배열, 대상 대비 %, ex) ['50%', '50%'], (px, %단위 지원)
+          - name: baseAngle
+            type:
+              - Number
+            desc: progress를 계산할 기준이 되는 각도 설정 (기본값: 0, 9시 방향이 0도, 0 ~ 360)
+          - name: radius
+            type:
+              - Array
+            desc: 호의 x, y축 반지름 설정, (기본값: ['50%', '50%'], px, %단위 지원)
+
+  - name: degree
+    return:
+      - Rotation
+      - Number
+    version: 1.1~
+    desc: 각도설정 및 반환, (실행시 rotation 이벤트 발생)
+    params:
+      - name: degree
+        type:
+          - Number
+        desc: 0 ~ 360 설정할 각도, 설정하지 않으면 현재의 degree를 반환.
+
+  - name: rotation
+    return:
+      - Rotation
+      - Number
+    version: 1.1~
+    desc: 회전 각도설정, (실행시 rotation 이벤트 발생)
+    params:
+      - name: progress
+        type:
+          - Number
+        desc: 음수, 양수 모두 설정 가능, 설정하지 않으면 현재의 progress를 반환.
+
+  - name: min
+    return:
+      - Rotation
+    version: 1.1~
+    desc: progress 최소값 설정
+    params:
+      - name: progress
+        type:
+          - Number
+        desc: 음수, 양수 모두 설정 가능, 설정하지 않으면 무한데.
+
+  - name: max
+    return:
+      - Rotation
+    version: 1.1~
+    desc: progress 최대값 설정
+    params:
+      - name: progress
+        type:
+          - Number
+        desc: 음수, 양수 모두 설정 가능, 설정하지 않으면 무한데.
+
+  - name: resize
+    return:
+      - Rotation
+    version: 1.1~
+    desc: resize시 기준 좌표들 다시 계산하여 resize 이벤트 전달
+
+  - name: reset
+    return:
+      - Rotation
+    version: 1.1~
+    desc: progress = 0 으로 설정 (min, max값이 설정되지 않았을때만 동작)
+
+  - name: enable
+    return:
+      - Rotation
+    version: 1.1~
+    desc: Rotation 검출 허용 설정
+
+  - name: disable
+    return:
+      - Rotation
+    version: 1.1~
+    desc: Rotation 검출 비허용 설정
+
+  - name: clear
+    return:
+      - Rotation
+    version: 1.1~
+    desc: 이벤트 및 기본설정 삭제
+
+## Events
+events:
+  - procedure: 1
+    type: rotationstart
+    desc: Rotation 검출 시작 시점
+    properties:
+      - name: target
+        desc: TouchEvent가 발생한 대상
+      - name: currentTarget
+        desc: 최초에 등록한 대상
+      - name: degree
+        desc: 호도각 (0~360)
+      - name: radian
+        desc: 라디안
+      - name: offsetX, offsetY
+        desc: 대상 안에서의 마우스 좌표
+      - name: pointX, pointY
+        desc: 중심점 + 반지름등이 계산된 좌표
+      - name: grow
+        desc: 1회 rotation된 각도
+      - name: progress
+        desc: 시작점에서 부터의 angle 수치
+#    info:
+    ver: 1.1
+
+  - procedure: 2
+    type: rotationmove
+    desc: Rotation 이동 시점
+#    properties:
+    info: rotationstart 와 동일
+    ver: 1.1
+
+  - procedure: 3
+    type: rotationend
+    desc: Rotation 끝나는 시점
+#    properties:
+    info: rotationstart 와 동일
+    ver: 1.1
+
+  - procedure: 3
+    type: rotation
+    desc: rotation(), degree() methods로 값이 설정되는 시점
+#    properties:
+    info: rotationstart 와 동일
+    ver: 1.1
+
+  - procedure: 3
+    type: resize
+    desc: resize() method가 실행되는 시점
+#    properties:
+    info: rotationstart 와 동일
+    ver: 1.1

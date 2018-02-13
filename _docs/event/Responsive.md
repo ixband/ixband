@@ -1,4 +1,5 @@
 ---
+layout: docs
 category: event
 title: Responsive
 tags: []
