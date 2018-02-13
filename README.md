@@ -1,3 +1,4 @@
-# 테스트
+# ixBand.js Documentation
+작성중...
 
-https://ixband.github.io/ixband/
+http://ixband.org
