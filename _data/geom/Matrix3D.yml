@@ -1,0 +1,205 @@
+## contents를 구성하는 data ##
+
+title: Matrix3D
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - 4x4 변형행렬, 3D Matrix.
+
+## Methods
+methods:
+  - name: Matrix3D
+    return:
+    version:
+    desc: 'Matrix3D 생성<br>
+          <img src="/assets/images/matrix3d.jpg" alt="matrix">'
+    params:
+      - name: m11
+        type:
+          - Number
+        desc:
+      - name: m12
+        type:
+          - Number
+        desc:
+      - name: m13
+        type:
+          - Number
+        desc:
+      - name: m14
+        type:
+          - Number
+        desc:
+      - name: m21
+        type:
+          - Number
+        desc:
+      - name: m22
+        type:
+          - Number
+        desc:
+      - name: m23
+        type:
+          - Number
+        desc:
+      - name: m24
+        type:
+          - Number
+        desc:
+      - name: m31
+        type:
+          - Number
+        desc:
+      - name: m32
+        type:
+          - Number
+        desc:
+      - name: m33
+        type:
+          - Number
+        desc:
+      - name: m34
+        type:
+          - Number
+        desc:
+
+  - name: concat
+    return:
+      - Matrix3D
+    version: 1.0~
+    desc: 행렬을 현재 행렬과 연결하여 두 행렬의 기하학적 효과를 효율적으로 결합.
+    params:
+      - name: mtx3d
+        type:
+          - Matrix3D
+        desc: 결합할 Matrix3D 객체
+
+  - name: clone
+    return:
+      - Matrix3D
+    version: 1.0~
+    desc: 이 행렬의 복제본인 새 Matrix3D 객체와, 포함된 객체의 동일한 복사본을 함께 반환.<br>
+          ※복사본을 반환 한다는점을 주의하자.
+
+  - name: scale
+    return:
+      - Matrix3D
+    version: 1.0~
+    desc: 행렬에 크기 조절 변형을 적용.
+    params:
+      - name: sx
+        type:
+          - Number
+        desc: scaleX
+      - name: sy
+        type:
+          - Number
+        desc: scaleX
+      - name: sz
+        type:
+          - Number
+        desc: scaleZ
+
+  - name: scaleX
+    return:
+      - Matrix3D
+    version: 1.0~
+    desc: 행렬에 X축 크기 조절 변형을 적용.
+    params:
+      - name: scale
+        type:
+          - Number
+        desc: scaleX
+
+  - name: scaleY
+    return:
+      - Matrix3D
+    version: 1.0~
+    desc: 행렬에 Y축 크기 조절 변형을 적용.
+    params:
+      - name: scale
+        type:
+          - Number
+        desc: scaleY
+
+  - name: scaleZ
+    return:
+      - Matrix3D
+    version: 1.0~
+    desc: 행렬에 Z축 크기 조절 변형을 적용.
+    params:
+      - name: scale
+        type:
+          - Number
+        desc: scaleZ
+
+  - name: rotateX
+    return:
+      - Matrix3D
+    version: 1.0~
+    desc: Matrix3D 객체에 X축 회전 변형을 적용.
+    params:
+      - name: angle
+        type:
+          - Number
+        desc: Degree
+
+  - name: rotateY
+    return:
+      - Matrix3D
+    version: 1.0~
+    desc: Matrix3D 객체에 Y축 회전 변형을 적용.
+    params:
+      - name: angle
+        type:
+          - Number
+        desc: Degree
+
+  - name: rotateZ
+    return:
+      - Matrix3D
+    version: 1.0~
+    desc: Matrix3D 객체에 Z축 회전 변형을 적용.
+    params:
+      - name: angle
+        type:
+          - Number
+        desc: Degree
+
+  - name: translate3d
+    return:
+      - Matrix3D
+    version: 1.0~
+    desc: dx, dy, dz 매개 변수에 지정된 대로 x 및 y 축을 따라 행렬을 평행 이동.
+    params:
+      - name: dx
+        type:
+          - Number
+        desc: x 축을 따라 오른쪽으로 이동할 크기
+      - name: dy
+        type:
+          - Number
+        desc: y 축을 따라 아래쪽으로 이동할 크기
+      - name: dz
+        type:
+          - Number
+        desc: z 축을 따라 아래쪽으로 이동할 크기
+
+  - name: transform3d
+    return:
+      - Object
+    version: 1.0~
+    desc: 'Matrix3D 객체가 나타내는 기하학적 변형을 지정된 점에 적용한 결과를 반환. {x:0, y:0, z:0}'
+    params:
+      - name: point3D
+        type:
+          - Object
+        desc: 'point3D x, y, z를 가지고 있는 Object, {x:0, y:0, z:0}'

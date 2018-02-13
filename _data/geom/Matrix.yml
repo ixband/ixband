@@ -1,0 +1,133 @@
+## contents를 구성하는 data ##
+
+title: Matrix
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - 3x3 변형행렬, 2D Matrix
+
+## Methods
+methods:
+  - name: Matrix
+    return:
+    version:
+    desc: 'Matrix 생성<br>
+          <img src="/assets/images/matrix.jpg" alt="matrix">'
+    params:
+      - name: a
+        type:
+          - Number
+        desc: 크기를 조절하거나 회전할 때 x축의 픽셀 위치에 영향을 주는 값.
+      - name: b
+        type:
+          - Number
+        desc: 회전하거나 기울일 때 y축의 픽셀 위치에 영향을 주는 값.
+      - name: c
+        type:
+          - Number
+        desc: 회전하거나 기울일 때 x축의 픽셀 위치에 영향을 주는 값.
+      - name: d
+        type:
+          - Number
+        desc: 크기를 조절하거나 회전할 때 y축의 픽셀 위치에 영향을 주는 값.
+      - name: tx
+        type:
+          - Number
+        desc: x축을 따라 각 점이 평행 이동할 거리.
+      - name: ty
+        type:
+          - Number
+        desc: y축을 따라 각 점이 평행 이동할 거리.
+
+  - name: concat
+    return:
+      - Matrix
+    version: 1.0~
+    desc: 행렬을 현재 행렬과 연결하여 두 행렬의 기하학적 효과를 효율적으로 결합.
+    params:
+      - name: mtx
+        type:
+          - Matrix
+        desc: 결합할 Matrix 객체
+
+  - name: clone
+    return:
+      - Matrix
+    version: 1.0~
+    desc: 이 행렬의 복제본인 새 Matrix 객체와, 포함된 객체의 동일한 복사본을 함께 반환.<br>
+          ※복사본을 반환 한다는점을 주의하자.
+
+  - name: scale
+    return:
+      - Matrix
+    version: 1.0~
+    desc: 행렬에 크기 조절 변형을 적용. x 축에는 sx가 곱해지고 y 축에는 sy가 곱해짐.
+    params:
+      - name: sx
+        type:
+          - Number
+        desc: scaleX
+      - name: sy
+        type:
+          - Number
+        desc: scaleX
+
+  - name: rotate
+    return:
+      - Matrix
+    version: 1.0~
+    desc: Matrix 객체에 회전 변형을 적용
+    params:
+      - name: angle
+        type:
+          - Number
+        desc: Degree
+
+  - name: skew
+    return:
+      - Matrix
+    version: 1.0~
+    desc: Matrix 객체에 기울이기 또는 시어링 변형을 적용.
+    params:
+      - name: rx
+        type:
+          - Number
+        desc: Degree
+      - name: ry
+        type:
+          - Number
+        desc: Degree
+
+  - name: translate
+    return:
+      - Matrix
+    version: 1.0~
+    desc: dx 및 dy 매개 변수에 지정된 대로 x 및 y 축을 따라 행렬을 평행 이동.
+    params:
+      - name: dx
+        type:
+          - Number
+        desc: x 축을 따라 오른쪽으로 이동할 크기
+      - name: dy
+        type:
+          - Number
+        desc: y 축을 따라 아래쪽으로 이동할 크기
+
+  - name: transform
+    return:
+      - Object
+    version: 1.0~
+    desc: 'Matrix 객체가 나타내는 기하학적 변형을 지정된 점에 적용한 결과를 반환. {x:0, y:0}'
+    params:
+      - name: point
+        type:
+          - Object
+        desc: 'x와 y를 가지고 있는 Object, {x:0, y:0}'
