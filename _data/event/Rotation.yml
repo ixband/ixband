@@ -42,11 +42,11 @@ methods:
           - name: baseAngle
             type:
               - Number
-            desc: progress를 계산할 기준이 되는 각도 설정 (기본값: 0, 9시 방향이 0도, 0 ~ 360)
+            desc: "progress를 계산할 기준이 되는 각도 설정 (기본값: 0, 9시 방향이 0도, 0 ~ 360)"
           - name: radius
             type:
               - Array
-            desc: 호의 x, y축 반지름 설정, (기본값: ['50%', '50%'], px, %단위 지원)
+            desc: "호의 x, y축 반지름 설정, (기본값: ['50%', '50%'], px, %단위 지원)"
 
   - name: degree
     return:
