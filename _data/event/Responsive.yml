@@ -1,0 +1,76 @@
+## contents를 구성하는 data ##
+
+title: Responsive
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - 설정한 사이즈에 따라 window resize이벤트를 통해서 해당 이벤트를 발생시킨다. (IE9~)
+
+## Methods
+methods:
+  - name: Responsive
+    return:
+    version:
+    desc: Responsive 생성
+    params:
+      - name: type
+        type:
+          - String
+        desc: 이벤트 발생시킬 기준
+              ex) 'width' or 'height'
+      - name: positions
+        type:
+          - Array
+        desc: 포지션 데이타 배열, [{min:Number, max:Number, type:String}, ...
+
+  - name: responsiveType
+    return:
+      - String
+    version: 1.0~
+    desc: 현재 해상도의 Type을 반환.
+          positions 데이타 등록시 설정한 type속성 중에 해당하는 값을 반환
+
+  - name: enable
+    return:
+      - Responsive
+    version: 1.0~
+    desc: Responsive 검출 허용 설정
+
+  - name: disable
+    return:
+      - Responsive
+    version: 1.0~
+    desc: Responsive 검출 비허용 설정
+
+  - name: clear
+    return:
+      - Responsive
+    version: 1.0~
+    desc: 이벤트 및 기본설정 삭제
+
+## Events
+events:
+  - procedure: 1
+    type: responsive
+    desc: 해당 size 구간에 진입시 한번 발생
+    properties:
+      - name: responsiveType
+        desc: 현재 해상도의 Type
+#    info:
+    ver: 1.0
+  - procedure: 2
+    type: resize
+    desc: 설정한 'width, height' 의 사이즈가 변경시 계속해서 발생
+    properties:
+      - name: responsiveType
+        desc: 현재 해상도의 Type
+#    info:
+    ver: 1.0
