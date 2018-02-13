@@ -9,7 +9,7 @@ timezone: 'Asia/Seoul'
 
 # URL
 url:
-baseurl: '/ixband'
+baseurl: '/'
 permalink: /:path/
 
 # Conversion
