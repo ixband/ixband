@@ -12,7 +12,7 @@ return: String
 
 ## Descriptions
 description:
-  - '"&lt;" 처럼 변형된 태그 문자열을 "<" 태그로 반환'
+  - '"&amp;lt;" 처럼 변형된 태그 문자열을 "<" 태그로 반환'
 
 ## Methods
 methods:

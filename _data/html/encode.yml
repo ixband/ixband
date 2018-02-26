@@ -12,7 +12,7 @@ return: String
 
 ## Descriptions
 description:
-  - '"<" 처럼 Html 태그를 "&lt;" 처럼 변형된 태그 문자열로 반환'
+  - '"<" 처럼 Html 태그를 "&amp;lt;" 처럼 변형된 태그 문자열로 반환'
 
 ## Methods
 methods:
