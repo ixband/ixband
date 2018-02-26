@@ -1,0 +1,38 @@
+## contents를 구성하는 data ##
+
+title: encode()
+
+## Specification
+type: public method
+support: 0.7
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - '"<" 처럼 Html 태그를 "&lt;" 처럼 변형된 태그 문자열로 반환'
+
+## Methods
+methods:
+  - name: encode
+    return:
+      - String
+    version: 0.7~
+    params:
+      - name: str
+        type:
+          - 'String'
+        desc: 변환할 문자열
+
+## Events
+#events:
+#  - procedure: 1
+#    type:
+#    desc:
+#    properties:
+#      - name:
+#        desc:
+#    info:
+#    ver: 1.0
