@@ -1,0 +1,32 @@
+## contents를 구성하는 data ##
+
+title: goToURL()
+
+## Specification
+type: public method
+support: 0.7
+return: -
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - '해당 URL로 이동.<br>
+    같은 창 이동은 "document.location.href" 로 구현되었고, 나머지는 "window.open( url, urlTarget )" 으로 구현 되었다.'
+
+## Methods
+methods:
+  - name: goToURL
+    return:
+      - void
+    version: 0.7~
+    params:
+      - name: url
+        type:
+          - String
+        desc: 이동할 페이지 url
+      - name: urlTarget
+        type:
+          - String
+        desc: "이동할 페이지 urlTarget (기본값 '_self')"
