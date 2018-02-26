@@ -1,0 +1,17 @@
+## contents를 구성하는 data ##
+
+title: TRANSITION
+
+## Specification
+type: public static const
+support: 1.0
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - CSS transition 속성의 CrossBrowsing 문자열 반환.
+  - Android2.* 버전 등등 에서 크로스브라우징을 위해서 -webkit-transition 이외의 transition 속성을 같이 작성하면 동작하지 않는 문제 때문에 사용한다.
+

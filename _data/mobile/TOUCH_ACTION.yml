@@ -1,0 +1,16 @@
+## contents를 구성하는 data ##
+
+title: TOUCH_ACTION
+
+## Specification
+type: public static const
+support: 1.0
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - CSS touch-action 속성의 CrossBrowsing 문자열 반환.
+
