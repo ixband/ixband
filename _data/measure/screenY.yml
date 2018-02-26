@@ -1,0 +1,22 @@
+## contents를 구성하는 data ##
+
+title: screenY()
+
+## Specification
+type: public method
+support: 0.6
+return: Number
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - Windows 바탕화면에서 브라우저 Y좌표 반환.
+
+## Methods
+methods:
+  - name: screenY
+    return:
+      - Number
+    version: 0.6~

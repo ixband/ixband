@@ -1,0 +1,22 @@
+## contents를 구성하는 data ##
+
+title: screenX()
+
+## Specification
+type: public method
+support: 0.6
+return: Number
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - Windows 바탕화면에서 브라우저 X좌표 반환.
+
+## Methods
+methods:
+  - name: screenX
+    return:
+      - Number
+    version: 0.6~
