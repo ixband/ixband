@@ -1,0 +1,30 @@
+## contents를 구성하는 data ##
+
+title: clone()
+
+## Specification
+type: public method
+support: 0.7
+return: Object
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 순환 참조가 되지 않도록 Object 복사본을 반환.
+  - "v0.7 : Function은 복사되지 않는다.<br>
+    JSON을 이용하여 복사본을 만들기 때문에 JSON이 지원하지 않는 ~IE7 은 json.js가 있어야 한다.<br>
+    v1.0 : JSON을 사용하지 않고 깊은 복사"
+
+## Methods
+methods:
+  - name: clone
+    return:
+      - Object
+    version: 0.7~
+    params:
+      - name: obj
+        type:
+          - Object
+        desc: 대상 Object

@@ -1,0 +1,27 @@
+## contents를 구성하는 data ##
+
+title: length()
+
+## Specification
+type: public method
+support: 1.0
+return: Int
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - Object의 properties 갯수 반환.
+
+## Methods
+methods:
+  - name: length
+    return:
+      - Int
+    version: 1.0~
+    params:
+      - name: obj
+        type:
+          - Object
+        desc: 대상 Object

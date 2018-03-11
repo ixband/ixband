@@ -1,0 +1,29 @@
+## contents를 구성하는 data ##
+
+title: is()
+
+## Specification
+type: public method
+support: 0.7
+return: Boolean
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 해당개체가 Object이면 true 반환.<br>
+    Array는 false
+  - ※ null은 제외 (v1.0)
+
+## Methods
+methods:
+  - name: is
+    return:
+      - Boolean
+    version: 0.7~
+    params:
+      - name: obj
+        type:
+          - Object
+        desc: 대상 Object
