@@ -12,9 +12,13 @@ sitemap: false
         <url>{{ site.baseurl }}{{ page.url | relative_url }}</url>
         <content type="html"><![CDATA[{{ data.description }}]]></content>
         <categories>
-            {% for category in page.categories %}
-            <category> {{ category }} </category>
-            {% endfor %}
+		{% for category in page.categories %}
+			{% if category == 'B' %}
+				<category>$B</category>
+			{% else %}
+				<category>{{ category }}</category>
+			{% endif %}
+		{% endfor %}
         </categories>
         <tags>
             {% for tag in page.tags %}
