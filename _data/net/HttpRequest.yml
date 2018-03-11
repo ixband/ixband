@@ -1,0 +1,107 @@
+## contents를 구성하는 data ##
+
+title: HttpRequest
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - XMLHttpRequest (xml, text기반 통신)<br>
+    로컬서버에서는 비정상작동 할수 있다. 같은 도메인의 데이타 파일만 가져올수 있다.
+
+## Methods
+methods:
+  - name: HttpRequest
+    return:
+    version:
+    desc: HttpRequest 생성
+    params:
+      - name: path
+        type:
+          - String
+        desc: 대상 경로
+      - name: data
+        type:
+          - Object
+        desc: "이벤트핸들러 에서 전달, 'e.data'"
+      - name: method
+        type:
+          - String
+        desc: "'GET' or 'POST', 기본값 'GET'<br>
+              GET 으로 요청시 IE에서 URL길이 2,048자이상은 잘라버리니 주의."
+      - name: charset
+        type:
+          - String
+        desc: "기본값 'UTF-8'(method가 POST 일때만 적용)"
+
+  - name: load
+    return:
+      - HttpRequest
+    version: 1.0~
+    desc: "HttpRequest connect<br>
+           다시 호출할려면 abort시킨후 호출해야한다."
+    params:
+          - name: params
+            type:
+              - String
+            desc: 예)count=100&time=100
+          - name: cache
+            type:
+              - Boolean
+            desc: GET으로 요청할때 캐시가 false면 url에 requestTime을 추가하여 캐시를 방지한다.
+
+  - name: abort
+    return:
+      - HttpRequest
+    version: 1.0~
+    desc: HttpRequest 정지, 이벤트삭제
+
+  - name: upload
+    return:
+      - HttpRequest
+    version: 1.0~
+    desc: "서버에 Stream으로 파일전송<br>
+           다시 호출할려면 abort시킨후 호출해야한다.<br>
+           method설정과 괸계없이 무조건 POST전송"
+    params:
+      - name: data
+        type:
+          - String
+        desc: base64 image data
+
+## Events
+events:
+  - procedure: 1
+    type: progress
+    desc: "리소스 로드와 같은 기본 프로세스의 진행 시점<br>
+           (IE10~, Android2.*~ 지원)"
+    ver: 1.0
+  - procedure: 2
+    type: complete
+    desc: 로드 완료 시점
+    properties:
+      - name: target
+        desc: Event가 발생한 대상
+      - name: xml
+        desc: xhr.responseXML
+      - name: text
+        desc: xhr.responseText
+      - name: status
+        desc: xhr.status
+      - name: statusText
+        desc: xhr.statusText
+      - name: data
+        desc: 최초 설정시 data
+#    info:
+    ver: 1.0
+  - procedure: 2
+    type: error
+    desc: 에러 발생 시점
+    info: complete과 동일
+    ver: 1.0

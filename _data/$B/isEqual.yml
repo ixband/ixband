@@ -12,7 +12,7 @@ return: Boolean
 
 ## Descriptions
 description:
-  - data 비교, Object, Array는 깊은 비교 (type까지 같아야 true)
+  - data 비교, Object, Array는 깊은 비교 (value의 type까지 같아야 true)
 
 ## Methods
 methods:

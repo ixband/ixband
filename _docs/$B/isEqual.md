@@ -9,8 +9,10 @@ tags: []
 
 ### Example
 ```js
-var data1 = {age: '24', name: 'Jene'},
-    data2 = {age: 24, name: 'Jene'};
+var data1 = {age: '24', name: 'Jene', items: [0, 1, 2]},
+    data2 = {age: 24, name: 'Jene', items: [0, 1, 2]},
+    data3 = {age: 24, name: 'Jene', items: [0, 1, 2]};
 
-var isEqual = $B.isEqual( data1, data2 );//false
+$B.isEqual( data1, data2 );//false
+$B.isEqual( data2, data3 );//true
 ```
