@@ -1,7 +1,8 @@
     <footer>
-        <span>Code licensed <a href="https://github.com/blaxk/ixband/blob/master/LICENSE">MIT</a></span>&nbsp;
-        <span>Last Updated : {{ site.time | date_to_rfc822 }}</span>
+        <span>Code licensed <a href="https://github.com/blaxk/ixband/blob/master/LICENSE">MIT</a></span>
     </footer>
+
+	<span>Last Updated : {{ site.static_files | jsonify }}</span>
 
     <script src="{{ site.baseurl }}/assets/js/common.js"></script>
 </body>
