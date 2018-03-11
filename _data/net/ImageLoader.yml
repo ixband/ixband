@@ -1,0 +1,74 @@
+## contents를 구성하는 data ##
+
+title: ImageLoader
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - 이미지 로더
+  - target을 지정하지 않았을때는 el.appendChild(e.img) 이런식으로 화면에 붙인다.<br>
+    img src를 넣을경우 특정 브라우져에서 정상로드시에도 error를 반환할때가 있다.<br>
+    로컬에서 테스트시 ie6,7에서 complete 이벤트가 무한발생한다.
+
+## Methods
+methods:
+  - name: ImageLoader
+    return:
+    version:
+    desc: ImageLoader 생성
+    params:
+      - name: path
+        type:
+          - String
+        desc: 이미지 경로
+      - name: target
+        type:
+          - Image
+        desc: img 타겟, 지정하지 않을때는 null을 설정한다.
+      - name: data
+        type:
+          - Object
+        desc: "이벤트핸들러 에서 전달, 'e.data'"
+
+  - name: load
+    return:
+      - ImageLoader
+    version: 1.0~
+    desc: Load 시작, 다시 호출할려면 unload시킨후 호출.
+
+  - name: unload
+    return:
+      - ImageLoader
+    version: 1.0~
+    desc: Load 취소
+
+## Events
+events:
+  - procedure: 1
+    type: complete
+    desc: 로드 완료 시점
+    properties:
+      - name: target
+        desc: Event가 발생한 대상
+      - name: img
+        desc: Image
+      - name: data
+        desc: 최초 설정시 data
+#    info:
+    ver: 1.0
+  - procedure: 1
+    type: error
+    desc: 에러 발생 시점
+    properties:
+      - name: target
+        desc: Event가 발생한 대상
+      - name: data
+        desc: 최초 설정시 data
+    ver: 1.0

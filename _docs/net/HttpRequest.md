@@ -18,7 +18,7 @@ var ajax = new $B.net.HttpRequest( 'data.php' )
         }).load( 'page=5&id=105' );
 ```
 
-# JS 로드
+**JS 로드**
 ```js
 var ajax = new $B.net.HttpRequest( 'js/test.js' )
         .addListener( 'complete', function (e) {
@@ -26,7 +26,7 @@ var ajax = new $B.net.HttpRequest( 'js/test.js' )
         }).load();
 ```
 
-# progress 이벤트 적용
+**progress 이벤트 적용**
 ```js
 var ajax = new $B.net.HttpRequest( 'js/test.js' );
 
