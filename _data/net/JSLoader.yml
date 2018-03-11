@@ -1,0 +1,65 @@
+## contents를 구성하는 data ##
+
+title: JSLoader
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - JavaScript 파일 로더<br>
+    로컬서버에서는 비정상작동 할수 있다.
+
+## Methods
+methods:
+  - name: JSLoader
+    return:
+    version:
+    desc: JSLoader 생성
+    params:
+      - name: path
+        type:
+          - String
+        desc: 대상 경로
+      - name: data
+        type:
+          - Object
+        desc: "이벤트핸들러 에서 전달, 'e.data'"
+
+  - name: load
+    return:
+      - JSLoader
+    version: 1.0~
+    desc: Load 시작, 로드가 진행중이면 unload시킨후 로드해야 한다. 로드완료후 호출 불가능.
+
+  - name: unload
+    return:
+      - JSLoader
+    version: 1.0~
+    desc: Load 취소, Load가 완료된 후에는 unload되지 않는다.
+
+  - name: complete
+    return:
+      - Boolean
+    version: 1.0~
+    desc: 로드여부 반환
+
+## Events
+events:
+  - procedure: 1
+    type: complete
+    desc: 로드 완료 시점
+    properties:
+      - name: target
+        desc: Event가 발생한 대상
+      - name: script
+        desc: Javascript text
+      - name: data
+        desc: 최초 설정시 data
+#    info:
+    ver: 1.0
