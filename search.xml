@@ -9,7 +9,7 @@ sitemap: false
 	{% assign data=site.data[page.category][page.title] %}
     <entry>
         <title><![CDATA[{{ data.title }}]]></title>
-        <url>{{ page.url | relative_url }}</url>
+        <url>{{ site.baseurl }}{{ page.url | relative_url }}</url>
         <content type="html"><![CDATA[{{ data.description }}]]></content>
         <categories>
             {% for category in page.categories %}
