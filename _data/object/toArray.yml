@@ -19,7 +19,7 @@ methods:
   - name: toArray
     return:
       - Array
-    version: 1.0~
+    version: 0.7~
     params:
       - name: obj
         type:
