@@ -9,5 +9,5 @@ tags: []
 
 ### Example
 ```js
-var touchAction = $B.ua.TOUCH_ACTION; //msTouchAction
+var touchAction = $B.mobile.TOUCH_ACTION; //msTouchAction
 ```
