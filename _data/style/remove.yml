@@ -1,0 +1,31 @@
+## contents를 구성하는 data ##
+
+title: remove()
+
+## Specification
+type: public method
+support: 1.0
+return: '-'
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - Style Property 삭제.
+
+## Methods
+methods:
+  - name: remove
+    return:
+      - Object
+    version: 1.0~
+    params:
+      - name: el
+        type:
+          - Element
+        desc: 대상 개체
+      - name: property
+        type:
+          - String
+        desc: '삭제할 style property, "z-index" 표기법'

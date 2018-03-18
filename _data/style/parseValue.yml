@@ -1,0 +1,28 @@
+## contents를 구성하는 data ##
+
+title: parseValue()
+
+## Specification
+type: public method
+support: 0.6
+return: Object
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - '문자열로 된 Style Properties Value를 파싱해서 반환.<br>
+     {value, unit} 형식으로 파싱'
+
+## Methods
+methods:
+  - name: parseValue
+    return:
+      - Object
+    version: 0.6~
+    params:
+      - name: str
+        type:
+          - String
+        desc: 대상 문자열
