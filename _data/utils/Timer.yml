@@ -1,0 +1,77 @@
+## contents를 구성하는 data ##
+
+title: Timer
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - 지정된 시간 시퀀스에 따라 코드를 실행할 수 있다.
+
+## Methods
+methods:
+  - name: Timer
+    return:
+    version:
+    desc: Timer 생성
+    params:
+      - name: delayTime
+        type:
+          - Number
+        desc: 1000/1초
+      - name: repeatCount
+        type:
+          - Int
+        desc: 반복횟수, 0은 무한반복
+      - name: data
+        type:
+          - '*'
+        desc: 핸들러에서 전달받을 e.data
+
+  - name: start
+    return:
+      - Timer
+    version: 1.0~
+    desc: Timer 시작, 이미 실행중이면 다시 시작하지 않는다.
+
+  - name: stop
+    return:
+      - Timer
+    version: 1.0~
+    desc: Timer 정지, currentCount는 재설정 하지 않는다.
+
+  - name: reset
+    return:
+      - Timer
+    version: 1.0~
+    desc: Stop후 currentCount = 0
+
+  - name: running
+    return:
+      - Boolean
+    version: 1.0~
+    desc: 타이머가 실행 중이면 true반환.
+
+## Events
+events:
+  - procedure: 1
+    type: timer
+    desc: 지정한 시간 (delayTime) 마다 호출
+    properties:
+      - name: currentCount
+        desc: 현재 반복 횟수
+      - name: data
+        desc: 설정했던 data
+#    info:
+    ver: 1.0
+  - procedure: 2
+    type: complete
+    desc: 지정한 repeatCount 횟수 만큼 실행이 끝나면 호출
+    info: timer 와 동일
+    ver: 1.0

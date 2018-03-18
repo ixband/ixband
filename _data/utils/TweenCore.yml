@@ -1,0 +1,169 @@
+## contents를 구성하는 data ##
+
+title: TweenCore
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - TweenCore
+
+## Methods
+methods:
+  - name: TweenCore
+    return:
+    version:
+    desc: TweenCore 생성
+    params:
+      - name: duration
+        type:
+          - Number
+        desc: 지속시간, 초
+      - name: begin
+        type:
+          - Number
+        desc: 출발값
+      - name: finish
+        type:
+          - Number
+        desc: 도착값
+      - name: option
+        type:
+          - Object
+        props:
+          - name: ease
+            type:
+              - Function
+            desc: $B.utils.ease 설정 (기본값 "quadOut")
+      - name: data
+        type:
+          - '*'
+        desc: 핸들러에서 전달받을 e.data
+
+  - name: delay
+    return:
+      - TweenCore
+    version: 1.0~
+    desc: 해당 초만큼 지연시킨후 다음 Method실행, 한명령줄에 하나의 delay만 사용한다.
+    params:
+      - name: time
+        type:
+          - Number
+        desc: 초단위, 예) 0.5초
+      - name: callback
+        type:
+          - Function
+        desc: delay가 끝나는 호출
+
+  - name: start
+    return:
+      - TweenCore
+    version: 1.0~
+    desc: TweenCore 리셋후 시작.
+
+  - name: stop
+    return:
+      - TweenCore
+    version: 1.0~
+    desc: TweenCore 정지.
+
+  - name: reset
+    return:
+      - TweenCore
+    version: 1.0~
+    desc: TweenCore 정지후 0.
+
+  - name: seek
+    return:
+      - TweenCore
+    version: 1.0~
+    desc: 해당탐색 구간으로 Tween.
+    params:
+      - name: progress
+        type:
+          - Number
+        desc: 0 ~ 1
+
+  - name: seekTo
+    return:
+      - TweenCore
+    version: 1.0~
+    desc: 해당탐색 구간으로 즉시 이동.
+    params:
+      - name: progress
+        type:
+          - Number
+        desc: 0 ~ 1
+
+  - name: toggle
+    return:
+      - TweenCore
+    version: 1.0~
+    desc: progress가 0이면 1, 1이면 0으로 Tween.
+
+  - name: value
+    return:
+      - TweenCore
+    version: 1.0~
+    desc: value 재설정
+    params:
+      - name: begin
+        type:
+          - Number
+        desc: 출발값
+      - name: finish
+        type:
+          - Number
+        desc: 도착값
+      - name: data
+        type:
+          - '*'
+        desc: 핸들러에서 전달받을 e.data
+
+  - name: fps
+    return:
+      - TweenCore
+    version: 1.0~
+    desc: FPS (초당 프레임) 설정.
+    params:
+      - name: frame
+        type:
+          - Int
+        desc: '기본 fps PC : 60, Mobile : 30'
+
+## Events
+events:
+  - procedure: 1
+    type: tween
+    desc: Tweener동작이 멈출때까지 계속 발생
+    properties:
+      - name: currentValue
+        desc: 현재값
+      - name: progress
+        desc: 진행률
+      - name: percent
+        desc: begin, finish 설정대비 비율
+      - name: currentCount
+        desc: 현재 호출된 횟수
+      - name: totalCount
+        desc: 전체 호출될 횟수
+      - name: data
+        desc: 설정했던 data
+#    info:
+    ver: 1.0
+  - procedure: 2
+    type: complete
+    desc: Tweener가 완료시 발생
+    info: tween 와 동일
+    ver: 1.0
+  - procedure: 2
+    type: seekcomplete
+    desc: seek(), seekTo()로 Tween시킨후 완료시 발생
+    info: tween 와 동일
+    ver: 1.0
