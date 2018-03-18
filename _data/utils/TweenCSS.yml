@@ -1,0 +1,186 @@
+## contents를 구성하는 data ##
+
+title: TweenCSS
+
+## Specification
+type: Constructor
+support: 1.0
+#return:
+extend:
+  label: $B.Class
+  path: /$B/Class/
+
+## Descriptions
+description:
+  - CSS를 반복적으로 조작하여 대상의 부드러운 움직임을 줄때 사용한다.
+  - IE7에서 left나 top처럼 좌표를 이동 시키려 하는데, 동작하지 않을시 대상에 position을 설정하면 된다.<br>
+    scrollLeft, scrollTop 지원.
+
+## Methods
+methods:
+  - name: TweenCSS
+    return:
+    version:
+    desc: TweenCSS 생성
+    params:
+      - name: target
+        type:
+          - Selector
+          - Element
+          - jQuery
+        desc: 대상개체<br>
+              ※대상 개체는 단일 개체
+      - name: duration
+        type:
+          - Number
+        desc: 지속시간, 초
+      - name: begin_props
+        type:
+          - String
+        desc: 출발값들, null을 설정하면 대상의 스타일 속성을 검색(해당스타일 속성이 없으면 에러)
+      - name: finish_props
+        type:
+          - String
+        desc: 도착값들
+      - name: option
+        type:
+          - Object
+        props:
+          - name: ease
+            type:
+              - Function
+            desc: $B.utils.ease 설정 (기본값 "quadOut")
+      - name: data
+        type:
+          - '*'
+        desc: 핸들러에서 전달받을 e.data
+
+  - name: delay
+    return:
+      - TweenCSS
+    version: 1.0~
+    desc: 해당 초만큼 지연시킨후 다음 Method실행, 한명령줄에 하나의 delay만 사용한다.
+    params:
+      - name: time
+        type:
+          - Number
+        desc: 초단위, 예) 0.5초
+      - name: callback
+        type:
+          - Function
+        desc: delay가 끝나는 호출
+
+  - name: start
+    return:
+      - TweenCSS
+    version: 1.0~
+    desc: TweenCSS 리셋후 시작.
+
+  - name: stop
+    return:
+      - TweenCSS
+    version: 1.0~
+    desc: TweenCSS 정지.
+
+  - name: reset
+    return:
+      - TweenCSS
+    version: 1.0~
+    desc: TweenCSS 정지후 0.
+
+  - name: seek
+    return:
+      - TweenCSS
+    version: 1.0~
+    desc: 해당탐색 구간으로 Tween.
+    params:
+      - name: progress
+        type:
+          - Number
+        desc: 0 ~ 1
+
+  - name: seekTo
+    return:
+      - TweenCSS
+    version: 1.0~
+    desc: 해당탐색 구간으로 즉시 이동.
+    params:
+      - name: progress
+        type:
+          - Number
+        desc: 0 ~ 1
+
+  - name: toggle
+    return:
+      - TweenCSS
+    version: 1.0~
+    desc: progress가 0이면 1, 1이면 0으로 Tween.
+
+  - name: addProp
+    return:
+      - TweenCSS
+    version: 1.0~
+    desc: "스타일 속성들 추가. 예)'width: 100px; z-index: 3;'"
+    params:
+      - name: begin_props
+        type:
+          - String
+        desc: '출발 CSS문자열, 예) "left:10px; top:20px",<br>
+               null을 설정하면 대상개체의 현재스타일 속성을 검색(해당스타일 속성이 없으면 에러)'
+      - name: finish_props
+        type:
+          - String
+        desc: '도착 CSS문자열, 예) "left:200px; top:200px"'
+
+  - name: removeProp
+    return:
+      - TweenCSS
+    version: 1.0~
+    desc: 스타일 속성들 삭제
+    params:
+      - name: propName
+        type:
+          - String
+        desc: "삭제할 CSS속성명, 'z-index' 표기법 사용"
+
+  - name: fps
+    return:
+      - TweenCSS
+    version: 1.0~
+    desc: FPS (초당 프레임) 설정.
+    params:
+      - name: frame
+        type:
+          - Int
+        desc: '기본 fps PC : 60, Mobile : 30'
+
+## Events
+events:
+  - procedure: 1
+    type: tween
+    desc: Tweener동작이 멈출때까지 계속 발생
+    properties:
+      - name: currentValue
+        desc: 현재값
+      - name: progress
+        desc: 진행률
+      - name: percent
+        desc: begin, finish 설정대비 비율
+      - name: currentCount
+        desc: 현재 호출된 횟수
+      - name: totalCount
+        desc: 전체 호출될 횟수
+      - name: data
+        desc: 설정했던 data
+#    info:
+    ver: 1.0
+  - procedure: 2
+    type: complete
+    desc: Tweener가 완료시 발생
+    info: tween 와 동일
+    ver: 1.0
+  - procedure: 2
+    type: seekcomplete
+    desc: seek(), seekTo()로 Tween시킨후 완료시 발생
+    info: tween 와 동일
+    ver: 1.0
