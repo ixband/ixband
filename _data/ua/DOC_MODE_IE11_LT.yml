@@ -1,0 +1,12 @@
+## contents를 구성하는 data ##
+
+title: DOC_MODE_IE11_LT
+
+## Specification
+type: public static const
+support: 0.6
+return: Boolean
+
+## Descriptions
+description:
+  - IE 브라우저이면서 문서모드가 IE 11미만 이면 true 반환.

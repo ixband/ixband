@@ -1,0 +1,13 @@
+## contents를 구성하는 data ##
+
+title: ANDROID
+
+## Specification
+type: public static const
+support: 0.6
+return: Boolean
+
+## Descriptions
+description:
+  - Android 디바이스면 true를 반환.<br>
+    OS가 Android기반이면 Tablet과 SmartPhone모두 true를 반환.

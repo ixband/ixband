@@ -3,7 +3,7 @@
 title: VERSION
 
 ## Specification
-type: public method
+type: public static const
 support: 0.6
 return: String
 #extend:

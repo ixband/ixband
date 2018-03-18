@@ -1,0 +1,13 @@
+## contents를 구성하는 data ##
+
+title: ANDROID_TABLET
+
+## Specification
+type: public static const
+support: 0.6
+return: Boolean
+
+## Descriptions
+description:
+  - Android OS Tablet이면 true 반환.<br>
+    갤럭시노트 시리즈 같은 Phablet은 false를 반환, 하지만 갤럭시노트8.0 같은 7인치 이상 Tablet은 true 반환.

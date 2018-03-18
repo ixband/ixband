@@ -1,0 +1,13 @@
+## contents를 구성하는 data ##
+
+title: DOC_MODE
+
+## Specification
+type: public static const
+support: 0.6
+return: Int
+
+## Descriptions
+description:
+  - IE 브라우저이면서 문서모드기준 IE버전을 Int로 반환.<br>
+    IE8부터 지원한다. ~IE7 이하 버전 브라우저에서는 0을 반환.

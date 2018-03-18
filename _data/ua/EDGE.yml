@@ -1,0 +1,12 @@
+## contents를 구성하는 data ##
+
+title: DOC_MODE_IE12_LT
+
+## Specification
+type: public static const
+support: 0.7
+return: Boolean
+
+## Descriptions
+description:
+  - Microsoft 의 Edge 브라우저 이면 true 반환.

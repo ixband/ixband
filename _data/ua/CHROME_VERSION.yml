@@ -1,0 +1,12 @@
+## contents를 구성하는 data ##
+
+title: CHROME_VERSION
+
+## Specification
+type: public static const
+support: 1.0
+return: String
+
+## Descriptions
+description:
+  - Chrome 기반 브라우저의 Chrome버전 반환.
