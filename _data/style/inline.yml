@@ -1,0 +1,44 @@
+## contents를 구성하는 data ##
+
+title: inline()
+
+## Specification
+type: public method
+support: 0.6
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 대상 개체의 인라인스타일을 설정하거나 반환.<br>
+    대상개체의 기존 cssText + value 로 설정된다.
+
+## Methods
+methods:
+  - name: inline
+    desc: 대상 개체의 인라인스타일 설정.
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: el
+        type:
+          - Element
+        desc: 대상 개체
+      - name: value
+        type:
+          - String
+        desc: '"width:100px; z-index:2" 표기법'
+
+  - name: inline
+    desc: 대상 개체의 cssText반환.
+    return:
+      - String
+    version: 0.6~
+    params:
+      - name: el
+        type:
+          - Element
+        desc: 대상 개체
