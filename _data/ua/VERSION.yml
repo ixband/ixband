@@ -1,0 +1,14 @@
+## contents를 구성하는 data ##
+
+title: VERSION
+
+## Specification
+type: public static const
+support: 0.7
+return: String
+
+## Descriptions
+description:
+  - 각 브라우저별 버전을 반환.<br>
+    반환 타입이 숫자가 아니고 문자열이니 주의하자.<br>
+    IE의 경우 8~는 DOC_MODE를 참조한다.

@@ -1,0 +1,13 @@
+## contents를 구성하는 data ##
+
+title: IE8_LT
+
+## Specification
+type: public static const
+support: 0.6
+return: Boolean
+
+## Descriptions
+description:
+  - IE 브라우저 이면서, 브라우저 모드 IE8미만 이면 true 반환, (~7버전)<br>
+    문서모드와 별계

@@ -1,0 +1,12 @@
+## contents를 구성하는 data ##
+
+title: IE_COMPATIBLE
+
+## Specification
+type: public static const
+support: 0.7
+return: Boolean
+
+## Descriptions
+description:
+  - IE 브라우저면서, 호환성모드 이면 true 반환.

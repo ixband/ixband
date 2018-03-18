@@ -1,0 +1,15 @@
+## contents를 구성하는 data ##
+
+title: OS_VERSION
+
+## Specification
+type: public static const
+support: 0.8
+return: String
+
+## Descriptions
+description:
+  - Operation System Version 반환.<br>
+    Windows, iOS, OSX, Android 지원<br>
+    반환 타입이 숫자가 아니고 문자열이니 주의하자
+  - '<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724832(v=vs.85).aspx" target="_blank">Windows OS 버전정보 안내</a>'

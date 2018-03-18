@@ -1,0 +1,16 @@
+## contents를 구성하는 data ##
+
+title: TABLET
+
+## Specification
+type: public static const
+support: 0.6
+return: Boolean
+
+## Descriptions
+description:
+  - Tablet Device면 true 반환.<br>
+    iPad, Windows Tablet, Android Tablet 이면 true 반환.<br>
+    갤럭시노트 시리즈 같은 Phablet은 false를 반환, 하지만 갤럭시노트8.0 같은 7인치 이상 Tablet은 true 반환.<br>
+    Windows OS에서는 터치가 되는 노트북도 Tablet으로 분류 되기 때문에 사용시 주의가 필요.<br>
+    Edge 브라우저에서는 제대로 인식되지 않는다.<br>

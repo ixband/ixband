@@ -1,0 +1,12 @@
+## contents를 구성하는 data ##
+
+title: MOBILE_IOS
+
+## Specification
+type: public static const
+support: 0.6
+return: Boolean
+
+## Descriptions
+description:
+  - iPhone, iPad, iPod 디바이스면 true 반환.

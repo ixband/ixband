@@ -1,0 +1,14 @@
+## contents를 구성하는 data ##
+
+title: WINDOWS_TABLET
+
+## Specification
+type: public static const
+support: 0.8
+return: Boolean
+
+## Descriptions
+description:
+  - Windows OS Tablet이면 true 반환.<br>
+    Windows OS에서는 터치가 되는 노트북도 Tablet으로 분류 되기 때문에 사용시 주의가 필요.<br>
+    Edge 브라우저에서는 제대로 인식되지 않는다.

@@ -1,0 +1,13 @@
+## contents를 구성하는 data ##
+
+title: MAC
+
+## Specification
+type: public static const
+support: 0.6
+return: Boolean
+
+## Descriptions
+description:
+  - Mac OS면 true 반환.<br>
+    Mac Xcode Simulator 도 Mac에서 돌아가기 때문에 true를 반환.

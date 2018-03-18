@@ -1,0 +1,13 @@
+## contents를 구성하는 data ##
+
+title: SAFARI
+
+## Specification
+type: public static const
+support: 0.6
+return: Boolean
+
+## Descriptions
+description:
+  - 순수 Safari 브라우저면 true 반환.<br>
+    safari 기반 브라우저는 제외된다.

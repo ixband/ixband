@@ -1,0 +1,13 @@
+## contents를 구성하는 data ##
+
+title: SAMSUNG
+
+## Specification
+type: public static const
+support: 1.0
+return: Boolean
+
+## Descriptions
+description:
+  - 안드로이드 삼성 브라우저면 true 반환.<br>
+    안드로이드 앱스토어의 정식 등록된 Samsung Browser 가 아닌 갤럭시S3 의 Samsung Browser는 인식되지 않는다.

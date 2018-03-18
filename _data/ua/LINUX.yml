@@ -1,0 +1,13 @@
+## contents를 구성하는 data ##
+
+title: LINUX
+
+## Specification
+type: public static const
+support: 0.6
+return: Boolean
+
+## Descriptions
+description:
+  - Linux OS면 true 반환.<br>
+    Android도 Linux기반 이라서 True를 반환한다.

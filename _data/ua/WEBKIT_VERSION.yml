@@ -1,0 +1,12 @@
+## contents를 구성하는 data ##
+
+title: WEBKIT_VERSION
+
+## Specification
+type: public static const
+support: 1.0
+return: String
+
+## Descriptions
+description:
+  - webkit 기반 브라우저 버전 반환.

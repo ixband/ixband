@@ -1,0 +1,12 @@
+## contents를 구성하는 data ##
+
+title: WINDOWS_PHONE
+
+## Specification
+type: public static const
+support: 0.8
+return: Boolean
+
+## Descriptions
+description:
+  - 디바이스가 윈도우즈폰이면 true 반환.

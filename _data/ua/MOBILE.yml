@@ -1,0 +1,13 @@
+## contents를 구성하는 data ##
+
+title: MOBILE
+
+## Specification
+type: public static const
+support: 0.6
+return: Boolean
+
+## Descriptions
+description:
+  - 해당 디바이스 navigator.userAgent 에 Mobile 이라는 단어가 포함되어 있으면 true 반환.<br>
+    일반적인 모바일 디바이스에서는 true를 반환하나, Android 태블릿은 false를 반환한다.

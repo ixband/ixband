@@ -1,0 +1,15 @@
+## contents를 구성하는 data ##
+
+title: IE_VERSION
+
+## Specification
+type: public static const
+support: 0.6
+return: Int
+
+## Descriptions
+description:
+  - IE 브라우저 버전을 반환, IE브라우저 버전이 없을때 0을 반환.<br>
+    문서모드와 별계<br>
+    IE11부터는 지원하지 않는다. (0 반환)
+  - 문서모드 (.DOC_MODE) 관련 Properties 사용 권장.

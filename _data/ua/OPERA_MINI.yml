@@ -1,0 +1,14 @@
+## contents를 구성하는 data ##
+
+title: OPERA_MINI
+
+## Specification
+type: public static const
+support: 1.0
+return: Boolean
+
+## Descriptions
+description:
+  - Opera Mini 브라우저면 true 반환.<br>
+  - ※ v32 즈음해서 은근슬쩍 Opera와 통합되면서 OPERA로 인식된다.<br>
+    그러면서 Opera Mini의 이슈들도 사라진것 같다.

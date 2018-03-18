@@ -1,0 +1,13 @@
+## contents를 구성하는 data ##
+
+title: TOUCH_DEVICE
+
+## Specification
+type: public static const
+support: 0.6
+return: Boolean
+
+## Descriptions
+description:
+  - 해당 디바이스가 터치 디바이스면 true 반환.<br>
+    Windows 8 터치 디바이스 지원.
