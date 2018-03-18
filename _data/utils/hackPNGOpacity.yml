@@ -1,0 +1,38 @@
+## contents를 구성하는 data ##
+
+title: cookie()
+
+## Specification
+type: public method
+support: 0.6
+return: '-'
+
+## Descriptions
+description:
+  - IE7~8 PNG Opacity 버그 문제를 해결해 주는 핵.
+  - img와 background-img에 적용가능, IE9부터는 동작하지 않게 분기되어 있다.<br>
+    background가 적용되어있으면 적용하지 않아도 된다.
+
+  - "<b>버그핵이 정상적으로 반영되기 위한조건</b><br>
+    1. 투명 PNG이미지는 반드시 Node에 싸서 Node에 Opacity를 줘야 한다.<br>
+    2. ie8에서 이미지에 position을 주면 안된다.<br>
+    3. ie8에서 filter상속 부분때문에.. 자식들에게 filter: inherit를 써준다.<br>
+    4. ie7에서 자식들에게 필터 상속을 하려면 부모의 positon을 꼭 써줘야 한다."
+
+## Methods
+methods:
+  - name: hackPNGOpacity
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: target
+        type:
+          - Element
+          - Selector
+          - Array
+        desc: 단일대상, 다중대상 img태그.
+      - name: overlay
+        type:
+          - Boolean
+        desc: 기본값 true, false설정시 그림자가 진해지는 현상은 제거할수 있으나 이미지에 따라 제대로 핵이 안될수도 있다.

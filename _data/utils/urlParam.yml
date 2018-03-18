@@ -1,0 +1,37 @@
+## contents를 구성하는 data ##
+
+title: urlParam()
+
+## Specification
+type: public method
+support: 1.0
+return: '*'
+
+## Descriptions
+description:
+  - url의 parameter 의 값을 반환하거나, object를 조합하여 url parameter string으로 반환
+
+## Methods
+methods:
+  - name: urlParam
+    desc: 설정한 이름의 param value를 반환.
+    return:
+      - void
+    version: 1.0~
+    params:
+      - name: prop
+        type:
+          - String
+        desc: "설정하지 않으면 전체 param을 Object로 반환한다.<br>
+              ex) {name: 'test', page: 2}"
+
+  - name: urlParam
+    desc: object를 조합하여 url parameter string으로 반환.
+    return:
+      - String
+    version: 1.0~
+    params:
+      - name: values
+        type:
+          - Object
+        desc: url parameter 으로 변환할 object
