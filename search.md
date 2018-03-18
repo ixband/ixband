@@ -3,8 +3,7 @@ layout: search
 title: Search result
 ---
 
-{{ page.title }}
----
+<h1>{{ page.title }}</h1>
 
 <div class="result">
     <ul>

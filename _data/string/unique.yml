@@ -1,0 +1,23 @@
+## contents를 구성하는 data ##
+
+title: unique()
+
+## Specification
+type: public method
+support: 1.0
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 16자의 unique한 문자열 반환.<br>
+    해당 화면에서 절대 유일값, alphabet + int 조합
+
+## Methods
+methods:
+  - name: unique
+    return:
+      - String
+    version: 1.0~

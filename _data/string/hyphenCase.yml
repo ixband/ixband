@@ -1,0 +1,27 @@
+## contents를 구성하는 data ##
+
+title: hyphenCase()
+
+## Specification
+type: public method
+support: 0.7.3
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 카멜표기접을 하이픈표기법으로 변환하여 반환.
+
+## Methods
+methods:
+  - name: hyphenCase
+    return:
+      - String
+    version: 0.7.3~
+    params:
+      - name: str
+        type:
+          - String
+        desc: 대상 문자열

@@ -1,0 +1,28 @@
+## contents를 구성하는 data ##
+
+title: numberFormat()
+
+## Specification
+type: public method
+support: 0.6
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 문자열(수치)을 3자리 숫자 단위표기법으로 반환.
+
+## Methods
+methods:
+  - name: numberFormat
+    return:
+      - String
+    version: 0.6~
+    params:
+      - name: str
+        type:
+          - String
+          - Number
+        desc: 대상 문자열 or 숫자

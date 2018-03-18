@@ -1,0 +1,28 @@
+## contents를 구성하는 data ##
+
+title: trim()
+
+## Specification
+type: public method
+support: 0.6
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - '문자열의 앞뒤 white space 제거 후 반환.<br>
+     white space ( 탭, 띄어쓰기, \n, \r )'
+
+## Methods
+methods:
+  - name: trim
+    return:
+      - String
+    version: 0.6~
+    params:
+      - name: str
+        type:
+          - String
+        desc: 대상 문자열

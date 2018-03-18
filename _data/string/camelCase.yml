@@ -1,0 +1,27 @@
+## contents를 구성하는 data ##
+
+title: camelCase()
+
+## Specification
+type: public method
+support: 0.6
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 하이픈표기법을 카멜표기법으로 변환하여 반환.
+
+## Methods
+methods:
+  - name: camelCase
+    return:
+      - String
+    version: 0.6~
+    params:
+      - name: str
+        type:
+          - String
+        desc: 대상 문자열

@@ -1,0 +1,27 @@
+## contents를 구성하는 data ##
+
+title: removeTags()
+
+## Specification
+type: public method
+support: 0.6
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 대상 문자열에서 html태그를 모두 제거하여 반환.
+
+## Methods
+methods:
+  - name: removeTags
+    return:
+      - String
+    version: 0.6~
+    params:
+      - name: str
+        type:
+          - String
+        desc: 대상 문자열

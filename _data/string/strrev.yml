@@ -1,0 +1,27 @@
+## contents를 구성하는 data ##
+
+title: strrev()
+
+## Specification
+type: public method
+support: 0.6
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 문자열을 뒤집어 반환.
+
+## Methods
+methods:
+  - name: strrev
+    return:
+      - String
+    version: 0.6~
+    params:
+      - name: str
+        type:
+          - String
+        desc: 대상 문자열

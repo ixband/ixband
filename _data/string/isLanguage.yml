@@ -1,0 +1,31 @@
+## contents를 구성하는 data ##
+
+title: isLanguage()
+
+## Specification
+type: public method
+support: 0.6
+return: Boolean
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 해당문자열에 해당 언어가 포함되어있는지 체크 하여 true or false 반환.
+
+## Methods
+methods:
+  - name: isLanguage
+    return:
+      - Boolean
+    version: 0.6~
+    params:
+      - name: str
+        type:
+          - String
+        desc: 대상 문자열
+      - name: language
+        type:
+          - String
+        desc: '영문(en), 한글(ko), 숫자(number), 특수문자(해당문자입력)'

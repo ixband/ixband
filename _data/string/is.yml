@@ -1,0 +1,27 @@
+## contents를 구성하는 data ##
+
+title: is()
+
+## Specification
+type: public method
+support: 0.6
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 해당개체가 문자열 이면 true 반환.
+
+## Methods
+methods:
+  - name: is
+    return:
+      - String
+    version: 0.6~
+    params:
+      - name: str
+        type:
+          - String
+        desc: 대상 문자열

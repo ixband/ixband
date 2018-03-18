@@ -1,0 +1,36 @@
+## contents를 구성하는 data ##
+
+title: isWholeWord()
+
+## Specification
+type: public method
+support: 0.6
+return: Boolean
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 해당 문자열에 일치하는 완전체 단어가 있는지 검사 하여 true or false 반환.
+
+## Methods
+methods:
+  - name: isWholeWord
+    return:
+      - Boolean
+    version: 0.6~
+    params:
+      - name: str
+        type:
+          - String
+        desc: 대상 문자열
+      - name: findStr
+        type:
+          - String
+          - Array
+        desc: 비교할 String or String Array, 문자열의 앞뒤로 공백이 들어가면 다른 문자열로 인식하여 false반환.
+      - name: flags
+        type:
+          - String
+        desc: '대소문자 구별하지 않으려면 "i", 멀티라인 검색은'

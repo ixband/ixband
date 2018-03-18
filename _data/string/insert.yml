@@ -1,0 +1,41 @@
+## contents를 구성하는 data ##
+
+title: insert()
+
+## Specification
+type: public method
+support: 0.6
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 대상 문자열의 원하는 Index에 문자열을 추가하여 반환.
+  - 반복적용 가능.<br>
+    반복적용시 마지막 index에는 문자가 추가 되지 않는다.
+
+## Methods
+methods:
+  - name: insert
+    return:
+      - String
+    version: 0.6~
+    params:
+      - name: str
+        type:
+          - String
+        desc: 대상 문자열
+      - name: addIndex
+        type:
+          - Int
+        desc: 삽입할 Index
+      - name: direction
+        type:
+          - String
+        desc: 진행될 방향(left, right). 기본값 right
+      - name: repeat
+        type:
+          - Boolean
+        desc: 반복적용 설정. 기본값 false

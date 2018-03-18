@@ -1,0 +1,27 @@
+## contents를 구성하는 data ##
+
+title: convertDataType()
+
+## Specification
+type: public method
+support: 1.0
+return: Boolean, String, Number, Null, Undefined
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 문자열을 각 데이타 타입에 맞춰 변환.
+
+## Methods
+methods:
+  - name: convertDataType
+    return:
+      - String
+    version: 1.0~
+    params:
+      - name: str
+        type:
+          - String
+        desc: 대상 문자열

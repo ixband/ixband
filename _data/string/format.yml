@@ -1,0 +1,36 @@
+## contents를 구성하는 data ##
+
+title: format()
+
+## Specification
+type: public method
+support: 0.6
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 대상 문자열에 특정 문자를 삽입하여 자리수를 맞춰 반환.
+
+## Methods
+methods:
+  - name: format
+    return:
+      - String
+    version: 0.6~
+    params:
+      - name: str
+        type:
+          - String
+          - Number
+        desc: 대상
+      - name: cipher
+        type:
+          - Int
+        desc: 자리수 설정
+      - name: fillStr
+        type:
+          - String
+        desc: 채워질 문자열, 기본 '0'

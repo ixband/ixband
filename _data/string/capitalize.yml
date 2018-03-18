@@ -1,0 +1,27 @@
+## contents를 구성하는 data ##
+
+title: capitalize()
+
+## Specification
+type: public method
+support: 0.6
+return: String
+#extend:
+#  label:
+#  path:
+
+## Descriptions
+description:
+  - 단어의 첫글짜를 대문자로 변환 후 문자열 반환.
+
+## Methods
+methods:
+  - name: capitalize
+    return:
+      - String
+    version: 0.6~
+    params:
+      - name: str
+        type:
+          - String
+        desc: 대상 문자열
