@@ -264,9 +264,9 @@ main {
 
       .category-name:before {
         font-family: "Font Awesome 5 Free";
-        font-size: 1.1em;
+        font-size: 1em;
         font-weight: 900;
-        //content: '\f07b';
+        content: '\f138';
       }
 
       .category-items {
@@ -276,7 +276,7 @@ main {
 
     & > li.active {
       .category-name:before {
-        //content: '\f07c';
+        content: '\f13a';
       }
 
       .category-items {
