@@ -224,6 +224,7 @@ main {
   width: 20%;
   font-size: 1.07em;
   background: #fff;
+  z-index: 100;
     
   @include large {
     .btn-category-close {
@@ -262,7 +263,6 @@ main {
       
     &.open {
       left: 0%;
-      z-index: 100;
     }
   }
   
