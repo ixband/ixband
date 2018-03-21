@@ -236,11 +236,16 @@ main {
     position: fixed;
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    display: none;
+    //display: none;
     top: 0;
-    left: 0;
+    left: -80%;
+    transition: left ease 500ms
+      
+    &.open {
+      left: 0%;
+    }
   }
   
   button {
