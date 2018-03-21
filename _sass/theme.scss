@@ -223,6 +223,7 @@ main {
   float: left;
   width: 20%;
   font-size: 1.07em;
+  background: #fff;
     
   @include large {
     
@@ -234,7 +235,8 @@ main {
 
   @include small {
     position: fixed;
-    overflow: hidden;
+    overflow: auto;
+    float: initial;
     -webkit-overflow-scrolling: touch;
     width: 80%;
     height: 100%;
@@ -243,7 +245,7 @@ main {
     left: -80%;
     transition: left ease 500ms;
       
-    + .open {
+    & .open {
       left: 0%;
     }
   }
