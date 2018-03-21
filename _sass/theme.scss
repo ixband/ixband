@@ -322,11 +322,13 @@ main {
   @include medium {
     width: 80%;
     padding: 20px;
+    border-left: none;
   }
 
   @include small {
     width: 100%;
     padding: 20px;
+    border-left: none;
   }
 
   img {
