@@ -264,9 +264,10 @@ main {
 
       .category-name:before {
         font-family: "Font Awesome 5 Free";
-        font-size: 1em;
+        font-size: 0.7em;
         font-weight: 900;
         content: '\f054';
+        vertical-align: middle;
       }
 
       .category-items {
