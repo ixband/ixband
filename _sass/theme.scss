@@ -192,6 +192,14 @@ header {
     padding: 16px;
     max-width: 100%;
     
+    .logo {
+      float: initial;
+    }
+    
+    .menu-group {
+      float: initial;
+    }
+    
     .btn-category {
       display: block;
       position: absolute;
