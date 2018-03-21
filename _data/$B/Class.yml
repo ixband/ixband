@@ -22,6 +22,8 @@ methods:
     return:
       - Class
     version: 1.0~
+    flags:
+      - static
     params:
       - name: methods
         type:
