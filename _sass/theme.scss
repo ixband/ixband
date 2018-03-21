@@ -226,11 +226,15 @@ main {
   background: #fff;
     
   @include large {
-    
+    .btn-category-close {
+      display: none;
+    }
   }
 
   @include medium {
-    
+    .btn-category-close {
+      display: none;
+    }
   }
 
   @include small {
@@ -244,8 +248,12 @@ main {
     top: 0;
     left: -80%;
     transition: left ease 500ms;
+    
+    .btn-category-close {
+      display: block;
+    }
       
-    & .open {
+    + .open {
       left: 0%;
     }
   }
