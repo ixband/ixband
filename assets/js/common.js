@@ -11,10 +11,12 @@
     
     $( '.btn-category' ).on( 'click', function () {
         $( '#category-area' ).addClass( 'open' );
+        $( 'body' ).css( 'overflow', 'hidden' );
     });
     
     $( '.btn-category-close' ).on( 'click', function () {
         $( '#category-area' ).removeClass( 'open' );
+        $( 'body' ).css( 'overflow', '' );
     });
 
 })( jQuery, ixBand );
