@@ -546,7 +546,7 @@ main {
       
       li {
         float: left;
-        padding: 0 5px;
+        padding: 0 5px 0 0;
         
         &:before {
           content: '| '
@@ -554,7 +554,7 @@ main {
       }
       
       li:first-child {
-        padding: 0 5px 0 0;
+        padding: 0 5px;
         
         &:before {
           content: ''
