@@ -1,3 +1,5 @@
+{% assign data=site.data[page.category][page.title] %}
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -7,7 +9,7 @@
 
     <meta name="title" content="{{ page.title }}|ixBand.js" />
     <meta name="author" content="blaxk"/>
-    <meta name="description" content="{{ page.description || site.description }}"/>
+    <meta name="description" content="{{ page.description || data.description }}"/>
 
     <title>{{ page.title }} | ixBand.js</title>
 
