@@ -20,7 +20,14 @@
     });
     
     $( '.btn-search' ).on( 'click', function () {
-        $( '.menu .search' ).toggleClass( 'open' );
+        var $search = $( '.menu .search' );
+        
+        if ( $search.hasClass('open') ) {
+            $search.removeClass( 'open' );
+        } else {
+            $search.addClass( 'open' );
+            $search.find( 'input' ).focus();
+        }
     });
 
 })( jQuery, ixBand );
