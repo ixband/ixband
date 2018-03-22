@@ -10,3 +10,5 @@ return: Boolean
 ## Descriptions
 description:
   - Firefox 브라우저면 true 반환.
+  - iOS의 경우는 FxiOS라는 버전으로 따로 관리되니 주의하자.<br>
+    (2018.04.22 기준 순수 Firefox버전은 v59.* 이상인 반면 FxiOS는 v10.*)
