@@ -68,39 +68,41 @@
 
 {% if data.events %}
 <h3>Events</h3>
-<table>
-    <thead>
-        <tr>
-            <th>No.</th>
-            <th>type</th>
-            <th>description</th>
-            <th>property</th>
-            <th>ver</th>
-        </tr>
-    </thead>
-    <tbody>
-    {% for event in data.events %}
-        <tr>
-            <td>{{ event.procedure }}</td>
-            <td>{{ event.type }}</td>
-            <td>{{ event.desc }}</td>
-            <td>
-                {% if event.properties %}
-                <ul>
-                    {% for prop in event.properties %}
-                    <li><span class="accent">{{ prop.name }}</span>{% if prop.desc %}: {{ prop.desc }}{% endif %}</li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-                {% if event.info %}
-                <span class="info">{{ event.info }}</span>
-                {% endif %}
-            </td>
-            <td>{{ event.ver }}</td>
-        </tr>
-    {% endfor %}
-    </tbody>
-</table>
+<div class="events">
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>type</th>
+                <th>description</th>
+                <th>property</th>
+                <th>ver</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for event in data.events %}
+            <tr>
+                <td>{{ event.procedure }}</td>
+                <td>{{ event.type }}</td>
+                <td>{{ event.desc }}</td>
+                <td>
+                    {% if event.properties %}
+                    <ul>
+                        {% for prop in event.properties %}
+                        <li><span class="accent">{{ prop.name }}</span>{% if prop.desc %}: {{ prop.desc }}{% endif %}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {% if event.info %}
+                    <span class="info">{{ event.info }}</span>
+                    {% endif %}
+                </td>
+                <td>{{ event.ver }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
 {% endif %}
 
 <div>
