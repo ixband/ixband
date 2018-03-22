@@ -18,5 +18,9 @@
         $( '#category-area' ).removeClass( 'open' );
         $( 'body' ).removeClass( 'open' );
     });
+    
+    $( '.btn-search' ).on( 'click', function () {
+        $( '.menu .search' ).toggleClass( 'open' );
+    });
 
 })( jQuery, ixBand );
