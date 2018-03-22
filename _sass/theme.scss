@@ -143,6 +143,7 @@ header {
     }
     
     .search {
+      display: block;
       border-bottom: #d1c5d8 solid 1px;
       margin: 0 20px;
       
@@ -154,6 +155,10 @@ header {
       
       input::-webkit-input-placeholder {
         color: rgba(255,255,255,0.5);
+      }
+      
+      .btn-search {
+        display: none;
       }
     }
     
@@ -218,6 +223,28 @@ header {
       font-size: 16px;
       margin: 4px 15px;
     }
+    
+    .search {
+      display: none;
+      position: absolute;
+      right: 0;
+      width: 100%;
+      margin-top: 2.4em;
+      background: #51007b;
+      
+      .btn-search {
+        display: block;
+      }
+      
+      i {
+        display: none;
+      }
+      
+      &.open {
+        display: block;
+      }
+    }
+    
   }
 }
 
