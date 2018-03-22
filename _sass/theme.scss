@@ -375,10 +375,14 @@ main {
 		}
 		
 		.categories {
-			overflow-y: scroll;
+			overflow-y: auto;
 			-webkit-overflow-scrolling: touch;
 			height: calc(100% - 1.5em);
-			margin: 1.5em 0 0 1.5em;
+			margin: 1.5em 0 0 2em;
+			
+			li {
+				margin: 1em 0;
+			}
 		}
 	}
 
