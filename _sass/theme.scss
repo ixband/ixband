@@ -77,10 +77,6 @@ a {
     border-color: rgba(255, 255, 255, 0.3);
   }
 
-  + .btn {
-    margin-left: 1rem;
-  }
-
   @include large {
     padding: 0.75rem 1rem;
   }
@@ -111,6 +107,7 @@ header {
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
+  padding: 16px;
   
   &:after {
     content:''; display:block; clear:both;
@@ -181,7 +178,6 @@ header {
   }
 
   @include large {
-    padding: 16px;
     
     .header-wrap {
       max-width: $large-breakpoint;
@@ -194,7 +190,6 @@ header {
   }
 
   @include medium {
-    padding: 16px;
     max-width: 100%;
     
     .btn-category {
@@ -203,7 +198,7 @@ header {
   }
 
   @include small {
-    padding: 16px;
+    padding-bottom: 0;
     max-width: 100%;
     
     .logo {
@@ -230,13 +225,15 @@ header {
       right: 0;
       width: 100%;
       margin-top: 2.4em;
+      margin-right: 0;
       background: #51007b;
+      border: none;
       
       .btn-search {
         display: block;
       }
       
-      i {
+      &>i {
         display: none;
       }
       
