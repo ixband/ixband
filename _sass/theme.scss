@@ -126,7 +126,7 @@ header {
   }
   
   .menu {
-    float: left;
+    display: inline-block;
     
     li {
       float: left;
@@ -141,13 +141,8 @@ header {
         text-decoration: none;
       }
     }
-  }
-  
-  .etc{
-    float: left;
     
     .search {
-      float: left;
       border-bottom: #d1c5d8 solid 1px;
       margin: 0 20px;
       
@@ -163,7 +158,6 @@ header {
     }
     
     .github {
-      float: left;
       margin: 5px 10px;
 
       a {
@@ -179,7 +173,6 @@ header {
         text-decoration: none;
       }
     }
-    
   }
 
   @include large {
