@@ -289,6 +289,7 @@ main {
 		}
 
 		li {
+			position: relative;
 			margin: 6px 0;
 		}
 
@@ -309,6 +310,14 @@ main {
 
 			.category-items {
 				display: none;
+				
+				> li.active {
+					&:after {
+						content: ' *';
+						font-weight: bold;
+						color: $header-bg-color;
+					}
+				}
 			}
 		}
 
