@@ -140,27 +140,19 @@ header {
 		}
 
 		.github {
-			margin: 5px 10px;
-
 			a {
-				color: rgba(255,255,255,0.7);
-
 				i {
 					margin-right: 5px;
 				}
-			}
-
-			a:hover, a.active {
-				color: rgba(255,255,255,1);
-				text-decoration: none;
 			}
 		}
 	}
 
 	.search {
 		display: block;
+		float: left;
 		border-bottom: #d1c5d8 solid 1px;
-		margin: 0 20px !important;
+		margin: 0 20px;
 
 		input {
 			background: transparent;
@@ -177,25 +169,20 @@ header {
 		display: none;
 	}
 
+	.btn-category {
+		display: none;
+	}
+
 
 	@include large {
-
 		.header-wrap {
 			max-width: $large-breakpoint;
 			margin: 0 auto;
-
-			.btn-category {
-				display: none;
-			}
 		}
 	}
 
 	@include medium {
 		max-width: 100%;
-
-		.btn-category {
-			display: none;
-		}
 	}
 
 	@include small {
@@ -230,7 +217,7 @@ header {
 			background: #51007b;
 			border: none;
 
-			&>i {
+			> i {
 				display: none;
 			}
 
