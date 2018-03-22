@@ -310,13 +310,16 @@ main {
 
 			.category-items {
 				display: none;
+				font-weight: normal;
+				margin: 0 0 0 1.3em;
 				
 				> li.active {
-					&:after {
+					&:before {
+						position: absolute;
 						content: ' *';
 						font-weight: bold;
 						color: $header-bg-color;
-						margin-left: 0.2em;
+						left: -12px;
 					}
 				}
 			}
@@ -329,19 +332,6 @@ main {
 
 			.category-items {
 				display: block;
-			}
-		}
-
-		.category-items {
-			font-weight: normal;
-			margin: 0 7px;
-
-			& > li {
-
-			}
-
-			& > li.active {
-
 			}
 		}
 	}
