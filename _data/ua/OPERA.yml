@@ -10,3 +10,4 @@ return: Boolean
 ## Descriptions
 description:
   - 오페라 브라우저면 true 반환.
+  - Opera의 경우 iOS에서는 브라우저를 체크하는게 불가능해 졌다. (Safari와 거의 유사하여 체크 불가능, 2018.04.22 기준)
