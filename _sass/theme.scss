@@ -28,11 +28,11 @@ input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill
 {
-    &, &:hover, &:focus, &:active
-    {
-	    -webkit-box-shadow: 0 0 0px 1000px $header-bg-color inset !important;
-	    -webkit-text-fill-color: #fff !important;
-    }
+	&, &:hover, &:focus, &:active
+	{
+		-webkit-box-shadow: 0 0 0px 1000px $header-bg-color inset !important;
+		-webkit-text-fill-color: #fff !important;
+	}
 }
 
 body {
@@ -238,15 +238,15 @@ header {
 			&.open {
 				display: block;
 			}
-			
+
 			input:-webkit-autofill,
 			textarea:-webkit-autofill,
 			select:-webkit-autofill
 			{
-			    &, &:hover, &:focus, &:active
-			    {
-			      -webkit-box-shadow: 0 0 0px 1000px $header-bg-dark-color inset !important;
-			    }
+				&, &:hover, &:focus, &:active
+				{
+					-webkit-box-shadow: 0 0 0px 1000px $header-bg-dark-color inset !important;
+				}
 			}
 		}
 
@@ -276,7 +276,7 @@ main {
 	font-size: 1.07em;
 	background: #fff;
 	z-index: 100;
-	
+
 	.categories {
 		margin: 40px 0 40px 10px;
 
@@ -312,7 +312,7 @@ main {
 				display: none;
 				font-weight: normal;
 				margin: 0 0 0 1.3em;
-				
+
 				> li.active {
 					&:before {
 						position: absolute;
@@ -321,7 +321,7 @@ main {
 						color: $header-bg-color;
 						left: -12px;
 					}
-					
+
 					a {
 						color: $header-bg-color;
 					}
@@ -350,7 +350,7 @@ main {
 		.btn-category-close {
 			display: none;
 		}
-		
+
 		.categories {
 			margin: 40px 0 40px 20px;
 		}
@@ -381,13 +381,13 @@ main {
 			left: 0%;
 			box-shadow: 10px 0 30px rgba(0,0,0,0.1);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 		}
-		
+
 		.categories {
 			overflow-y: auto;
 			-webkit-overflow-scrolling: touch;
 			height: calc(100% - 1.5em);
 			margin: 1.5em 0 0 2em;
-			
+
 			li {
 				margin: 1em 0;
 			}
@@ -413,7 +413,7 @@ main {
 	& > p {
 		margin-left: 10px;
 	}
-	
+
 	.events {
 		width: 100%;
 		overflow: auto;
