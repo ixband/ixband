@@ -438,7 +438,7 @@ select:-webkit-autofill
 {
     &, &:hover, &:focus, &:active
     {
-      -webkit-box-shadow: 0 0 0px 1000px #51007b inset !important;
-      background: transparent !important;
+      -webkit-box-shadow: 0 0 0px 1000px rgba(0,0,0,0) inset !important;
+      //$header-bg-dark-color
     }
 }
