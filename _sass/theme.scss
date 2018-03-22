@@ -212,13 +212,16 @@ header {
 			position: absolute;
 			right: 0;
 			width: 100%;
-			margin-top: 2.4em;
-			margin-right: 0;
+			margin: 2.4em 0 0 0 !important;
 			background: #51007b;
 			border: none;
 
-			> i {
+			i {
 				display: none;
+			}
+
+			input {
+				width: 90%;
 			}
 
 			&.open {
