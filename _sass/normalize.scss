@@ -432,9 +432,8 @@ ul {
   outline: 0;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  background: transparent !impotent;
+input[type="search"] {
+  -webkit-autofill {
+    background: transparent !impotent;
+  }
 }
