@@ -293,6 +293,7 @@ main {
 		position: fixed;
 		float: initial;
 		width: 80%;
+		height: 100%;
 		top: 0;
 		left: -80%;
 		transition: left ease 500ms, box-shadow ease 500ms;
@@ -318,6 +319,7 @@ main {
 			overflow-y: scroll;
 			-webkit-overflow-scrolling: touch;
 			height: calc(100% - 1.5em);
+			margin: 1.5em 0 0 1.5em;
 		}
 	}
 
