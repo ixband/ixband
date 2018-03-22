@@ -432,8 +432,12 @@ ul {
   outline: 0;
 }
 
-input[type="search"] {
-  -webkit-autofill {
-    background: transparent !important;
-  }
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill
+{
+    &, &:hover, &:focus, &:active
+    {
+        -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    }
 }
