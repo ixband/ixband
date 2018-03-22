@@ -160,7 +160,7 @@ header {
 	.search {
 		display: block;
 		border-bottom: #d1c5d8 solid 1px;
-		margin: 0 20px;
+		margin: 0 20px !important;
 
 		input {
 			background: transparent;
@@ -171,10 +171,10 @@ header {
 		input::-webkit-input-placeholder {
 			color: rgba(255,255,255,0.5);
 		}
+	}
 
-		.btn-search {
-			display: none;
-		}
+	.btn-search {
+		display: none;
 	}
 
 
@@ -230,10 +230,6 @@ header {
 			background: #51007b;
 			border: none;
 
-			.btn-search {
-				display: block;
-			}
-
 			&>i {
 				display: none;
 			}
@@ -241,6 +237,16 @@ header {
 			&.open {
 				display: block;
 			}
+		}
+
+		.btn-search {
+			display: block;
+			position: absolute;
+			right: 0;
+			border: 0;
+			background: transparent;
+			font-size: 16px;
+			margin: 4px 15px;
 		}
 
 	}
