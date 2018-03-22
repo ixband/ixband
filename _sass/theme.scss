@@ -397,6 +397,11 @@ main {
 	& > p {
 		margin-left: 10px;
 	}
+	
+	.events {
+		width: 100%;
+		overflow: auto;
+	}
 
 	@include large {
 		width: 80%;
@@ -539,7 +544,7 @@ main {
 
 	table {
 		width: 100%;
-		overflow: auto;
+		min-width: 600px;
 		word-break: normal;
 		word-break: keep-all; // For Firefox to horizontally scroll wider tables.
 		-webkit-overflow-scrolling: touch;
