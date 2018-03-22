@@ -300,7 +300,7 @@ main {
 		top: 0;
 		left: -80%;
 		transition: left ease 500ms, box-shadow ease 500ms;
-		box-shadow: 0px 0 10px rgba(0,0,0,0);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+		box-shadow: 0px 0 30px rgba(0,0,0,0);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 
 		.btn-category-close {
 			display: block;
@@ -315,7 +315,7 @@ main {
 
 		&.open {
 			left: 0%;
-			box-shadow: 20px 0 10px rgba(0,0,0,0.2);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+			box-shadow: 10px 0 30px rgba(0,0,0,0.1);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 		}
 	}
 
