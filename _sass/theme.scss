@@ -3,681 +3,682 @@
 @import "variables";
 
 @mixin large {
-  @media screen and (min-width: #{$large-breakpoint}) {
-    @content;
-  }
+	@media screen and (min-width: #{$large-breakpoint}) {
+		@content;
+	}
 }
 
 @mixin medium {
-  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
-    @content;
-  }
+	@media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+		@content;
+	}
 }
 
 @mixin small {
-  @media screen and (max-width: #{$medium-breakpoint}) {
-    @content;
-  }
+	@media screen and (max-width: #{$medium-breakpoint}) {
+		@content;
+	}
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  color: $body-text-color;
-  
-  @include large {
-    
-  }
+	padding: 0;
+	margin: 0;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	color: $body-text-color;
 
-  @include medium {
-    
-  }
+	@include large {
 
-  @include small {
-    overflow: initial;
-    
-    &.open {
-      overflow: hidden;
-    }
-  }
+	}
+
+	@include medium {
+
+	}
+
+	@include small {
+		overflow: initial;
+
+		&.open {
+			overflow: hidden;
+		}
+	}
 }
 
 a {
-  color: $body-link-color;
-  text-decoration: none;
+	color: $body-link-color;
+	text-decoration: none;
 
-  &:hover {
-    text-decoration: underline;
-  }
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .btn {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+	display: inline-block;
+	margin-bottom: 1rem;
+	color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.08);
+	border-color: rgba(255, 255, 255, 0.2);
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.3rem;
+	transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
-  &:hover {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
-  }
+	&:hover {
+		color: rgba(255, 255, 255, 0.8);
+		text-decoration: none;
+		background-color: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 255, 255, 0.3);
+	}
 
-  @include large {
-    padding: 0.75rem 1rem;
-  }
+	@include large {
+		padding: 0.75rem 1rem;
+	}
 
-  @include medium {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.9rem;
-  }
+	@include medium {
+		padding: 0.6rem 0.9rem;
+		font-size: 0.9rem;
+	}
 
-  @include small {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 0.9rem;
+	@include small {
+		display: block;
+		width: 100%;
+		padding: 0.75rem;
+		font-size: 0.9rem;
 
-    + .btn {
-      margin-top: 1rem;
-      margin-left: 0;
-    }
-  }
+		+ .btn {
+			margin-top: 1rem;
+			margin-left: 0;
+		}
+	}
 }
 
 .accent {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 header {
-  color: $header-heading-color;
-  text-align: center;
-  background-color: $header-bg-color;
-  padding: 16px;
-  
-  &:after {
-    content:''; display:block; clear:both;
-  }
-  
-  .logo {
-    float: left
-  }
-  
-  .menu-group {
-    float: right;
-    font-size: 1.15em;
-  }
-  
-  .menu {
-    display: inline-block;
-    
-    li {
-      float: left;
-      margin: 5px 10px;
-      
-      a {
-        color: rgba(255,255,255,0.7);
-      }
-      
-      a:hover, a.active {
-        color: rgba(255,255,255,1);
-        text-decoration: none;
-      }
-    }
-    
-    .search {
-      display: block;
-      border-bottom: #d1c5d8 solid 1px;
-      margin: 0 20px;
-      
-      input {
-        background: transparent;
-        border: 0;
-        padding: 5px;
-      }
-      
-      input::-webkit-input-placeholder {
-        color: rgba(255,255,255,0.5);
-      }
-      
-      .btn-search {
-        display: none;
-      }
-    }
-    
-    .github {
-      margin: 5px 10px;
+	color: $header-heading-color;
+	text-align: center;
+	background-color: $header-bg-color;
+	padding: 16px;
 
-      a {
-        color: rgba(255,255,255,0.7);
-        
-        i {
-          margin-right: 5px;
-        }
-      }
+	&:after {
+		content:''; display:block; clear:both;
+	}
 
-      a:hover, a.active {
-        color: rgba(255,255,255,1);
-        text-decoration: none;
-      }
-    }
-  }
+	.logo {
+		float: left
+	}
 
-  @include large {
-    
-    .header-wrap {
-      max-width: $large-breakpoint;
-      margin: 0 auto;
-      
-      .btn-category {
-        display: none;
-      }
-    }
-  }
+	.menu-group {
+		float: right;
+		font-size: 1.15em;
+	}
 
-  @include medium {
-    max-width: 100%;
-    
-    .btn-category {
-      display: none;
-    }
-  }
+	.menu {
+		display: inline-block;
 
-  @include small {
-    padding-bottom: 0;
-    max-width: 100%;
-    
-    .logo {
-      float: initial;
-    }
-    
-    .menu-group {
-      float: initial;
-    }
-    
-    .btn-category {
-      display: block;
-      position: absolute;
-      left: 0;
-      border: 0;
-      background: transparent;
-      font-size: 16px;
-      margin: 4px 15px;
-    }
-    
-    .search {
-      display: none;
-      position: absolute;
-      right: 0;
-      width: 100%;
-      margin-top: 2.4em;
-      margin-right: 0;
-      background: #51007b;
-      border: none;
-      
-      .btn-search {
-        display: block;
-      }
-      
-      &>i {
-        display: none;
-      }
-      
-      &.open {
-        display: block;
-      }
-    }
-    
-  }
+		li {
+			float: left;
+			margin: 5px 10px;
+
+			a {
+				color: rgba(255,255,255,0.7);
+			}
+
+			a:hover, a.active {
+				color: rgba(255,255,255,1);
+				text-decoration: none;
+			}
+		}
+
+		.github {
+			margin: 5px 10px;
+
+			a {
+				color: rgba(255,255,255,0.7);
+
+				i {
+					margin-right: 5px;
+				}
+			}
+
+			a:hover, a.active {
+				color: rgba(255,255,255,1);
+				text-decoration: none;
+			}
+		}
+	}
+
+	.search {
+		display: block;
+		border-bottom: #d1c5d8 solid 1px;
+		margin: 0 20px;
+
+		input {
+			background: transparent;
+			border: 0;
+			padding: 5px;
+		}
+
+		input::-webkit-input-placeholder {
+			color: rgba(255,255,255,0.5);
+		}
+
+		.btn-search {
+			display: none;
+		}
+	}
+
+
+	@include large {
+
+		.header-wrap {
+			max-width: $large-breakpoint;
+			margin: 0 auto;
+
+			.btn-category {
+				display: none;
+			}
+		}
+	}
+
+	@include medium {
+		max-width: 100%;
+
+		.btn-category {
+			display: none;
+		}
+	}
+
+	@include small {
+		padding-bottom: 0;
+		max-width: 100%;
+
+		.logo {
+			float: initial;
+		}
+
+		.menu-group {
+			float: initial;
+		}
+
+		.btn-category {
+			display: block;
+			position: absolute;
+			left: 0;
+			border: 0;
+			background: transparent;
+			font-size: 16px;
+			margin: 4px 15px;
+		}
+
+		.search {
+			display: none;
+			position: absolute;
+			right: 0;
+			width: 100%;
+			margin-top: 2.4em;
+			margin-right: 0;
+			background: #51007b;
+			border: none;
+
+			.btn-search {
+				display: block;
+			}
+
+			&>i {
+				display: none;
+			}
+
+			&.open {
+				display: block;
+			}
+		}
+
+	}
 }
 
 main {
-  max-width: $large-breakpoint;
-  margin:0 auto;
-  
-  &:after{content:''; display:block; clear:both;}
+	max-width: $large-breakpoint;
+	margin:0 auto;
+
+	&:after{content:''; display:block; clear:both;}
 }
 
 #category-area {
-  float: left;
-  width: 20%;
-  font-size: 1.07em;
-  background: #fff;
-  z-index: 100;
-    
-  @include large {
-    .btn-category-close {
-      display: none;
-    }
-  }
+	float: left;
+	width: 20%;
+	font-size: 1.07em;
+	background: #fff;
+	z-index: 100;
 
-  @include medium {
-    .btn-category-close {
-      display: none;
-    }
-  }
+	@include large {
+		.btn-category-close {
+			display: none;
+		}
+	}
 
-  @include small {
-    position: fixed;
-    overflow: auto;
-    float: initial;
-    -webkit-overflow-scrolling: touch;
-    width: 80%;
-    height: 100%;
-    //display: none;
-    top: 0;
-    left: -80%;
-    transition: left ease 500ms;
-    box-shadow: 10px 0 10px rgba(0,0,0,0.1);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
-    
-    .btn-category-close {
-      display: block;
-      position: absolute;
-      top: 1em;
-      right: 1em;
-      
-      i {
-        font-size: 1.5em;
-      }
-    }
-      
-    &.open {
-      left: 0%;
-    }
-  }
-  
-  button {
-    border: 0;
-    background: transparent;
-  }
+	@include medium {
+		.btn-category-close {
+			display: none;
+		}
+	}
 
-  ul.categories {
-    margin: 40px 20px;
-    
-    a {
-      color: $body-text-color;
-    }
+	@include small {
+		position: fixed;
+		overflow: auto;
+		float: initial;
+		-webkit-overflow-scrolling: touch;
+		width: 80%;
+		height: 100%;
+		//display: none;
+		top: 0;
+		left: -80%;
+		transition: left ease 500ms;
+		box-shadow: 10px 0 10px rgba(0,0,0,0.1);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 
-    a:hover {
-      text-decoration: none;
-    }
-    
-    li {
-      margin: 6px 0;
-    }
+		.btn-category-close {
+			display: block;
+			position: absolute;
+			top: 1em;
+			right: 1em;
 
-    & > li {
-      font-weight: bold;
-      
-      .category-name span {
-        margin-left: 5px;
-      }
+			i {
+				font-size: 1.5em;
+			}
+		}
 
-      .category-name:before {
-        font-family: "Font Awesome 5 Free";
-        font-size: 0.7em;
-        font-weight: 900;
-        content: '\f054';
-        vertical-align: middle;
-      }
+		&.open {
+			left: 0%;
+		}
+	}
 
-      .category-items {
-        display: none;
-      }
-    }
+	button {
+		border: 0;
+		background: transparent;
+	}
 
-    & > li.active {
-      .category-name:before {
-        content: '\f078';
-      }
+	ul.categories {
+		margin: 40px 20px;
 
-      .category-items {
-        display: block;
-      }
-    }
+		a {
+			color: $body-text-color;
+		}
 
-    .category-items {
-      font-weight: normal;
-      margin: 0 7px;
-      
-      & > li {
-        
-      }
+		a:hover {
+			text-decoration: none;
+		}
 
-      & > li.active {
-        
-      }
-    }
-  }
+		li {
+			margin: 6px 0;
+		}
+
+		& > li {
+			font-weight: bold;
+
+			.category-name span {
+				margin-left: 5px;
+			}
+
+			.category-name:before {
+				font-family: "Font Awesome 5 Free";
+				font-size: 0.7em;
+				font-weight: 900;
+				content: '\f054';
+				vertical-align: middle;
+			}
+
+			.category-items {
+				display: none;
+			}
+		}
+
+		& > li.active {
+			.category-name:before {
+				content: '\f078';
+			}
+
+			.category-items {
+				display: block;
+			}
+		}
+
+		.category-items {
+			font-weight: normal;
+			margin: 0 7px;
+
+			& > li {
+
+			}
+
+			& > li.active {
+
+			}
+		}
+	}
 
 }
 
 #contents-area {
-  word-wrap: break-word;
-  float:right;
-  width: 100%;
+	word-wrap: break-word;
+	float:right;
+	width: 100%;
 
-  &:first-child {
-    margin-top: 0;
-  }
-  
-  & > p {
-    margin-left: 10px;
-  }
+	&:first-child {
+		margin-top: 0;
+	}
 
-  @include large {
-    width: 80%;
-    padding: 20px 0 0 45px;
-    border-left: $hr-border-color solid 1px;
-  }
+	& > p {
+		margin-left: 10px;
+	}
 
-  @include medium {
-    width: 80%;
-    padding: 20px;
-    border-left: none;
-  }
+	@include large {
+		width: 80%;
+		padding: 20px 0 0 45px;
+		border-left: $hr-border-color solid 1px;
+	}
 
-  @include small {
-    width: 100%;
-    padding: 20px;
-    border-left: none;
-  }
+	@include medium {
+		width: 80%;
+		padding: 20px;
+		border-left: none;
+	}
 
-  img {
-    max-width: 100%;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: normal;
-    color: $section-headings-color;
-  }
-  
-  h3 {
-    font-size: 1.5em;
-    margin: 2.2em 0 0.5em 5px;
-  }
-  
-  h4 {
-    position: relative;
-    margin: 1em 0 0.5em 0;
-    background: $method-h-color;
-    border-radius: 0 5px 0 5px;
-    padding: 6px 16px;
-  }
+	@include small {
+		width: 100%;
+		padding: 20px;
+		border-left: none;
+	}
 
-  p {
-    margin-bottom: 1em;
-  }
+	img {
+		max-width: 100%;
+	}
 
-  code {
-    padding: 2px 4px;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 0.8rem;
-    color: $code-text-color;
-    background-color: $code-bg-color;
-    border-radius: 0.3rem;
-  }
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: normal;
+		color: $section-headings-color;
+	}
 
-  pre {
-    padding: 1.5em 2em;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 0.8rem;
-    color: $code-text-color;
-    word-wrap: normal;
-    background-color: $code-bg-color;
+	h3 {
+		font-size: 1.5em;
+		margin: 2.2em 0 0.5em 5px;
+	}
 
-    > code {
-      padding: 0;
-      margin: 0;
-      color: $code-text-color;
-      word-break: normal;
-      white-space: pre;
-      background: transparent;
-      border: 0;
-    }
-  }
+	h4 {
+		position: relative;
+		margin: 1em 0 0.5em 0;
+		background: $method-h-color;
+		border-radius: 0 5px 0 5px;
+		padding: 6px 16px;
+	}
 
-  .highlight {
-    margin-bottom: 1rem;
+	p {
+		margin-bottom: 1em;
+	}
 
-    pre {
-      margin-bottom: 0;
-      word-break: normal;
-    }
-  }
-  
-  div.highlight {
-    border-radius: 5px;
-    overflow: hidden;
-  }
+	code {
+		padding: 2px 4px;
+		font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+		font-size: 0.8rem;
+		color: $code-text-color;
+		background-color: $code-bg-color;
+		border-radius: 0.3rem;
+	}
 
-  .highlight pre,
-  pre {
-    padding: 0.8rem;
-    overflow: auto;
-    border-radius: 0.3rem;
-    -webkit-overflow-scrolling: touch;
-  }
+	pre {
+		padding: 1.5em 2em;
+		margin-top: 0;
+		margin-bottom: 1rem;
+		font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+		font-size: 0.8rem;
+		color: $code-text-color;
+		word-wrap: normal;
+		background-color: $code-bg-color;
 
-  pre code,
-  pre tt {
-    display: inline;
-    max-width: initial;
-    padding: 0;
-    margin: 0;
-    overflow: initial;
-    line-height: inherit;
-    word-wrap: normal;
-    background-color: transparent;
-    border: 0;
+		> code {
+			padding: 0;
+			margin: 0;
+			color: $code-text-color;
+			word-break: normal;
+			white-space: pre;
+			background: transparent;
+			border: 0;
+		}
+	}
 
-    &:before,
-    &:after {
-      content: normal;
-    }
-  }
+	.highlight {
+		margin-bottom: 1rem;
 
-  ul,
-  ol {
-    margin-top: 0;
-  }
+		pre {
+			margin-bottom: 0;
+			word-break: normal;
+		}
+	}
 
-  blockquote {
-    padding: 0 1rem;
-    margin-left: 0;
-    color: $blockquote-text-color;
-    border-left: 0.3rem solid $border-color;
+	div.highlight {
+		border-radius: 5px;
+		overflow: hidden;
+	}
 
-    > :first-child {
-      margin-top: 0;
-    }
+	.highlight pre,
+	pre {
+		padding: 0.8rem;
+		overflow: auto;
+		border-radius: 0.3rem;
+		-webkit-overflow-scrolling: touch;
+	}
 
-    > :last-child {
-      margin-bottom: 0;
-    }
-  }
+	pre code,
+	pre tt {
+		display: inline;
+		max-width: initial;
+		padding: 0;
+		margin: 0;
+		overflow: initial;
+		line-height: inherit;
+		word-wrap: normal;
+		background-color: transparent;
+		border: 0;
 
-  table {
-    width: 100%;
-    overflow: auto;
-    word-break: normal;
-    word-break: keep-all; // For Firefox to horizontally scroll wider tables.
-    -webkit-overflow-scrolling: touch;
+		&:before,
+		&:after {
+			content: normal;
+		}
+	}
 
-    thead tr {
-      background: $table-head-color
-    }
-    
-    th {
-      font-weight: bold;
-    }
+	ul,
+	ol {
+		margin-top: 0;
+	}
 
-    th,
-    td {
-      padding: 0.5rem 1rem;
-      border: 1px solid $table-border-color;
-    }
-  }
+	blockquote {
+		padding: 0 1rem;
+		margin-left: 0;
+		color: $blockquote-text-color;
+		border-left: 0.3rem solid $border-color;
 
-  dl {
-    padding: 0;
+		> :first-child {
+			margin-top: 0;
+		}
 
-    dt {
-      padding: 0;
-      margin-top: 1rem;
-      font-size: 1rem;
-      font-weight: bold;
-    }
+		> :last-child {
+			margin-bottom: 0;
+		}
+	}
 
-    dd {
-      padding: 0;
-      margin-bottom: 1rem;
-    }
-  }
+	table {
+		width: 100%;
+		overflow: auto;
+		word-break: normal;
+		word-break: keep-all; // For Firefox to horizontally scroll wider tables.
+		-webkit-overflow-scrolling: touch;
 
-  hr {
-    height: 2px;
-    padding: 0;
-    margin: 1rem 0;
-    background-color: $hr-border-color;
-    border: 0;
-  }
-  
-  .spec {
-    padding-left: 17px;
-    font-size: 0.95em;
-    border-left: #FFC107 solid 3px;
-    
-    p {
-      margin: 0;
-    }
-  }
-  
-  .description {
-    padding: 20px 20px 0 20px;
-    
-    li {
-      margin-bottom: 10px;
-    }
-  }
-  
-  .methods {
-    border-bottom: $hr-border-color solid 1px;
+		thead tr {
+			background: $table-head-color
+		}
 
-    .type {
-      background: $type-bg-color;
-      border-radius: 3px;
-      padding: 0 0.6em 0.17em 0.6em;
-      margin-right: 4px;
-      font-size: 0.85em;
-    }
+		th {
+			font-weight: bold;
+		}
 
-    .type.return {
-      color: #7c7c7c;
-    }
+		th,
+		td {
+			padding: 0.5rem 1rem;
+			border: 1px solid $table-border-color;
+		}
+	}
 
-    .ver {
-      position: absolute;
-      right: 7px;
-      font-size: 0.85em;
-    }
-    
-    .flags {
-      position: absolute;
-      right: 0;
-      bottom: -1.5em;
-      background: #6b798a;
-      color: #fff;
-      font-size: .8em;
-      border-radius: 0 0 4px 4px;
-      padding: 0 5px;
-      
-      li {
-        float: left;
-        padding: 0 5px 0 0;
-        
-        &:before {
-          content: '| '
-        }
-      }
-      
-      li:first-child {
-        padding: 0 5px;
-        
-        &:before {
-          content: ''
-        }
-      }
-    }
+	dl {
+		padding: 0;
 
-    .method > .desc {
-      margin: 12px 16px 20px 16px;
-    }
+		dt {
+			padding: 0;
+			margin-top: 1rem;
+			font-size: 1rem;
+			font-weight: bold;
+		}
 
-    .params {
-      margin-left: 16px;
-      padding: 0 0 20px 16px;
-      list-style: disc;
+		dd {
+			padding: 0;
+			margin-bottom: 1rem;
+		}
+	}
 
-      .desc {
-        padding: 10px 7px;
-      }
-    }
+	hr {
+		height: 2px;
+		padding: 0;
+		margin: 1rem 0;
+		background-color: $hr-border-color;
+		border: 0;
+	}
 
-    .props {
-      list-style: circle;
-      margin: 0 0 0 15px;
+	.spec {
+		padding-left: 17px;
+		font-size: 0.95em;
+		border-left: #FFC107 solid 3px;
 
-      .accent {
-        font-weight: normal;
-      }
+		p {
+			margin: 0;
+		}
+	}
 
-      .prop {
-        margin: 8px 0 0 0;
+	.description {
+		padding: 20px 20px 0 20px;
 
-        .desc {
-          padding: 2px 0 0 5px
-        }
-      }
-    }
-  }
+		li {
+			margin-bottom: 10px;
+		}
+	}
+
+	.methods {
+		border-bottom: $hr-border-color solid 1px;
+
+		.type {
+			background: $type-bg-color;
+			border-radius: 3px;
+			padding: 0 0.6em 0.17em 0.6em;
+			margin-right: 4px;
+			font-size: 0.85em;
+		}
+
+		.type.return {
+			color: #7c7c7c;
+		}
+
+		.ver {
+			position: absolute;
+			right: 7px;
+			font-size: 0.85em;
+		}
+
+		.flags {
+			position: absolute;
+			right: 0;
+			bottom: -1.5em;
+			background: #6b798a;
+			color: #fff;
+			font-size: .8em;
+			border-radius: 0 0 4px 4px;
+			padding: 0 5px;
+
+			li {
+				float: left;
+				padding: 0 5px 0 0;
+
+				&:before {
+					content: '| '
+				}
+			}
+
+			li:first-child {
+				padding: 0 5px;
+
+				&:before {
+					content: ''
+				}
+			}
+		}
+
+		.method > .desc {
+			margin: 12px 16px 20px 16px;
+		}
+
+		.params {
+			margin-left: 16px;
+			padding: 0 0 20px 16px;
+			list-style: disc;
+
+			.desc {
+				padding: 10px 7px;
+			}
+		}
+
+		.props {
+			list-style: circle;
+			margin: 0 0 0 15px;
+
+			.accent {
+				font-weight: normal;
+			}
+
+			.prop {
+				margin: 8px 0 0 0;
+
+				.desc {
+					padding: 2px 0 0 5px
+				}
+			}
+		}
+	}
 }
 
 footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: solid 1px $hr-border-color;
+	padding-top: 2rem;
+	margin-top: 2rem;
+	border-top: solid 1px $hr-border-color;
 
-  @include large {
-    font-size: 1rem;
-  }
+	@include large {
+		font-size: 1rem;
+	}
 
-  @include medium {
-    font-size: 1rem;
-  }
+	@include medium {
+		font-size: 1rem;
+	}
 
-  @include small {
-    font-size: 0.9rem;
-  }
+	@include small {
+		font-size: 0.9rem;
+	}
 }
