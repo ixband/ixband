@@ -10,5 +10,6 @@ return: Boolean
 ## Descriptions
 description:
   - Opera Mini 브라우저면 true 반환.<br>
-  - ※ v32 즈음해서 은근슬쩍 Opera와 통합되면서 OPERA로 인식된다.<br>
-    그러면서 Opera Mini의 이슈들도 사라진것 같다.
+  - Android는 v32 즈음해서 은근슬쩍 Opera와 통합되면서 OPERA로 인식된다.<br>
+    Opera Mini의 이슈들도 어느정도는 사라진것 같다. (touch-event e.preventDetault() 이슈는 여전하다.)
+  - iOS에서는 Opera 브라우저를 체크하는게 불가능해 졌다. (Safari와 거의 유사하여 체크 불가능, 2018.04.22 기준)
