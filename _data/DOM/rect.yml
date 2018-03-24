@@ -1,0 +1,25 @@
+## contents를 구성하는 data ##
+
+title: rect()
+
+## Specification
+type: public method
+support: 0.6
+return: Object
+
+## Descriptions
+description:
+  - '대상 개체의 Rectangle 반환 {left, top, width, height}<br>
+     padding과 border포함된 수치'
+
+## Methods
+methods:
+  - name: rect
+    return:
+      - Object
+    version: 0.6~
+    params:
+      - name: relative
+        type:
+          - Boolean
+        desc: 기본값false, false면 document 기준, true면 viewport 기준으로 계산

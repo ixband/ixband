@@ -1,0 +1,19 @@
+## contents를 구성하는 data ##
+
+title: remove()
+
+## Specification
+type: public method
+support: 1.0
+return: '-'
+
+## Descriptions
+description:
+  - 대상 개체 삭제.
+
+## Methods
+methods:
+  - name: remove
+    return:
+      - void
+    version: 1.0~

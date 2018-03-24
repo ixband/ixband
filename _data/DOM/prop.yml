@@ -1,0 +1,39 @@
+## contents를 구성하는 data ##
+
+title: prop()
+
+## Specification
+type: public method
+support: 0.6
+return: '-'
+
+## Descriptions
+description:
+  - 대상 개체 Property를 설정하거나 반환.
+
+## Methods
+methods:
+  - name: prop
+    desc: 대상 개체 Property를 설정.
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: propertyName
+        type:
+          - String
+        desc: "'z-index'표기법"
+      - name: value
+        type:
+          - String
+
+  - name: prop
+    desc: 대상 개체 Property Value를 반환.
+    return:
+      - String
+    version: 0.6~
+    params:
+      - name: propertyName
+        type:
+          - String
+        desc: "'z-index'표기법"
