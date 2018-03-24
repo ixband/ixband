@@ -1,0 +1,30 @@
+## contents를 구성하는 data ##
+
+title: hasEvent()
+
+## Specification
+type: public method
+support: 0.6
+return: Boolean
+
+## Descriptions
+description:
+  - '대상 개체에 등록된 이벤트가 있는지 확인.<br>
+    style, script같은 특정 노드에서는 사용할수 없다.<br>
+    "mousewheel", "transitionend" 크로스브라우징 해결.'
+
+## Methods
+methods:
+  - name: hasEvent
+    return:
+      - Boolean
+    version: 0.6~
+    params:
+      - name: type
+        type:
+          - String
+        desc: '"on"빼고, "click"'
+      - name: handler
+        type:
+          - Function
+        desc: Event Handler

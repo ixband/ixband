@@ -1,0 +1,26 @@
+## contents를 구성하는 data ##
+
+title: hasClass()
+
+## Specification
+type: public method
+support: 0.6
+return: Boolean
+
+## Descriptions
+description:
+  - 대상 개체의 해당 className의 존재여부 반환.<br>
+    해당 className이 존재하면 true반환
+
+## Methods
+methods:
+  - name: hasClass
+    return:
+      - Boolean
+    version: 0.6~
+    params:
+      - name: className
+        type:
+          - String
+          - Array
+        desc: 여러개의 className을 비교할 수 있다. 이럴경우 className 들이 모두 일치해야 true를 반환.

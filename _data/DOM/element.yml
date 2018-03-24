@@ -1,0 +1,22 @@
+## contents를 구성하는 data ##
+
+title: element()
+
+## Specification
+type: public method
+support: 0.6
+return: Element
+
+## Descriptions
+description:
+  - 해당 Selector로 검색한 대상 단일 개체 반환.
+  - 'ixBand() 의 Methods는 모두 .element()로 대상 검출.<br>
+    일반적인 DOM검색은 속도 측면에서 .selector() 나 .selectorAll()을 사용하길 권장.<br>
+    찾는 대상이 없으면 "ixError" 발생'
+
+## Methods
+methods:
+  - name: element
+    return:
+      - Element
+    version: 0.6~

@@ -1,0 +1,21 @@
+## contents를 구성하는 data ##
+
+title: height()
+
+## Specification
+type: public method
+support: 0.6
+return: Number
+
+## Descriptions
+description:
+  - 대상 개체의 세로사이즈 반환.
+  - Border, 스크롤바가 제외되고 Padding이 포함된 수치
+    window, document, screen지원
+
+## Methods
+methods:
+  - name: height
+    return:
+      - Number
+    version: 0.6~

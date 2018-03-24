@@ -1,0 +1,26 @@
+## contents를 구성하는 data ##
+
+title: each()
+
+## Specification
+type: public method
+support: 0.6
+return: Array
+
+## Descriptions
+description:
+  - 대상객체들의 갯수만큼 callback 반복 호출 후 결과 배열 반환.<br>
+    반복문을 직접쓰는것 보다는 느리다.
+
+## Methods
+methods:
+  - name: each
+    desc: Inline Style설정.
+    return:
+      - Array
+    version: 0.6~
+    params:
+      - name: callback
+        type:
+          - Function
+        desc: function callback(item:Element, index:Int, array:Array):*
