@@ -1,0 +1,32 @@
+## contents를 구성하는 data ##
+
+title: outerHeight()
+
+## Specification
+type: public method
+support: 0.6
+return: Number
+
+## Descriptions
+description:
+  - 대상 개체의 바깥쪽 세로사이즈 반환.
+  - 'Padding, Border, 스크롤바가 포함된 수치<br>
+    window, document는 지원하지 않는다.<br>
+    ※ window, document 지원, IE9~, 이전버전은 .height()와 동일 (v1.0)'
+
+## Methods
+methods:
+  - name: outerHeight
+    return:
+      - Number
+    version: 0.6~
+
+  - name: outerHeight
+    return:
+      - Number
+    version: 0.6~
+    params:
+      - name: includeMargin
+        type:
+          - Boolean
+        desc: margin 포함여부

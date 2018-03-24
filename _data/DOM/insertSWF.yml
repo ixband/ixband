@@ -1,0 +1,48 @@
+## contents를 구성하는 data ##
+
+title: insertSWF()
+
+## Specification
+type: public method
+support: 0.6
+return: Element
+
+## Descriptions
+description:
+  - 대상 개체 자식 요소로 SWF 삽입.
+  - '&lt;object&gt;태그를 웹표준에 맞춰 생성해준다.<br>
+    대상 개체를 설정하지 않으면 화면에 append 할 수 없기 때문에 ExternalInterface로 연결할수 없고, 때문에 onReady를 받을수 없다.'
+
+## Methods
+methods:
+  - name: insertSWF
+    desc: "onReady 이벤트를 발생시키기 위해서는 flash에서
+          ExternalInterface.call( _onSwfEvent, { type: 'ready', id: _myID, value: 'test_value'} ); 형식으로 호출해줘야 한다."
+    return:
+      - Element
+    version: 0.6~
+    params:
+      - name: path
+        type:
+          - String
+        desc: SWF 경로
+      - name: width
+        type:
+          - Number
+        desc: SWF 가로 사이즈
+      - name: height
+        type:
+          - Number
+        desc: SWF 세로 사이즈
+      - name: params
+        type:
+          - Object
+        desc: SWF에 전달할 params
+      - name: dispatch
+        type:
+          - Object
+        desc: 'dispatch.onReady이벤트 전달, {type, id, target, value}'
+      - name: attributes
+        type:
+          - Object
+        desc: "id, wmode, version, info 설정, 기본값 {id: '없으면 자동생성', wmode: 'opaque', version: '10,0,0,0', info: 'Adobe Flash Player를 설치해야 이용가능한 콘텐츠 입니다.'}"

@@ -1,0 +1,26 @@
+## contents를 구성하는 data ##
+
+title: next()
+
+## Specification
+type: public method
+support: 0.6
+return: Element
+
+## Descriptions
+description:
+  - 대상노드의 다음 노드를 반환.<br>
+    대상노드와 같은 레벨, 빈 TextNode나 CommentNode는 무시.
+
+## Methods
+methods:
+  - name: next
+    return:
+      - Element
+    version: 0.6~
+    params:
+      - name: selector
+        type:
+          - String
+        desc: '매치시킬 Selector, "> or Space" 직계, 방계 검색은 지원하지 않는다.<br>
+               설정하게되면 Selector와 일치해야 개체 반환.'

@@ -1,0 +1,22 @@
+## contents를 구성하는 data ##
+
+title: innerHeight()
+
+## Specification
+type: public method
+support: 0.6
+return: Number
+
+## Descriptions
+description:
+  - 대상 개체의 안쪽 세로사이즈 반환.
+  - Border, 스크롤바, Padding이 제외된 수치<br>
+    window, document는 지원하지 않는다.<br>
+    screen 지원 (작업표시줄이 제외된 사이즈)
+
+## Methods
+methods:
+  - name: innerHeight
+    return:
+      - Number
+    version: 0.6~

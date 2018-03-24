@@ -1,0 +1,24 @@
+## contents를 구성하는 data ##
+
+title: match()
+
+## Specification
+type: public method
+support: 0.6
+return: Boolean
+
+## Descriptions
+description:
+  - 대상객체가 해당 selector조건과 일치하면 true반환.
+
+## Methods
+methods:
+  - name: match
+    return:
+      - Boolean
+    version: 0.6~
+    params:
+      - name: selector
+        type:
+          - String
+        desc: '매치시킬 Selector, "> or Space" 직계, 방계 검색은 지원하지 않는다.'

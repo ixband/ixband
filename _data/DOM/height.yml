@@ -9,8 +9,8 @@ return: Number
 
 ## Descriptions
 description:
-  - 대상 개체의 세로사이즈 반환.
-  - Border, 스크롤바가 제외되고 Padding이 포함된 수치
+  - 대상 개체의 세로사이즈 반환.<br>
+  - Border, 스크롤바가 제외되고 Padding이 포함된 수치<br>
     window, document, screen지원
 
 ## Methods
