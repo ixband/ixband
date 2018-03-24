@@ -1,0 +1,24 @@
+## contents를 구성하는 data ##
+
+title: clone()
+
+## Specification
+type: public method
+support: 0.6
+return: Element
+
+## Descriptions
+description:
+  - 대상개체의 자식노드들을 배열로 반환.
+
+## Methods
+methods:
+  - name: clone
+    return:
+      - Element
+    version: 0.6~
+    params:
+      - name: childCopy
+        type:
+          - Boolean
+        desc: 자식요소까지 복사할지 설정, 기본 false
