@@ -1,0 +1,21 @@
+## contents를 구성하는 data ##
+
+title: contentWidth()
+
+## Specification
+type: public method
+support: 0.6
+return: Int
+
+## Descriptions
+description:
+  - 대상 개체가 iframe일때, iframe에 컨텐츠가 로드된후의 컨텐츠 가로사이즈 반환.<br>
+    같은 도메인에서만 동작한다. 도메인이 다르면 0 반환.
+
+## Methods
+methods:
+  - name: contentWidth
+    return:
+      - Int
+    version: 0.6~
+

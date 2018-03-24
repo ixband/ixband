@@ -1,0 +1,39 @@
+## contents를 구성하는 data ##
+
+title: css()
+
+## Specification
+type: public method
+support: 0.6
+return: '-'
+
+## Descriptions
+description:
+  - 대상 개체 Style을 설정하거나 반환.
+
+## Methods
+methods:
+  - name: css
+    desc: Inline Style설정.
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: properties
+        type:
+          - String
+        desc: '"width:100px; z-index:2" 표기법'
+
+  - name: css
+    desc: ComputedStyle을 반환.<br>
+          최신 브라우저에서는 좀더 정확한 수치 반환 (소수)
+    return:
+      - Number
+      - String
+      - Properties
+    version: 0.6~
+    params:
+      - name: propertyName
+        type:
+          - String
+        desc: '"z-index" 표기법, 입력하지 않으면 all (property를 입력하여 값을 구하는것이 정확하다)'
