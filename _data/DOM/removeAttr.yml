@@ -1,0 +1,24 @@
+## contents를 구성하는 data ##
+
+title: removeAttr()
+
+## Specification
+type: public method
+support: 0.6
+return: '-'
+
+## Descriptions
+description:
+  - 대상 개체의 해당 속성 삭제.
+
+## Methods
+methods:
+  - name: removeAttr
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: attr
+        type:
+          - String
+        desc: "대상 속성, IE6,7에서도 공통으로 'class'로 표기해서 사용할 수 있다."

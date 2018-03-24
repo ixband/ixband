@@ -1,0 +1,25 @@
+## contents를 구성하는 data ##
+
+title: removeChild()
+
+## Specification
+type: public method
+support: 0.6
+return: '-'
+
+## Descriptions
+description:
+  - 대상 개체의 자식요소 삭제.
+
+## Methods
+methods:
+  - name: removeChild
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: child
+        type:
+          - Element
+          - Int
+        desc: Element나 index: 0~ 수치가 자식수보다 크거나 작으면 에러발생

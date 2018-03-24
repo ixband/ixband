@@ -1,0 +1,25 @@
+## contents를 구성하는 data ##
+
+title: removeProp()
+
+## Specification
+type: public method
+support: 0.6
+return: '-'
+
+## Descriptions
+description:
+  - 대상 개체의 Property 삭제.
+
+## Methods
+methods:
+  - name: removeProp
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: propertyName
+        type:
+          - String
+        desc: "'z-index'표기법"
+

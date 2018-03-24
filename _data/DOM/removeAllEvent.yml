@@ -1,0 +1,27 @@
+## contents를 구성하는 data ##
+
+title: removeAllEvent()
+
+## Specification
+type: public method
+support: 0.6
+return: '-'
+
+## Descriptions
+description:
+  - 대상 개체에 해당 이벤트 해제.<br>
+    style, script같은 특정 노드에서는 사용할수 없다.<br>
+    addEvent()로 등록된 이벤트만 해제된다.
+
+## Methods
+methods:
+  - name: removeAllEvent
+    desc: $B( target ).removeEvent()와 다른점은 자식요소의 이벤트도 해제할 수 있다.
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: childRemove
+        type:
+          - Boolean
+        desc: 자식의 이벤트를 해제할지 설정, 기본값 false.

@@ -1,0 +1,48 @@
+## contents를 구성하는 data ##
+
+title: removeEvent()
+
+## Specification
+type: public method
+support: 0.6
+return: '-'
+
+## Descriptions
+description:
+  - 대상 개체에 해당 이벤트 해제.<br>
+    style, script같은 특정 노드에서는 사용할수 없다.<br>
+    addEvent()로 등록된 이벤트만 해제된다.
+
+## Methods
+methods:
+  - name: removeEvent
+    desc: 기본적인 이벤트 해제.
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: type
+        type:
+          - String
+        desc: '"on"빼고, "click"'
+      - name: handler
+        type:
+          - Function
+        desc: Event Handler
+
+  - name: removeEvent
+    desc: 대상 개체의 해당 타입으로 등록된 모든 이벤트 해제.
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: type
+        type:
+          - String
+        desc: '"on"빼고, "click"'
+
+  - name: removeEvent
+    desc: 대상 개체의 등록된 모든 이벤트 해제.
+    return:
+      - void
+    version: 0.6~
