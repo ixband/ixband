@@ -9,7 +9,8 @@ return: Element
 
 ## Descriptions
 description:
-  - 대상개체의 자식노드들을 배열로 반환.
+  - '대상 개체 노드 복사.<br>
+    ※ ie6~8에서 addEvent로 등록된 이벤트를 제거하고 복사하기 위해서 사용한다.'
 
 ## Methods
 methods:

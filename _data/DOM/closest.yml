@@ -1,0 +1,25 @@
+## contents를 구성하는 data ##
+
+title: closest()
+
+## Specification
+type: public method
+support: 0.6
+return: Element
+
+## Descriptions
+description:
+  - 대상객체의 가장 가까운 조상 개체 반환.
+
+## Methods
+methods:
+  - name: closest
+    return:
+      - Element
+    version: 0.6~
+    params:
+      - name: selector
+        type:
+          - String
+        desc: '매치시킬 Selector, "> or Space" 직계, 방계 검색은 지원하지 않는다.<br>
+              설정하게되면 Selector와 일치해야 개체 반환.'
