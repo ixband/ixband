@@ -15,7 +15,7 @@ description:
 ## Methods
 methods:
   - name: trigger
-    desc: Event Properties : type, currentTarget, data
+    desc: 'Event Properties : type, currentTarget, data'
     return:
       - void
     version: 0.6~
