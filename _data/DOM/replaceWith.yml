@@ -1,0 +1,26 @@
+## contents를 구성하는 data ##
+
+title: replaceWith()
+
+## Specification
+type: public method
+support: 1.0
+return: Element
+
+## Descriptions
+description:
+  - 대상 개체 교체.
+
+## Methods
+methods:
+  - name: replaceWith
+    return:
+      - Element
+    version: 1.0~
+    params:
+      - name: selector
+        type:
+          - String
+          - Element
+        desc: '매치시킬 Selector, "> or Space" 직계, 방계 검색은 지원하지 않는다.'
+

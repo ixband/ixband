@@ -1,0 +1,41 @@
+## contents를 구성하는 data ##
+
+title: selector()
+
+## Specification
+type: public method
+support: 0.6
+return: Element
+
+## Descriptions
+description:
+  - DOM을 검색하여 해당 Selector와 일치하는 단일 개체 반환.
+  - '대상개체를 지정하지 않을때는 document를 설정해 주면 된다.<br>
+     내장함수 querySelector 일부 기능들을 구현.<br>
+     nodeName, .className, .className.className, #id, nodeName.className, nodeName.className.className, nodeName#id, ">" 직계 하위객체<br>
+     Space 방계 하위객체 모두, 다중 객체선택 구분자 "," (","를 사용하여 다중 selector를 입력하면 나중에 작성된 selector를 기준으로 단일 element를 검출한다.)'
+  - '<b>지원하는 속성 Selector</b><br>
+    <ul>
+    <li>[attr] 해당속성이 있을때</li>
+    <li>[attr=value] 값이 같을때</li>
+    <li>[attr^=value] 시작값이 같을때</li>
+    <li>[attr$=value] 끝값이 같을때</li>
+    <li>[attr*=value] 일부문자가 같을때</li>
+    <li>[attr~=value] 완전체단어일치</li>
+    </ul>'
+
+## Methods
+methods:
+  - name: selector
+    desc: '최신 querySelector를 지원하는 브라우저에서는 내장 함수를 활용해서 구현되었고, IE6~7에서는 별도로 작성한 로직으로 동작한다.<br>
+           IE6~7에서는 id난 className으로 검출할때 nodeName을 넣지않으면 타겟 문서 전체를 검색 하기 때문에 퍼포먼스가 떨어진다.<br>
+           되도록이면 타겟과 nodeName을 넣고 검색을 해야한다.<br>
+           *:first-child와 같은 가상 선택자 형식의 Selector는 지원하지 않는다.'
+    return:
+      - Element
+    version: 0.6~
+    params:
+      - name: selector
+        type:
+          - String
+        desc: 검색할 Selector 문자열

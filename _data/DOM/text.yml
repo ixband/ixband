@@ -1,0 +1,31 @@
+## contents를 구성하는 data ##
+
+title: text()
+
+## Specification
+type: public method
+support: 0.6
+return: '-'
+
+## Descriptions
+description:
+  - 대상개체의 Text를 설정하거나 반환.
+
+## Methods
+methods:
+  - name: text
+    desc: 대상개체의 Text를 설정.
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: str
+        type:
+          - String
+        desc: 설정할 문자열
+
+  - name: text
+    desc: 대상개체의 Text문자열을 반환.
+    return:
+      - String
+    version: 0.6~

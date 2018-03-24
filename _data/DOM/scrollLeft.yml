@@ -1,0 +1,32 @@
+## contents를 구성하는 data ##
+
+title: scrollLeft()
+
+## Specification
+type: public method
+support: 0.6
+return: '-'
+
+## Descriptions
+description:
+  - 대상 개체의 스크롤된 X좌표 설정하거나 반환.<br>
+    window지원
+
+## Methods
+methods:
+  - name: scrollLeft
+    desc: 대상 개체의 스크롤된 X좌표 설정
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: value
+        type:
+          - Number
+        desc: 설정값
+
+  - name: scrollLeft
+    desc: 대상 개체의 스크롤된 X좌표 반환
+    return:
+      - Number
+    version: 0.6~

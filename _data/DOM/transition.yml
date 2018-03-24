@@ -1,0 +1,43 @@
+## contents를 구성하는 data ##
+
+title: transition()
+
+## Specification
+type: public method
+support: 0.6
+return: '-'
+
+## Descriptions
+description:
+  - 대상개체의 CSS3 transition을 적용한다.
+  - '대상의 해당 style property 가 설정되어 있지 않으면 transition 이 제대로 적용되지 않을 수 있다.<br>
+    ~IE9 는 지원하지 않는다.<br>
+    호출시 대상개체의 등록된 "transitionend" 이벤트는 모두 해제시키고 하나의 이벤트만 등록된다.<br>
+    ※ IE와 iOS에서는 해당노드가 화면에서 사라지면(display:none;) transition을 pause시키고 transitionend 이벤트도 보류된다.<br>
+    onTransitonEnd 이벤트는 출발값과 도착값이 같으면 발생하지 않는다.<br>
+    Ease값 조절: <a href="https://matthewlein.com/ceaser/" target="_blank">CSS3 Ease Generator</a>'
+
+## Methods
+methods:
+  - name: transition
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: tStyle
+        type:
+          - String
+        desc: 'taransition style, ex) "left:220px"'
+      - name: tValue
+        type:
+          - String
+        desc: 'taransition value, ex) "left 0.6s ease"'
+      - name: dispatch
+        type:
+          - Object
+        desc: 'dispatch되는 Event들 onTransitionEnd: Function<br>
+               Event Properties : type, target, data'
+      - name: data
+        type:
+          - '*'
+        desc: 'transitionend 이벤트 핸들러에서 전달받을 data, ex) e.data'
