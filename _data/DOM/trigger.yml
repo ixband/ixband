@@ -1,0 +1,30 @@
+## contents를 구성하는 data ##
+
+title: trigger()
+
+## Specification
+type: public method
+support: 0.7
+return: '-'
+
+## Descriptions
+description:
+  - .addEvent() Method 로 등록된 이벤트 강제 샐행<br>
+    Custom Event 실행 가능.
+
+## Methods
+methods:
+  - name: trigger
+    desc: Event Properties : type, currentTarget, data
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: type
+        type:
+          - String
+        desc: '"on"빼고, "click"'
+      - name: data
+        type:
+          - '*'
+        desc: Event Handler 에서 전달받을 데이타
