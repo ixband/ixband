@@ -9,7 +9,15 @@
 
     <meta name="title" content="{{ page.title }}|ixBand.js" />
     <meta name="author" content="blaxk"/>
-    <meta name="description" content="{{ data.description[0] }}"/>
+    <meta name="description" content="Type:{{ data.type }} | {{ data.description[0] }}"/>
+	<meta name="keywords" content="ixBand, ixBand.js, Javascript, JS, Javascript Core{% for tag in page.tags %}, {{ tag }}{% endfor %}"/>
+	<meta property="article:tag" content="ixBand" />
+	<meta property="article:tag" content="ixBand.js" />
+	<meta property="article:tag" content="Javascript" />
+	<meta property="article:tag" content="Javascript Core" />
+	{% for tag in page.tags %}
+	<meta property="article:tag" content="{{ tag }}" />
+	{% endfor %}
 
     <title>{{ page.title }} | ixBand.js</title>
 
