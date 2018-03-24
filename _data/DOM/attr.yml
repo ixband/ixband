@@ -1,0 +1,41 @@
+## contents를 구성하는 data ##
+
+title: attr()
+
+## Specification
+type: public method
+support: 0.6
+return: '-'
+
+## Descriptions
+description:
+  - 대상 개체 속성을 설정하거나 반환.
+
+## Methods
+methods:
+  - name: attr
+    desc: 대상 개체 속성을 설정.
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: attr
+        type:
+          - String
+        desc: "대상 속성, IE6,7에서도 공통으로 'class'로 표기해서 사용할 수 있다."
+      - name: value
+        type:
+          - String
+        desc:
+
+  - name: attr
+    desc: 대상 개체 속성을 반환.
+    return:
+      - Element
+      - Properties
+    version: 0.6~
+    params:
+      - name: attr
+        type:
+          - String
+        desc: "대상 속성, IE6,7에서도 공통으로 'class'로 표기해서 사용할 수 있다."

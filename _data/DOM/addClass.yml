@@ -1,0 +1,25 @@
+## contents를 구성하는 data ##
+
+title: addClass()
+
+## Specification
+type: public method
+support: 0.6
+return: '-'
+
+## Descriptions
+description:
+  - 대상 개체의 해당 className 추가.<br>
+    해당 classNam이 이미 설정되어 있으면 다시 설정하지 않는다.
+
+## Methods
+methods:
+  - name: addClass
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: className
+        type:
+          - String
+        desc: 여러개의 className을 추가할 수 있다.
