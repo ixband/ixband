@@ -22,4 +22,4 @@ methods:
         type:
           - Element
           - Int
-        desc: Element나 index: 0~ 수치가 자식수보다 크거나 작으면 에러발생
+        desc: 'Element나 index: 0~ 수치가 자식수보다 크거나 작으면 에러발생'
