@@ -1,0 +1,29 @@
+## contents를 구성하는 data ##
+
+title: addChild()
+
+## Specification
+type: public method
+support: 0.6
+return: '-'
+
+## Descriptions
+description:
+  - 대상을 개체의 자식요소로 삽입.
+
+## Methods
+methods:
+  - name: addChild
+    return:
+      - void
+    version: 0.6~
+    params:
+      - name: child
+        type:
+          - Element
+        desc: 배치할 대상개체
+      - name: index
+        type:
+          - Int
+        desc: 배치할 index 0~ (선택사항) 수치가 자식수보다 크거나 작으면 맨뒤나 맨앞에 알아서 배치 시킨다.<br>
+              설정하지 않으면 맨뒤에 배치 시킨다.
