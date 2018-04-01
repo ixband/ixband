@@ -8,7 +8,7 @@ title: docs
 <div class="docs_search">
 	<div class="search_input_area">
 		<form action="{{ site.baseurl }}/search/" method="get">
-			<input type="search" placeholder="Search..." name="keyword" class="search-input">
+			<input type="search" placeholder="Keyword..." name="keyword" class="search-input">
 			<button type="submit" class="btn-search">Search</button>
 		</form>
 	</div>
