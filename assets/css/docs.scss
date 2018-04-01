@@ -14,8 +14,9 @@
     input {
       background: transparent;
       padding: 10px;
-      border: 0;
+      border: $border-color solid 1px;
       border-radius: 3px;
+      height: 20px;
     }
 
     .btn-search {
@@ -23,6 +24,8 @@
       padding: 0 10px;
       color: #fff;
       border-radius: 3px;
+      border: 0;
+      height: 20px;
     }
   }
 
