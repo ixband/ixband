@@ -20,8 +20,8 @@
     }
 
     .btn-search {
-      background: $header-bg-color;
-      padding: 0 10px;
+      background: $header-bg-dark-color;
+      padding: 10px;
       color: #fff;
       border-radius: 3px;
       border: 0;
@@ -31,7 +31,7 @@
 
   .hash {
     > span {
-      margin: 0 0 1em 0;
+      margin: 0 1em 0 0;
     }
   }
 
