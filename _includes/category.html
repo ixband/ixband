@@ -4,9 +4,11 @@
     {% assign sortedDocs = site.docs | sort: 'category' %}
     {% assign groups = sortedDocs | group_by: 'category' %}
 
+	{% comment %}
     <li class="started {% if page.title == 'Getting started' %}active{% endif %}">
         <a href="{{ site.baseurl }}/started">Getting started</a>
     </li>
+	{% endcomment %}
 
     {% for group in groups %}
         {% if group.name != 'DOM' %}
