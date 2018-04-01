@@ -22,4 +22,19 @@ main {
     border-radius: 0.3rem;
     color: $body-text-gray-color;
   }
+
+  .area_404 {
+    h1, h2, h3, div {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4em;
+      margin: 3em 0;
+    }
+
+    h3 {
+      margin: 1em 0;
+    }
+  }
 }
