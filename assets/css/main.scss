@@ -18,7 +18,8 @@ main {
   .old_version {
     margin-top: 1em;
     background: $table-head-color;
-    padding: 2em;
+    padding: 1em;
     border-radius: 0.3rem;
+    color: $body-text-gray-color;
   }
 }
