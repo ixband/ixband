@@ -10,7 +10,7 @@ timezone: 'Asia/Seoul'
 # URL
 url: http://ixband.org
 baseurl: /
-permalink: /404.html
+permalink: /:path/
 
 # Conversion
 markdown:    kramdown
