@@ -4,23 +4,4 @@
 @import 'theme';
 @import 'docs-contents-area';
 @import 'category';
-
-.docs_search {
-
-
-  .search_input_area {
-    padding-bottom: 15px;
-
-    input {
-      background: transparent;
-      padding: 10px;
-    }
-
-    .btn-search {
-      background: $header-bg-color;
-      padding: 0 10px;
-      color: #fff;
-    }
-  }
-
-}
+@import 'search';
