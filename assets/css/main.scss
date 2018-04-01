@@ -4,12 +4,14 @@
 @import 'theme';
 
 main {
-  background: $header-bg-dark-color;
-  color: #fff;
+  //background: $header-bg-dark-color;
+  //color: #fff;
+  width: 100%;
 }
 
 #contents-area {
-  margin-top: 2rem;
+  max-width: 1024px;
+  margin: 0 auto;
 
   h1,
   h2,
@@ -17,7 +19,6 @@ main {
   h4,
   h5,
   h6 {
-    font-weight: normal;
-    color: #fff;
+    //color: #fff;
   }
 }
