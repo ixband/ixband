@@ -30,7 +30,7 @@
 
             decode( doc.description );
 
-            if ( reg.test(doc.title) || _.contains(doc.tags, keyword) || match( reg, doc.description) ) {
+            if ( reg.test(doc.category) || reg.test(doc.title) || _.contains(doc.tags, keyword) || match( reg, doc.description) ) {
                 var item = [
                     '<li class="item">',
                         '<a href="' + doc.path + '">',
