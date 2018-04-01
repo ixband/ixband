@@ -3,10 +3,21 @@
 
 @import 'theme';
 
-#contents-area {
-
+main {
   background: $header-bg-dark-color;
-  margin-top: 2rem;
   color: #fff;
+}
 
+#contents-area {
+  margin-top: 2rem;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: normal;
+    color: #fff;
+  }
 }
