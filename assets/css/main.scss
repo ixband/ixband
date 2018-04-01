@@ -7,12 +7,13 @@ main {
   //background: $header-bg-dark-color;
   //color: #fff;
   width: 100%;
+  margin: 0;
 }
 
 #contents-area {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2em;
+  padding: 2em 2em 5em 2em;
 
   h1,
   h2,
