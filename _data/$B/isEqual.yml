@@ -12,7 +12,8 @@ return: Boolean
 
 ## Descriptions
 description:
-  - data 비교, Object, Array는 깊은 비교 (value의 type까지 같아야 true)
+  - data 비교, Object, Array는 깊은 비교 (value의 type까지 같아야 true)<br>
+    v1.1.2 에서 빈 Object나 Array끼리 비교해도 true가 나오도록 수정
 
 ## Methods
 methods:
