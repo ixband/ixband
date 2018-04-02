@@ -15,4 +15,5 @@ var data1 = {age: '24', name: 'Jene', items: [0, 1, 2]},
 
 $B.isEqual( data1, data2 );//false
 $B.isEqual( data2, data3 );//true
+$B.isEqual( {}, {} );//true
 ```
