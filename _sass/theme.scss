@@ -240,7 +240,7 @@ main {
 
 footer {
 	padding: 2rem;
-	border-top: solid 1px $hr-border-color;
+	border-top: solid 1px $border-color;
 
 	@include large {
 		font-size: 0.9rem;
