@@ -13,7 +13,7 @@
   @include large {
     width: 80%;
     padding: 20px 0 5rem 45px;
-    border-left: $hr-border-color solid 1px;
+    border-left: $border-color solid 1px;
   }
 
   @include medium {
@@ -191,7 +191,7 @@
     height: 2px;
     padding: 0;
     margin: 1rem 0;
-    background-color: $hr-border-color;
+    background-color: $border-color;
     border: 0;
   }
 
@@ -214,7 +214,7 @@
   }
 
   .methods {
-    border-bottom: $hr-border-color solid 1px;
+    border-bottom: $border-color solid 1px;
 
     .type {
       background: $type-bg-color;
