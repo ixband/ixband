@@ -70,6 +70,8 @@
   }
 
   @include large {
+    border-right: $border-color solid 1px;
+    
     .btn-category-close {
       display: none;
     }
