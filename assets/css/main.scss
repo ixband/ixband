@@ -11,6 +11,20 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: 2em 2em 5em 2em;
+  
+  h1 {
+    font-size: 4em;
+    font-weight: 300;
+  }
+  
+  h2 {
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-weight: 600;
+  }
 
   .old_version {
     margin-top: 1em;
