@@ -238,8 +238,13 @@ main {
 }
 
 footer {
-	padding: 2rem;
 	border-top: solid 1px $border-color;
+
+  .footer-area {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: $large-breakpoint;
+  }
 
 	@include large {
 		font-size: 0.9rem;
