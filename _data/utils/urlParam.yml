@@ -16,7 +16,8 @@ methods:
   - name: urlParam
     desc: 설정한 이름의 param value를 반환.
     return:
-      - void
+      - String
+      - Object
     version: 1.0~
     params:
       - name: prop
