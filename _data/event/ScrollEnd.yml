@@ -38,7 +38,6 @@ methods:
       - name: values
         type:
           - Object
-        desc: 0 ~ 360 설정할 각도, 설정하지 않으면 현재의 degree를 반환.
         props:
           - name: left
             type: Number
