@@ -41,7 +41,7 @@ methods:
             desc: 'Swipe 발생 축 설정, "vertical", "horizontal", "auto" (기본값 = "horizontal")'
           - name: preventDefault
             type: Boolean
-            desc: safari v10~ 에서 세로축 touchstart를 막고 싶을때만 설정한다. (safari 오류 임시처방)
+            desc: safari v10~ 에서 세로축 touchstart를 막고 싶을때만 설정. (v1.1.2 에서 해결되어 해당 옵션 삭제)
 
   - name: sensitivity
     return:
