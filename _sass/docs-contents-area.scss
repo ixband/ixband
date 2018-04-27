@@ -158,13 +158,14 @@
     word-break: normal;
     word-break: keep-all; // For Firefox to horizontally scroll wider tables.
     -webkit-overflow-scrolling: touch;
+    font-size: 0.9em;
 
     thead tr {
       background: $table-head-color
     }
 
     th {
-      font-weight: bold;
+      font-weight: 600;
     }
 
     th,
