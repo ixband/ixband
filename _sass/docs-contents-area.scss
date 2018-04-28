@@ -173,6 +173,11 @@
       padding: 0.5rem 1rem;
       border: 1px solid $table-border-color;
     }
+
+    ul {
+      list-style: circle;
+      margin-left: 10px;
+    }
   }
 
   dl {
