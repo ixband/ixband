@@ -10,6 +10,7 @@ return: '*'
 ## Descriptions
 description:
   - url의 parameter 의 값을 반환하거나, object를 조합하여 url parameter string으로 반환
+  - camelCase 표기법만을 지원한다. (?testParam=1234)
 
 ## Methods
 methods:
