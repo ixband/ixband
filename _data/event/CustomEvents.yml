@@ -86,7 +86,7 @@ methods:
         desc: useCapture, passive 등등, 입력하지 않으면 type과 listener만 체크
   - name: dispatch
     return:
-      - Boolean
+      - CustomEvents
     version: 1.0~
     desc: 등록 리스너 실행
     params:
