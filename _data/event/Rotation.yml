@@ -38,7 +38,7 @@ methods:
           - name: datumPoint
             type:
               - Array
-            desc: 기준 중심 좌표 x, y배열, 대상 대비 %, ex) ['50%', '50%'], (px, %단위 지원)
+            desc: "기준 중심 좌표 x, y배열, 대상 대비 %, (기본값: ['50%', '50%'], px, %단위 지원)"
           - name: baseAngle
             type:
               - Number
