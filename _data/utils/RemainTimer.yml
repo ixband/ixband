@@ -41,7 +41,8 @@ methods:
     return:
       - RemainTimer
     version: 1.0~
-    desc: RemainTimer정지, 시간을 재설정 하지 않는다.
+    desc: RemainTimer정지, 시간을 재설정 하지 않는다.<br>
+          이벤트 발생이 중지된다.
 
   - name: reset
     return:
