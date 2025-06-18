@@ -32,6 +32,15 @@ methods:
           - jQuery
         desc: 터치이벤트 발생시킬 대상 (하나의 대상의 하나의 TouchEvent생성)<br>
               ※대상 개체는 단일 개체.
+      - name: options
+        type:
+          - Object
+        desc:
+        props:
+          - name: enableMouseEvent
+            type:
+              - Boolean
+            desc: 터치 이벤트가 지원하지 않는 환경에서 mouse이벤트를 사용할지 여부. (v1.5.0부터 지원)
 
   - name: addListener
     return:

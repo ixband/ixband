@@ -39,6 +39,10 @@ methods:
           - name: axiz
             type: String
             desc: 'Swipe 발생 축 설정, "vertical", "horizontal", "auto" (기본값 = "horizontal")'
+          - name: enableMouseEvent
+            type:
+              - Boolean
+            desc: 터치 이벤트가 지원하지 않는 환경에서 mouse이벤트를 사용할지 여부. (v1.5.0부터 지원)
           - name: preventDefault
             type: Boolean
             desc: safari v10~ 에서 세로축 touchstart를 막고 싶을때만 설정. (v1.1.2 에서 해결되어 해당 옵션 삭제)

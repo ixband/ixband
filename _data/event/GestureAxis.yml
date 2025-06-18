@@ -35,6 +35,10 @@ methods:
           - Object
         desc:
         props:
+          - name: enableMouseEvent
+            type:
+              - Boolean
+            desc: 터치 이벤트가 지원하지 않는 환경에서 mouse이벤트를 사용할지 여부. (v1.5.0부터 지원)
           - name: preventDefault
             type:
               - Boolean
